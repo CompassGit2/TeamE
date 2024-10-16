@@ -16,5 +16,5 @@ MonoBehaviour:
   Name: "\u30B9\u30BA\u9271\u77F3"
   MaterialImage: {fileID: 21300000, guid: 0fc57feaca5bb9f45b25e95767bf4607, type: 3}
   Rarity: 0
-  description: "\u6EB6\u3051\u3084\u3059\u304F\u3001\u4F38\u3073\u3084\u3059\u3044\u3002"
-  price: 70
+  Price: 70
+  Description: "\u6EB6\u3051\u3084\u3059\u304F\u3001\u4F38\u3073\u3084\u3059\u3044\u3002"

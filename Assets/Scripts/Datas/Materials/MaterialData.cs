@@ -1,16 +1,16 @@
 using UnityEngine;
 
-namespace ItemData
+namespace Data
 {
-    [CreateAssetMenu(menuName = "Database/Material")]
+    [CreateAssetMenu(menuName = "Data/Material")]
     public class MaterialData : ScriptableObject
     {
         public int Id;
         public string Name;
         public Sprite MaterialImage;
         public int Rarity;
-        public string description;
-        public int price;
+        public int Price;
+        public string Description;
 
     }
 }

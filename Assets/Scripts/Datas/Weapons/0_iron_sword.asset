@@ -9,12 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b3bd4638ea5154bb360eb57d7b640e, type: 3}
-  m_Name: 2_zinc_ore
+  m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
+  m_Name: 0_iron_sword
   m_EditorClassIdentifier: 
-  Id: 2
-  Name: "\u4E9C\u925B\u9271\u77F3"
-  MaterialImage: {fileID: 21300000, guid: b26df073f5f4b0742af323cadab45053, type: 3}
+  Id: 0
+  Name: "\u9244\u306E\u77ED\u5263"
+  WeaponImage: {fileID: 0}
   Rarity: 0
-  Price: 70
-  Description: "\u9306\u3073\u306B\u304F\u3044\u3002"
+  Length: 50
+  Weight: 700
+  Sharpness: 80
+  Bonus: 0
+  Attack: 0
+  Price: 0
+  Description: 
