@@ -1,8 +1,7 @@
 using UnityEngine;
-using Data;
 using System.Collections.Generic;
 
-namespace Database
+namespace Data.Database
 {
     [CreateAssetMenu(menuName = "Database/WeaponDatabase")]
     public class WeaponDatabase : ScriptableObject

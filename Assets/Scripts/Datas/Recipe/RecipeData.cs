@@ -11,6 +11,7 @@ namespace Data
         public MaterialData Material2;
         public MaterialData Material3;
         public int MaxQuality;
+        public float TemperatureSensitivity;
     }
 }
 
