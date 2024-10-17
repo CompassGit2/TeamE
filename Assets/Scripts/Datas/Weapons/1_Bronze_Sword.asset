@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 1_Bronze_Sword
   m_EditorClassIdentifier: 
   Id: 0
-  Name: 
+  Name: "\u9752\u9285\u306E\u5263"
   WeaponImage: {fileID: 0}
   Rarity: 0
-  Length: 0
-  Weight: 0
-  Sharpness: 0
-  BasePrice: 0
+  Length: 50
+  Weight: 500
+  Sharpness: 40
+  BasePrice: 100
   Description: 
