@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
+  m_Name: 3_copper_sword
+  m_EditorClassIdentifier: 
+  Id: 4
+  Weapon: {fileID: 11400000, guid: f7d57043ac947cc40af78d4e9473995e, type: 2}
+  Material1: {fileID: 11400000, guid: 7383264bf99c7b44589bebc190c0f570, type: 2}
+  AmountMaterial1: 3
+  Material2: {fileID: 0}
+  AmountMaterial2: 0
+  Material3: {fileID: 0}
+  AmountMaterial3: 0
+  MaxQuality: 100
+  RiseTemperatureSensitivity: 2
+  DownTemperatureSensitivity: 2

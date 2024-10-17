@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
-  m_Name: 0_iron_sword
+  m_Name: 4_crimson_sword
   m_EditorClassIdentifier: 
-  Id: 0
-  Name: "\u9244\u306E\u5263"
+  Id: 4
+  Name: "\u771F\u7D05\u306E\u5263"
   WeaponImage: {fileID: 0}
-  Rarity: 0
+  Rarity: 3
   Length: 50
-  Weight: 100
-  Sharpness: 80
-  BasePrice: 150
+  Weight: 200
+  Sharpness: 120
+  BasePrice: 450
   Description: 

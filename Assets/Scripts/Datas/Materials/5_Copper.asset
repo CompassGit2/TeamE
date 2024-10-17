@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24b3bd4638ea5154bb360eb57d7b640e, type: 3}
-  m_Name: 1_tin_ore
+  m_Name: 5_Copper
   m_EditorClassIdentifier: 
-  Id: 1
-  Name: "\u30B9\u30BA\u9271\u77F3"
-  MaterialImage: {fileID: 21300000, guid: 0fc57feaca5bb9f45b25e95767bf4607, type: 3}
+  Id: 5
+  Name: "\u9285"
+  MaterialImage: {fileID: 0}
   Rarity: 1
-  Price: 70
-  Description: "\u6EB6\u3051\u3084\u3059\u304F\u3001\u4F38\u3073\u3084\u3059\u3044\u3002"
+  Price: 55
+  Description: "\u7F8E\u3057\u3044\u5149\u6CA2\u3092\u6301\u3061\u3001\u6DF1\u3044\u8D64\u307F\u3092\u5E2F\u3073\u305F\u91D1\u5C5E"
