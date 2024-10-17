@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Data
 {   
+    /// <summary>
+    /// 武器データ
+    /// </summary>
     [CreateAssetMenu(menuName = "Data/Weapon")]
     public class WeaponData : ScriptableObject 
     {
@@ -12,9 +15,7 @@ namespace Data
         public int Length;
         public int Weight;
         public int Sharpness;
-        public int Bonus;
-        public int Attack;
-        public int Price;
+        public int BasePrice;
         public string Description;
 
     }
