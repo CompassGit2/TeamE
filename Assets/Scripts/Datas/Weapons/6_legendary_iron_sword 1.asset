@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
-  m_Name: 0_iron_sword
+  m_Name: 6_legendary_iron_sword 1
   m_EditorClassIdentifier: 
-  Id: 0
-  Name: "\u9244\u306E\u5263"
+  Id: 6
+  Name: "\u82F1\u96C4\u7684\u306A\u9244\u306E\u5263"
   WeaponImage: {fileID: 0}
-  Rarity: 0
-  Length: 50
-  Weight: 100
-  Sharpness: 80
-  BasePrice: 150
+  Rarity: 4
+  Length: 90
+  Weight: 600
+  Sharpness: 180
+  BasePrice: 500
   Description: 

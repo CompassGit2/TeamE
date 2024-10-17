@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 1
   Name: "\u9752\u9285\u306E\u5263"
   WeaponImage: {fileID: 0}
-  Rarity: 0
+  Rarity: 1
   Length: 50
   Weight: 500
   Sharpness: 40
