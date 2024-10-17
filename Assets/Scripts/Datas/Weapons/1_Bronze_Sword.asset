@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
   m_Name: 1_Bronze_Sword
   m_EditorClassIdentifier: 
-  Id: 0
+  Id: 1
   Name: "\u9752\u9285\u306E\u5263"
   WeaponImage: {fileID: 0}
   Rarity: 0
