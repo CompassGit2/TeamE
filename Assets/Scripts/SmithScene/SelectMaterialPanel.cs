@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using EasingCore;
 using Data;
 
 namespace SmithScene.SelectMaterial
@@ -17,8 +16,10 @@ namespace SmithScene.SelectMaterial
     class SelectMaterialPanel : MonoBehaviour
     {
         [SerializeField] GridView gridView = default;
+        
+        [SerializeField] UseMaterialPanel useMaterialPanel;
 
-        void Start()
+        void OnEnable()
         {
             gridView.OnCellClicked(index => SetMaterialToUse(Storage.materials[index]));
 
@@ -50,6 +51,8 @@ namespace SmithScene.SelectMaterial
                 return;
             }
 
+            gridView.UpdateSelection(0);
+
             /*
             TryParseValue(selectIndexInputField, 0, gridView.DataCount - 1, index =>
             {
@@ -67,7 +70,7 @@ namespace SmithScene.SelectMaterial
 
         void SetMaterialToUse(MaterialStack material)
         {
-
+            useMaterialPanel.SetUseMaterial(material);
         }
     }
 
