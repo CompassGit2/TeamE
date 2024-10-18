@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 1_Bronze_Sword
   m_EditorClassIdentifier: 
   Id: 0
-  Weapon: {fileID: 0}
-  Material1: {fileID: 0}
-  AmountMaterial1: 0
-  Material2: {fileID: 0}
-  AmountMaterial2: 0
+  Weapon: {fileID: 11400000, guid: 71b78589ae65dbf4cb26ccbc90d2deb3, type: 2}
+  Material1: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+  AmountMaterial1: 5
+  Material2: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+  AmountMaterial2: 3
   Material3: {fileID: 0}
   AmountMaterial3: 0
-  MaxQuality: 0
-  RiseTemperatureSensitivity: 0
-  DownTemperatureSensitivity: 0
+  MaxQuality: 100
+  RiseTemperatureSensitivity: 1
+  DownTemperatureSensitivity: 3

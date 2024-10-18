@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
-  m_Name: 8_Heavy Iron Blade
+  m_Name: 9_Wild_Iron_Sword
   m_EditorClassIdentifier: 
-  Id: 8
-  Weapon: {fileID: 11400000, guid: b057065e4be94714b9e2bd1fe8980e59, type: 2}
+  Id: 9
+  Weapon: {fileID: 11400000, guid: 21171cee474ea8440a79296085f2e2c9, type: 2}
   Material1: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
-  AmountMaterial1: 10
-  Material2: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
-  AmountMaterial2: 5
+  AmountMaterial1: 6
+  Material2: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+  AmountMaterial2: 10
   Material3: {fileID: 0}
   AmountMaterial3: 0
-  MaxQuality: 200
-  RiseTemperatureSensitivity: 3
-  DownTemperatureSensitivity: 3
+  MaxQuality: 100
+  RiseTemperatureSensitivity: 2
+  DownTemperatureSensitivity: 2

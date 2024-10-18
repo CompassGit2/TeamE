@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
-  m_Name: 8_Heavy Iron Blade
+  m_Name: 10_Crimsonsteel_Cleaver
   m_EditorClassIdentifier: 
-  Id: 8
-  Weapon: {fileID: 11400000, guid: b057065e4be94714b9e2bd1fe8980e59, type: 2}
+  Id: 10
+  Weapon: {fileID: 11400000, guid: ce040876a4b5c1e4685bab062bd25d20, type: 2}
   Material1: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
   AmountMaterial1: 10
-  Material2: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
-  AmountMaterial2: 5
-  Material3: {fileID: 0}
-  AmountMaterial3: 0
-  MaxQuality: 200
+  Material2: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+  AmountMaterial2: 8
+  Material3: {fileID: 11400000, guid: a3789aa950442434ba4d7e00da500359, type: 2}
+  AmountMaterial3: 15
+  MaxQuality: 300
   RiseTemperatureSensitivity: 3
-  DownTemperatureSensitivity: 3
+  DownTemperatureSensitivity: 5
