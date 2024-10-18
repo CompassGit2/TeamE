@@ -20,6 +20,6 @@ MonoBehaviour:
   AmountMaterial2: 5
   Material3: {fileID: 0}
   AmountMaterial3: 0
-  MaxQuality: 0
-  RiseTemperatureSensitivity: 0
-  DownTemperatureSensitivity: 0
+  MaxQuality: 200
+  RiseTemperatureSensitivity: 3
+  DownTemperatureSensitivity: 3

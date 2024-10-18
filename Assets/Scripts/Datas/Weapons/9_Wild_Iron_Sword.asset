@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
   m_Name: 9_Wild_Iron_Sword
   m_EditorClassIdentifier: 
-  Id: 0
-  Name: 
-  WeaponImage: {fileID: 0}
-  Rarity: 0
-  Length: 0
-  Weight: 0
-  Sharpness: 0
-  BasePrice: 0
+  Id: 9
+  Name: "\u8352\u9244\u306E\u5263"
+  WeaponImage: {fileID: 21300000, guid: 6a564d3414746ce40adce4d638ba2414, type: 3}
+  Rarity: 1
+  Length: 85
+  Weight: 200
+  Sharpness: 85
+  BasePrice: 280
   Description: 

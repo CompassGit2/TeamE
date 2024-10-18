@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
   m_Name: 9_Wild_Iron_Sword
   m_EditorClassIdentifier: 
-  Id: 0
-  Weapon: {fileID: 0}
-  Material1: {fileID: 0}
-  AmountMaterial1: 0
-  Material2: {fileID: 0}
-  AmountMaterial2: 0
+  Id: 9
+  Weapon: {fileID: 11400000, guid: 21171cee474ea8440a79296085f2e2c9, type: 2}
+  Material1: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+  AmountMaterial1: 6
+  Material2: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+  AmountMaterial2: 10
   Material3: {fileID: 0}
   AmountMaterial3: 0
-  MaxQuality: 0
-  RiseTemperatureSensitivity: 0
-  DownTemperatureSensitivity: 0
+  MaxQuality: 100
+  RiseTemperatureSensitivity: 2
+  DownTemperatureSensitivity: 2

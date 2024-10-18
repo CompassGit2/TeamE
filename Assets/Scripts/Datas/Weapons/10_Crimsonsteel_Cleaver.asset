@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 10_Crimsonsteel_Cleaver
   m_EditorClassIdentifier: 
   Id: 0
-  Name: 
+  Name: "\u771F\u7D05\u306E\u92FC\u9244\u5263"
   WeaponImage: {fileID: 21300000, guid: 6a564d3414746ce40adce4d638ba2414, type: 3}
-  Rarity: 0
-  Length: 0
-  Weight: 0
-  Sharpness: 0
-  BasePrice: 0
+  Rarity: 3
+  Length: 100
+  Weight: 400
+  Sharpness: 110
+  BasePrice: 550
   Description: 
