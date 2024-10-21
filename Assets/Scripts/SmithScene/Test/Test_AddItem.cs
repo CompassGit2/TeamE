@@ -18,7 +18,7 @@ public class Test_AddItem : MonoBehaviour
     List<MaterialStack> GenerateMaterial()
     {
         List<MaterialStack> dummyItems = new List<MaterialStack>();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < materialDatabase.materialList.Count; i++)
         {
             MaterialStack dummyItem = new MaterialStack(materialDatabase.GetMaterialList()[i],10);
             dummyItems.Add(dummyItem);

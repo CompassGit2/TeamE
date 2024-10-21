@@ -18,6 +18,7 @@ namespace SmithScene.SelectMaterial
         [SerializeField] TextMeshProUGUI lengthTMP;
         [SerializeField] TextMeshProUGUI weightTMP;
         [SerializeField] TextMeshProUGUI sharpnessTMP;
+        public RecipeData selectedRecipe;
         public bool RecipeExist = false;
 
         public void SearchRecipe(List<MaterialStack> useMaterials)
@@ -32,6 +33,7 @@ namespace SmithScene.SelectMaterial
                 weightTMP.text = recipe[0].Weapon.Weight.ToString();
                 sharpnessTMP.text = recipe[0].Weapon.Sharpness.ToString();
                 RecipeExist = true;
+                selectedRecipe = recipe[0];
                 foundRecipePanel.SetActive(true);
             }
             else
