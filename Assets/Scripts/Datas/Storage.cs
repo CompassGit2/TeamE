@@ -5,14 +5,14 @@ namespace Data{
     {
         public static List<MaterialStack> Materials
         {
-            get => Materials;
+            get => materials;
         }
         
         private static List<MaterialStack> materials = new List<MaterialStack>();
 
         public static List<Weapon> Weapons
         {
-            get => Weapons;
+            get => weapons;
         }
         private static List<Weapon> weapons = new List<Weapon>();
 
