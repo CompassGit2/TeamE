@@ -11,7 +11,7 @@ public class Test_AddItem : MonoBehaviour
     {
         foreach(MaterialStack i in GenerateMaterial())
         {
-            Storage.AddItem(i.material, i.amount);
+            Storage.AddMaterial(i.material, i.amount);
         }
     }
 

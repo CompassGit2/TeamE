@@ -21,9 +21,9 @@ namespace SmithScene.SelectMaterial
 
         void OnEnable()
         {
-            gridView.OnCellClicked(index => SetMaterialToUse(Storage.materials[index]));
+            gridView.OnCellClicked(index => SetMaterialToUse(Storage.Materials[index]));
 
-            GenerateCells(Storage.materials);
+            GenerateCells(Storage.Materials);
 
             gridView.JumpTo(50);
         }

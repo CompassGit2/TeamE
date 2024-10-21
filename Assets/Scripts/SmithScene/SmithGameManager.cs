@@ -50,9 +50,10 @@ namespace SmithScene.Game
         {
             current = Keyboard.current;
             gameProgress = GameProgress.BeforeGame;
+            fire.GetComponent<Fire>().RiseTemperature += TempChange;
         }
         
-        // Start is called before the first frame update
+
         void Initialize()
         {
             timeLimit = 60.0f + (20.0f * recipe.Weapon.Rarity);
@@ -63,6 +64,7 @@ namespace SmithScene.Game
             maxQuality = recipe.MaxQuality;
             qualitySlider.maxValue = maxQuality;
 
+            temperature = 10000;
             tempRiseSensi = recipe.RiseTemperatureSensitivity;
             tempDownSensi = recipe.DownTemperatureSensitivity;
         }
@@ -92,18 +94,24 @@ namespace SmithScene.Game
                     gameProgress = GameProgress.AfterGame;
                 }
 
+                CheckPlayerAction();
                 switch(playerAction)
                 {
                     case PlayerAction.Hammer:
+                        fire.SetActive(false);
                         break;
                     case PlayerAction.Water:
+                        fire.SetActive(false);
                         break;
                     case PlayerAction.Fire:
                         fire.SetActive(true);
                         break;
                     case PlayerAction.None:
+                        fire.SetActive(false);
                         break;
                 }
+
+                TempChange();
 
             }
         }
@@ -141,7 +149,21 @@ namespace SmithScene.Game
                 playerAction = PlayerAction.None;
             }
         }
+
+        void TempChange()
+        {
+            if(playerAction == PlayerAction.Fire)
+            {
+                temperature += (int)(recipe.Weapon.Rarity * 10 * tempRiseSensi);
+            }
+            else
+            {
+                temperature -= (int)(recipe.Weapon.Rarity * 5 * tempDownSensi);
+            }
+        }
+
     }
+
 
 }
 
