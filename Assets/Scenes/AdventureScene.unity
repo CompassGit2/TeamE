@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   inventoryUI: {fileID: 1697383095}
+  inventoryManager: {fileID: 0}
 --- !u!222 &188664041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1238,6 +1239,100 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 27753653915771049, guid: df89aab94d0747f41a17b25228975df0, type: 3}
   m_PrefabInstance: {fileID: 512940280}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1893120969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893120971}
+  - component: {fileID: 1893120970}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1893120970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893120969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85eb44fd8c12894bba99e8d10e8cd01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDatabase:
+  - MaterialID: 0
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  - MaterialID: 1
+    MaterialIcon: {fileID: 0}
+  inventoryItems:
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  - MaterialID: 0
+    itemIcon: {fileID: 0}
+    itemCount: 0
+  inventoryUI: {fileID: 27753653915771049, guid: df89aab94d0747f41a17b25228975df0, type: 3}
+  itemSlotParent: {fileID: 0}
+  itemSlotPrefab: {fileID: 3636894411207066311, guid: 7231a01e2a20d16428ce0c6f73778881, type: 3}
+--- !u!4 &1893120971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893120969}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1031.8839, y: 537.0088, z: -15.356499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074556466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1430,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2074556469}
+  - {fileID: 1893120971}
   - {fileID: 1350535144}
   - {fileID: 588628203}
   - {fileID: 188664039}

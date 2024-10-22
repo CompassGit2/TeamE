@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 4ba9ded35d548d94286be3e48e67add3
+guid: e85eb44fd8c12894bba99e8d10e8cd01
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - inventoryUI: {fileID: 27753653915771049, guid: df89aab94d0747f41a17b25228975df0, type: 3}
-  - inventoryManager: {instanceID: 0}
+  - itemSlotParent: {instanceID: 0}
+  - itemSlotPrefab: {fileID: 3636894411207066311, guid: 7231a01e2a20d16428ce0c6f73778881, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

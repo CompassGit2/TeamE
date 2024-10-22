@@ -7,6 +7,8 @@ public class PlayerControll : MonoBehaviour
     public float moveSpeed = 5f;
     public GameObject inventoryUI;
     private bool isInventoryOpen = false;
+    public InventoryManager inventoryManager;
+    private Sprite someSprite;
 
     void Update()
     {
@@ -24,6 +26,11 @@ public class PlayerControll : MonoBehaviour
         {
             isInventoryOpen = !isInventoryOpen;  
             inventoryUI.SetActive(isInventoryOpen); 
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            inventoryManager.AddItem(1, 1); 
         }
     }
 }
