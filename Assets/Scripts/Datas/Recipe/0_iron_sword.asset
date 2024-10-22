@@ -21,5 +21,6 @@ MonoBehaviour:
   Material3: {fileID: 0}
   AmountMaterial3: 0
   MaxQuality: 100
+  SuitableTemperature: 7500
   RiseTemperatureSensitivity: 1
   DownTemperatureSensitivity: 1
