@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b3bd4638ea5154bb360eb57d7b640e, type: 3}
+  m_Name: 11_Radiant_Stone
+  m_EditorClassIdentifier: 
+  Id: 11
+  Name: "\u8F1D\u77F3"
+  MaterialImage: {fileID: 21300000, guid: efdd5161344448448aacbdf1fe0ab8e0, type: 3}
+  Rarity: 4
+  Price: 360
+  Description: "\u5149\u3092\u653E\u3064\u7F8E\u3057\u3044\u5B9D\u77F3\u306E\u3088\u3046\u306A\u9271\u77F3\u3002\u5E38\u306B\u6DE1\u3044\u5149\u3092\u5E2F\u3073\u3001\u9B54\u529B\u3092\u5897\u5E45\u3055\u305B\u308B\u7279\u6027\u3092\u6301\u3064"

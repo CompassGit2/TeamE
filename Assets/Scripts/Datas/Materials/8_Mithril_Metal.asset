@@ -16,5 +16,5 @@ MonoBehaviour:
   Name: "\u30DF\u30B9\u30EA\u30EB\u91D1\u5C5E"
   MaterialImage: {fileID: 21300000, guid: 1e64a5a7e27c2c54297a98eb71df662f, type: 3}
   Rarity: 5
-  Price: 440
+  Price: 450
   Description: "\u975E\u5E38\u306B\u8EFD\u304F\u3066\u9811\u4E08\u306A\u4F1D\u8AAC\u306E\u91D1\u5C5E\u3002\u91D1\u5C5E\u3088\u308A\u3082\u8EFD\u304F\u3001\u92FC\u3092\u3082\u51CC\u3050\u5F37\u5EA6\u3092\u8A87\u308B"

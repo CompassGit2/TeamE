@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
-  m_Name: 12_Orichalcum_Sword
+  m_Name: 14_Adamantite_Sword
   m_EditorClassIdentifier: 
-  Id: 0
-  Weapon: {fileID: 11400000, guid: 5a9adc4f3bc3f8c4fa087578444da633, type: 2}
-  Material1: {fileID: 11400000, guid: 2595efbce407e6e4990e2b4230c52558, type: 2}
+  Id: 14
+  Weapon: {fileID: 11400000, guid: 9a4dcad83125749408a991cb42596576, type: 2}
+  Material1: {fileID: 11400000, guid: 1859878fee739e9448d15e645bc4e919, type: 2}
   AmountMaterial1: 10
-  Material2: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+  Material2: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
   AmountMaterial2: 20
-  Material3: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+  Material3: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
   AmountMaterial3: 20
   MaxQuality: 300
   RiseTemperatureSensitivity: 5
