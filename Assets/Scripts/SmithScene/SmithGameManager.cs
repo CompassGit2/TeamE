@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using Unity.VisualScripting;
 
 namespace SmithScene.Game
 {
@@ -35,6 +34,7 @@ namespace SmithScene.Game
         [SerializeField] TextMeshProUGUI timeText;
         [SerializeField] Slider qualitySlider;
         [SerializeField] Slider temperatureSlider;
+        [SerializeField] Slider suitTempSlider;
 
         RecipeData recipe;
 
@@ -81,6 +81,8 @@ namespace SmithScene.Game
             tempDownSensi = recipe.DownTemperatureSensitivity;
 
             bonus = 0;
+
+            suitTempSlider.value = recipe.SuitableTemperature;
         }
 
         // Update is called once per frame
@@ -99,6 +101,7 @@ namespace SmithScene.Game
                 if (timeLimit <= 0)
                 {
                     gameProgress = GameProgress.AfterGame;
+                    GameFinish().Forget();
                 }
 
                 CheckPlayerAction();
@@ -142,6 +145,30 @@ namespace SmithScene.Game
             
             await CountDown();
             gameProgress = GameProgress.InGame;
+        }
+
+        public async UniTaskVoid GameFinish()
+        {
+            if(gameProgress != GameProgress.AfterGame)
+            {
+                gameProgress = GameProgress.AfterGame;
+            }
+
+            
+            await UniTask.Delay(2000);
+            if(nowQuality / maxQuality >= 0.5)
+            {
+                bonus += (nowQuality / maxQuality * 100) - 50;
+                if(temperature <= 500)
+                {
+                    bonus += 10;
+                }
+                Weapon weapon = new Weapon(recipe.Weapon, bonus, (recipe.Weapon.Sharpness + recipe.Weapon.Weight) + (bonus * recipe.Weapon.Rarity / 10), recipe.Weapon.BasePrice + (recipe.Weapon.BasePrice * bonus / 100));
+            }
+            else
+            {
+
+            }
         }
 
         async UniTask CountDown()
@@ -233,9 +260,11 @@ namespace SmithScene.Game
             {
                 case HammerHitResult.Critical:
                     baseQuality = 20f;
+                    bonus += 3;
                     break;
                 case HammerHitResult.Excellent:
                     baseQuality = 16f;
+                    bonus += 1;
                     break;
                 case HammerHitResult.Good:
                     baseQuality = 10f;
@@ -257,11 +286,6 @@ namespace SmithScene.Game
             {
                 temperature = 0;
             }
-        }
-
-        void AddBonus(int value)
-        {
-            bonus += value;
         }
 
         void AddQuality(int value)
