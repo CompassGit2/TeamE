@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1008633840551911250}
   - component: {fileID: 4335737666934542438}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: PriceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,13 +808,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbfd36e85021d1428c6a5c8a47aaade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponText: {fileID: 0}
+  weaponText: {fileID: 8392032369000372599}
   weaponDatabase: {fileID: 11400000, guid: 44ce24139cf62884099b658aa8681e91, type: 2}
-  bousText: {fileID: 0}
-  RankText: {fileID: 0}
-  Price: {fileID: 0}
-  ReslutObject: {fileID: 3060988380173193067}
-  SowrdImage: {fileID: 7636074135919048609}
+  bonusText: {fileID: 2162603528023560833}
+  RankText: {fileID: 8847876190842955169}
+  Price: {fileID: 4335737666934542438}
+  ResultObject: {fileID: 3060988380173193067}
+  SwordImage: {fileID: 7636074135919048609}
 --- !u!1 &3061649532878290363
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 299959087855894696}
   - component: {fileID: 2162603528023560833}
   m_Layer: 5
-  m_Name: Bouns
+  m_Name: Bonus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 7603737527249339286}
   - component: {fileID: 8392032369000372599}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: WeaponText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
