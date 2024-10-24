@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using Data;
 using UnityEngine;
@@ -10,6 +9,9 @@ namespace SmithScene.SelectMaterial
     {
         [SerializeField] Game.SmithGameManager smithGameManager;
         [SerializeField] GameObject selectMaterialPanel;
+        [SerializeField] AudioSource systemSoundEffect;
+        public AudioClip enableSound;
+        public AudioClip clickSound;
         public RecipeData recipe;
         Button button;
 
@@ -23,6 +25,7 @@ namespace SmithScene.SelectMaterial
         public void Enable(RecipeData recipeData, List<MaterialStack> useMaterial)
         {
             recipe = recipeData;
+            systemSoundEffect.PlayOneShot(enableSound);
             button.interactable = true;
             _useMaterial = useMaterial;
         }
@@ -34,6 +37,7 @@ namespace SmithScene.SelectMaterial
 
         public void OnStartButtonClicked()
         {
+            systemSoundEffect.PlayOneShot(clickSound);
             foreach (MaterialStack stack in _useMaterial)
             {
                 Storage.RemoveMaterial(stack.material, stack.amount);

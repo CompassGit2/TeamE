@@ -18,6 +18,12 @@ namespace SmithScene.Game
         public Action<HammerHitResult> HammerHit;
         [SerializeField] GameObject movePointer;
         [SerializeField] GameObject targetPointer;
+        [SerializeField] AudioSource hammerHitAudioSource;
+        [SerializeField] AudioSource hammerEffectAudioSource;
+        public AudioClip HammerHitSound;
+        public AudioClip CritSound;
+        public AudioClip ExSound;
+        public AudioClip MissSound;
         Vector3 initialPosition;
         
         [Tooltip("一周の時間")]
@@ -104,6 +110,7 @@ namespace SmithScene.Game
 
         void Hit()
         {
+            hammerHitAudioSource.PlayOneShot(HammerHitSound);
             float diff = Mathf.Abs(crosshairPos - targetPos);
             float wrappedDiff = Mathf.Min(diff, size - diff);
 
@@ -111,11 +118,13 @@ namespace SmithScene.Game
             {
                 Debug.Log("Critical!");
                 HammerHit(HammerHitResult.Critical);
+                hammerEffectAudioSource.PlayOneShot(CritSound);
             }
             else if(wrappedDiff <= exThreshold)
             {
                 Debug.Log("Excellent");
                 HammerHit(HammerHitResult.Excellent);
+                hammerEffectAudioSource.PlayOneShot(ExSound);
             }
             else if(wrappedDiff <= goodThreshold)
             {
@@ -126,6 +135,7 @@ namespace SmithScene.Game
             {
                 Debug.Log("Miss...");
                 HammerHit(HammerHitResult.Miss);
+                hammerEffectAudioSource.PlayOneShot(MissSound);
             }
             SetTargetPointer();
         }
