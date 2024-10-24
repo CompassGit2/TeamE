@@ -28,6 +28,9 @@ namespace SmithScene.Game
                 case HammerHitResult.Excellent:
                     CritAnimator.SetTrigger("Excellent");
                     break;
+                case HammerHitResult.Miss:
+                    CritAnimator.SetTrigger("Miss");
+                    break;
             }
         }
     }

@@ -35,6 +35,10 @@ namespace SmithScene.Game
         [SerializeField] Slider qualitySlider;
         [SerializeField] Slider temperatureSlider;
         [SerializeField] Slider suitTempSlider;
+        [SerializeField] Animator tempMeterAnimator;
+        [SerializeField] Animator popUpTextAnimator;
+
+        [SerializeField] Result.Result result;
 
         RecipeData recipe;
 
@@ -70,7 +74,7 @@ namespace SmithScene.Game
             timeLimit = 120.0f + (20.0f * recipe.Weapon.Rarity);
             timeLimitSlider.maxValue = timeLimit;
             timeLimitSlider.value = timeLimit;
-            timeText.text = timeLimit.ToString("f1") + "秒";
+            timeText.text = timeLimit.ToString("f0");
 
             nowQuality = 0;
             maxQuality = recipe.MaxQuality;
@@ -94,7 +98,7 @@ namespace SmithScene.Game
                 timeLimit -= Time.deltaTime;
         
                 //時間を表示する
-                timeText.text = timeLimit.ToString("f1") + "秒";
+                timeText.text = timeLimit.ToString("f0");
                 timeLimitSlider.value = timeLimit;
         
                 //countdownが0以下になったとき
@@ -142,6 +146,7 @@ namespace SmithScene.Game
         public async UniTaskVoid GameStart(RecipeData recipeData)
         {
             Initialize(recipeData);
+            popUpTextAnimator.SetTrigger("CountDown");
             
             await CountDown();
             gameProgress = GameProgress.InGame;
@@ -154,7 +159,7 @@ namespace SmithScene.Game
                 gameProgress = GameProgress.AfterGame;
             }
 
-            
+            popUpTextAnimator.SetTrigger("Finish");
             await UniTask.Delay(2000);
             if(nowQuality / maxQuality >= 0.5)
             {
@@ -164,10 +169,11 @@ namespace SmithScene.Game
                     bonus += 10;
                 }
                 Weapon weapon = new Weapon(recipe.Weapon, bonus, (recipe.Weapon.Sharpness + recipe.Weapon.Weight) + (bonus * recipe.Weapon.Rarity / 10), recipe.Weapon.BasePrice + (recipe.Weapon.BasePrice * bonus / 100));
+                result.DisplayWeapon(weapon,nowQuality/maxQuality*100f);
             }
             else
             {
-
+                result.DisplayLose(nowQuality/maxQuality*100f);
             }
         }
 
@@ -240,6 +246,11 @@ namespace SmithScene.Game
                 {
                     nowQuality = 0;
                 }
+                tempMeterAnimator.SetBool("Alert", true);
+            }
+            else
+            {
+                tempMeterAnimator.SetBool("Alert", false);
             }
 
         }
