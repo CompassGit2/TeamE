@@ -18,6 +18,7 @@ namespace SmithScene.SelectMaterial
         [SerializeField] TextMeshProUGUI lengthTMP;
         [SerializeField] TextMeshProUGUI weightTMP;
         [SerializeField] TextMeshProUGUI sharpnessTMP;
+        [SerializeField] GameStartButton gameStartButton;
         public RecipeData selectedRecipe;
         public bool RecipeExist = false;
 
@@ -35,11 +36,13 @@ namespace SmithScene.SelectMaterial
                 RecipeExist = true;
                 selectedRecipe = recipe[0];
                 foundRecipePanel.SetActive(true);
+                gameStartButton.Enable(recipe[0],useMaterials);
             }
             else
             {
                 RecipeExist = false;
                 foundRecipePanel.SetActive(false);
+                gameStartButton.Disable();
             }
         }
     }
