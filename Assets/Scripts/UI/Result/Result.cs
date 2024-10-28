@@ -121,6 +121,15 @@ namespace SmithScene.Result
 
             SceneManager.LoadScene("MenuScene");
         }
+        public void Continume()
+        {
+            if (_weapon != null)
+            {
+                Storage.AddWeapon(_weapon);
+
+            }
+            SceneManager.LoadScene("SmithScene");
+        }
     }
 
 }
