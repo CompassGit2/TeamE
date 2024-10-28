@@ -553,7 +553,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 2074556469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -573,13 +574,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba9ded35d548d94286be3e48e67add3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  Maxspeed: 3
+  speed: 5
+  Maxspeed: 5
   drag: 1000
   animator: {fileID: 188664044}
   inventoryUI: {fileID: 1697383095}
   targetTag: Destructible
-  destroyRange: 2
+  destroyRange: 1.5
   destroyAngle: 45
 --- !u!222 &188664041
 CanvasRenderer:
@@ -643,7 +644,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: -194804753, guid: cb767f2c515ca0543af6bb7824ab4fc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -49452,18 +49453,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074556466}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 188664039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2074556469}
   - {fileID: 1893120971}
   - {fileID: 188664039}
   - {fileID: 1350535144}
