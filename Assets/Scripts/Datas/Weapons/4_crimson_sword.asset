@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4
   Name: "\u771F\u7D05\u306E\u5263"
-  WeaponImage: {fileID: 21300000, guid: 6a564d3414746ce40adce4d638ba2414, type: 3}
+  WeaponImage: {fileID: 21300000, guid: 19ace478703ee8f4ea8167d5bd68af16, type: 3}
   Rarity: 2
   Length: 50
   Weight: 200
   Sharpness: 120
   BasePrice: 450
-  Description: 
+  Description: "\u771F\u7D05\u306E\u77F3\u304B\u3089\u4F5C\u3089\u308C\u305F\u72EC\u7279\u306A\u5263\u3002\u92ED\u3044\u5207\u308C\u5473\u3068\u7F8E\u3057\u3044\u8D64\u8272\u304C\u7279\u5FB4\u3002"
