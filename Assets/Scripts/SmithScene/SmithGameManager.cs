@@ -33,6 +33,7 @@ namespace SmithScene.Game
         [SerializeField] Slider timeLimitSlider;
         [SerializeField] TextMeshProUGUI timeText;
         [SerializeField] Slider qualitySlider;
+        [SerializeField] Image qualityFill;
         [SerializeField] Slider temperatureSlider;
         [SerializeField] Slider suitTempSlider;
         [SerializeField] Animator tempMeterAnimator;
@@ -135,6 +136,15 @@ namespace SmithScene.Game
 
                 TempChange();
                 qualitySlider.value = nowQuality;
+                if((float)nowQuality/maxQuality >= 0.5f)
+                {
+                    qualityFill.color = new Color32(255,209,141,255);
+                }
+                else
+                {
+                    qualityFill.color = new Color32(255,255,255,255);
+
+                }
             }
             if(gameProgress == GameProgress.AfterGame)
             {
@@ -161,15 +171,24 @@ namespace SmithScene.Game
 
             popUpTextAnimator.SetTrigger("Finish");
             await UniTask.Delay(2000);
-            if(nowQuality / maxQuality >= 0.5)
+            if((float)nowQuality / maxQuality >= 0.5f)
             {
-                bonus += (nowQuality / maxQuality * 100) - 50;
+                int qualityBonus = ((int)((float)nowQuality / maxQuality * 100)) - 50;
+                if(qualityBonus < 0)
+                {
+                    qualityBonus = 0;
+                }
+                bonus += qualityBonus;
+
+                bool temperatureBonus = false;
                 if(temperature <= 500)
                 {
                     bonus += 10;
+                    temperatureBonus = true;
                 }
+                
                 Weapon weapon = new Weapon(recipe.Weapon, bonus, (recipe.Weapon.Sharpness + recipe.Weapon.Weight) + (bonus * recipe.Weapon.Rarity / 10), recipe.Weapon.BasePrice + (recipe.Weapon.BasePrice * bonus / 100));
-                result.DisplayWeapon(weapon,nowQuality/maxQuality*100f);
+                result.DisplayWeapon(weapon, nowQuality/maxQuality*100f, qualityBonus, temperatureBonus);
             }
             else
             {
