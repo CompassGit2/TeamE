@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace AdventureScene {
+
     public class PlayerControll : MonoBehaviour
     {
         public float speed;
@@ -174,6 +174,5 @@ namespace AdventureScene {
             Gizmos.DrawLine(transform.position, transform.position + transform.up * destroyRange); // Œü‚¢‚Ä‚¢‚é•ûŒü
         }
     }
-}
 
 
