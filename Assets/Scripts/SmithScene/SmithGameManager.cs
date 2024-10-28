@@ -28,6 +28,7 @@ namespace SmithScene.Game
         [SerializeField] GameObject fireObject;
         [SerializeField] GameObject hammerObject;
         [SerializeField] GameObject waterObject;
+        [SerializeField] ComboCounter comboCounter;
         Hammer hammer;
 
         [SerializeField] Slider timeLimitSlider;
@@ -49,6 +50,8 @@ namespace SmithScene.Game
         int temperature;
         float tempRiseSensi;
         float tempDownSensi;
+
+        HammerHitCount hitCount;
 
         private int bonus;
 
@@ -84,6 +87,10 @@ namespace SmithScene.Game
             temperature = 2000;
             tempRiseSensi = recipe.RiseTemperatureSensitivity;
             tempDownSensi = recipe.DownTemperatureSensitivity;
+
+            hitCount = new();
+
+            comboCounter.Initialize();
 
             bonus = 0;
 
@@ -186,6 +193,9 @@ namespace SmithScene.Game
                     bonus += 10;
                     temperatureBonus = true;
                 }
+
+                int comboBonus = comboCounter.GetComboBonus();
+                bonus += comboBonus;
                 
                 Weapon weapon = new Weapon(recipe.Weapon, bonus, (recipe.Weapon.Sharpness + recipe.Weapon.Weight) + (bonus * recipe.Weapon.Rarity / 10), recipe.Weapon.BasePrice + (recipe.Weapon.BasePrice * bonus / 100));
                 result.DisplayWeapon(weapon, nowQuality/maxQuality*100f, qualityBonus, temperatureBonus);
@@ -291,16 +301,20 @@ namespace SmithScene.Game
                 case HammerHitResult.Critical:
                     baseQuality = 20f;
                     bonus += 3;
+                    hitCount.Critical ++;
                     break;
                 case HammerHitResult.Excellent:
                     baseQuality = 16f;
                     bonus += 1;
+                    hitCount.Excellent ++;
                     break;
                 case HammerHitResult.Good:
                     baseQuality = 10f;
+                    hitCount.Good ++;
                     break;
                 case HammerHitResult.Miss:
                     baseQuality = 0f;
+                    hitCount.Miss ++;
                     break;
             }
             AddQuality((int)(baseQuality * progressMultiplier));
@@ -340,6 +354,22 @@ namespace SmithScene.Game
             return Mathf.Lerp(maxDistance, minDistance, recipe.Weapon.Rarity/ 6f);
         }
 
+    }
+
+    public class HammerHitCount
+    {
+        public int Critical;
+        public int Excellent;
+        public int Good;
+        public int Miss;
+
+        public HammerHitCount()
+        {
+            Critical = 0;
+            Excellent = 0;
+            Good = 0;
+            Miss = 0;
+        }
     }
 
 
