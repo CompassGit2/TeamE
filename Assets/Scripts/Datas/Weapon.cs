@@ -3,6 +3,7 @@ namespace Data
     [System.Serializable]
     public class Weapon
     {
+        public int Id;
         public WeaponData weapon;
         public int bonus;
         public int attack;

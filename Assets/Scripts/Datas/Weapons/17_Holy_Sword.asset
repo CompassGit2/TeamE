@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93aa2f9f9c488104cbff04a69c9a017e, type: 3}
+  m_Name: 17_Holy_Sword
+  m_EditorClassIdentifier: 
+  Id: 17
+  Name: "\u8056\u306A\u308B\u5263"
+  WeaponImage: {fileID: 0}
+  Rarity: 3
+  Length: 90
+  Weight: 150
+  Sharpness: 160
+  BasePrice: 500
+  Description: "\u8056\u306A\u308B\u529B\u304C\u5BBF\u308B\u7279\u5225\u306A\u5263\u3002\u8EFD\u91CF\u306A\u304C\u3089\u3082\u5F37\u529B\u306A\u4E00\u6483\u3092\u6301\u3064\u5263\u3002"

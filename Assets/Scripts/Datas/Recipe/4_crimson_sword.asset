@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
   m_Name: 4_crimson_sword
   m_EditorClassIdentifier: 
-  Id: 2
+  Id: 4
   Weapon: {fileID: 11400000, guid: 81e4ca44d02551d4c984e3fe8f75ffc0, type: 2}
   Material1: {fileID: 11400000, guid: a3789aa950442434ba4d7e00da500359, type: 2}
-  AmountMaterial1: 2
+  AmountMaterial1: 10
   Material2: {fileID: 0}
   AmountMaterial2: 0
   Material3: {fileID: 0}
   AmountMaterial3: 0
   MaxQuality: 400
-  RiseTemperatureSensitivity: 3
-  DownTemperatureSensitivity: 4
+  SuitableTemperature: 7000
+  RiseTemperatureSensitivity: 1
+  DownTemperatureSensitivity: 0.87

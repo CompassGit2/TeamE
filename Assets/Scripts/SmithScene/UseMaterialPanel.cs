@@ -13,6 +13,8 @@ namespace SmithScene.SelectMaterial
         [SerializeField] List<Image> materialImages;
         [SerializeField] List<TextMeshProUGUI> materialAmounts;
         [SerializeField] RecipePanel recipePanel;
+        [SerializeField] AudioSource systemSoundEffect;
+        public AudioClip RemoveItemSound;
 
 
         // 使用素材リスト
@@ -108,6 +110,7 @@ namespace SmithScene.SelectMaterial
             {
                 useMaterials.RemoveAt(materialNum);
             }
+            systemSoundEffect.PlayOneShot(RemoveItemSound);
             UpdateUseMaterial();
             return;
         }

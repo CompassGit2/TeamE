@@ -14,6 +14,7 @@ namespace Data
         public MaterialData Material3;
         public int AmountMaterial3;
         public int MaxQuality;
+        public int SuitableTemperature;
         public float RiseTemperatureSensitivity;
         public float DownTemperatureSensitivity;
     }

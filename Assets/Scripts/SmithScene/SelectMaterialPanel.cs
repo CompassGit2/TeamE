@@ -18,12 +18,14 @@ namespace SmithScene.SelectMaterial
         [SerializeField] GridView gridView = default;
         
         [SerializeField] UseMaterialPanel useMaterialPanel;
+        [SerializeField] AudioSource systemSoundEffect;
+        public AudioClip CellClickedSound;
 
         void OnEnable()
         {
-            gridView.OnCellClicked(index => SetMaterialToUse(Storage.materials[index]));
+            gridView.OnCellClicked(index => SetMaterialToUse(Storage.Materials[index]));
 
-            GenerateCells(Storage.materials);
+            GenerateCells(Storage.Materials);
 
             gridView.JumpTo(50);
         }
@@ -70,6 +72,7 @@ namespace SmithScene.SelectMaterial
 
         void SetMaterialToUse(MaterialStack material)
         {
+            systemSoundEffect.PlayOneShot(CellClickedSound);
             useMaterialPanel.SetUseMaterial(material);
         }
     }

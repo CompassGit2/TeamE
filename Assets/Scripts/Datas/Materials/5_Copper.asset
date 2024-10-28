@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5
   Name: "\u9285"
-  MaterialImage: {fileID: 0}
+  MaterialImage: {fileID: 21300000, guid: 1e64a5a7e27c2c54297a98eb71df662f, type: 3}
   Rarity: 1
   Price: 55
   Description: "\u7F8E\u3057\u3044\u5149\u6CA2\u3092\u6301\u3061\u3001\u6DF1\u3044\u8D64\u307F\u3092\u5E2F\u3073\u305F\u91D1\u5C5E"
