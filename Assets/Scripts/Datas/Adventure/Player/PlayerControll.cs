@@ -118,10 +118,14 @@ public class PlayerControll : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            if (!isDestroying)
+            if (Input.GetMouseButton(0))
             {
-                isDestroying = true;
-                destroyCoroutine = StartCoroutine(DestroyTarget());
+                Debug.Log("左クリックが押されました");
+                if (!isDestroying)
+                {
+                    isDestroying = true;
+                    destroyCoroutine = StartCoroutine(DestroyTarget());
+                }
             }
         }
         else if (isDestroying)
@@ -137,30 +141,37 @@ public class PlayerControll : MonoBehaviour
     {
         while (isDestroying)
         {
-            // プレイヤーの前方の方向を取得
-            Vector3 forwardDirection = transform.up; // プレイヤーの向いている方向
             Vector3 position = transform.position; // プレイヤーの位置
+            Debug.Log($"プレイヤー位置: {position}"); // 追加    
 
             // 範囲内にあるオブジェクトを取得
             Collider[] colliders = Physics.OverlapSphere(position, destroyRange);
+            Debug.Log($"範囲内オブジェクト数: {colliders.Length}"); // 追加
 
             foreach (Collider collider in colliders)
             {
-                // 破壊対象のタグを持っているかチェック
+                Debug.Log($"オブジェクト: {collider.gameObject.name}, タグ: {collider.tag}");
+
                 if (collider.CompareTag(targetTag))
                 {
-                    // プレイヤーの向いている方向との角度を計算
+                    Vector3 forwardDirection = transform.up; // プレイヤーの向いている方向
                     Vector3 directionToObject = (collider.transform.position - position).normalized;
                     float angle = Vector3.Angle(forwardDirection, directionToObject);
 
-                    // 指定した角度内にあるかチェック
+                    Debug.Log($"角度: {angle}"); // 追加
+
+
                     if (angle <= destroyAngle)
                     {
-                        Destroy(collider.gameObject); // オブジェクトを破壊
+                        DestructibleObject destructible = collider.GetComponent<DestructibleObject>();
+                        if (destructible != null)
+                        {
+                            Debug.Log($"破壊対象: {collider.gameObject.name}");
+                            destructible.DestroyObject(); // オブジェクトを破壊
+                        }
                     }
                 }
             }
-
             // 次のフレームまで待機
             yield return new WaitForSeconds(destroyDelay);
         }
