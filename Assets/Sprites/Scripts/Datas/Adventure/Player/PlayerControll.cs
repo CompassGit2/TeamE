@@ -8,11 +8,11 @@ public class PlayerControll : MonoBehaviour
     public float Maxspeed;
     public float drag = 20.0f;    // –€C—Í‚Ì‹­‚³
     public Animator animator;
-    public GameObject inventoryUI; 
-    private bool isInventoryOpen = false;  
+    public GameObject inventoryUI;
+    private bool isInventoryOpen = false;
     public string targetTag = "Destructible"; // ”j‰ó‘ÎÛ‚Ìƒ^ƒO
-    private bool isDestroying = false; 
-    private float destroyDelay = 0.5f; 
+    private bool isDestroying = false;
+    private float destroyDelay = 0.5f;
     private Coroutine destroyCoroutine;
     public float destroyRange = 2f;
     public float destroyAngle = 45f;
@@ -23,7 +23,7 @@ public class PlayerControll : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -174,3 +174,4 @@ public class PlayerControll : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + transform.up * destroyRange); // Œü‚¢‚Ä‚¢‚é•ûŒü
     }
 }
+
