@@ -22,5 +22,5 @@ MonoBehaviour:
   AmountMaterial3: 20
   MaxQuality: 300
   SuitableTemperature: 8000
-  RiseTemperatureSensitivity: 1
-  DownTemperatureSensitivity: 0.84
+  RiseTemperatureSensitivity: 1.48
+  DownTemperatureSensitivity: 1.5
