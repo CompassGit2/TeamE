@@ -6,7 +6,6 @@ using UnityEngine;
     {
         public float speed;
         public float Maxspeed;
-        public float drag = 20.0f;    // 摩擦力の強さ
         public Animator animator;
         public GameObject inventoryUI;
         private bool isInventoryOpen = false;
@@ -26,7 +25,7 @@ using UnityEngine;
             rb = GetComponent<Rigidbody2D>();
         }
 
-        void Update()
+        void FixedUpdate()
         {
             // 水平方向と垂直方向の入力を取得
             float moveHorizontal = 0.0f;
@@ -84,33 +83,33 @@ using UnityEngine;
                 }
             }
 
-            // アニメーションのパラメータを設定
-            int speedValue = (int)(Mathf.Abs(moveHorizontal) + Mathf.Abs(moveVertical));
-            animator.SetInteger("Speed", speedValue);
+        // アニメーションのパラメータを設定
+        int speedValue = (int)(Mathf.Abs(moveHorizontal) + Mathf.Abs(moveVertical));
+        animator.SetInteger("Speed", speedValue);
 
-            if (speedValue > 0)
-            {
-                lastMoveX = moveHorizontal;
-                lastMoveY = moveVertical;
-            }
+        if (speedValue > 0)
+        {
+            lastMoveX = moveHorizontal;
+            lastMoveY = moveVertical;
+        }
 
-            animator.SetFloat("MoveX", lastMoveX);
-            animator.SetFloat("MoveY", lastMoveY);
+        animator.SetFloat("MoveX", lastMoveX);
+        animator.SetFloat("MoveY", lastMoveY);
 
-            // 入力に基づいて力を計算
-            Vector2 movement = new Vector2(moveHorizontal, moveVertical) * speed;
+        // プレイヤーの移動をAddForceで実行
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * speed;
 
-            // 力を加える
-            rb.AddForce(movement);
+        // 力を加える
+        rb.AddForce(movement);
 
-            // 最大速度を超えないようにする
-            if (rb.velocity.magnitude > Maxspeed)
-            {
-                rb.velocity = rb.velocity.normalized * Maxspeed;
-            }
+        // 最大速度を超えないようにする
+        if (rb.velocity.magnitude > Maxspeed)
+        {
+            rb.velocity = rb.velocity.normalized * Maxspeed;
+        }
 
-            // Eキーが押されたらインベントリを開閉
-            if (Input.GetKeyDown(KeyCode.E))
+        // Eキーが押されたらインベントリを開閉
+        if (Input.GetKeyDown(KeyCode.E))
             {
                 isInventoryOpen = !isInventoryOpen;  // 開閉をトグル
                 inventoryUI.SetActive(isInventoryOpen);  // インベントリUIの表示を切り替え
