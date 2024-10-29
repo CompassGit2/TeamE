@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba9ded35d548d94286be3e48e67add3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 28
   Maxspeed: 30
   animator: {fileID: 2154369065205321724}
   inventoryUI: {fileID: 0}

@@ -19,7 +19,7 @@ public class PlayerControll : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         // 水平方向と垂直方向の入力を取得
         float moveHorizontal = 0.0f;
@@ -107,6 +107,8 @@ public class PlayerControll : MonoBehaviour
         {
             isInventoryOpen = !isInventoryOpen;  // 開閉をトグル
             inventoryUI.SetActive(isInventoryOpen);  // インベントリUIの表示を切り替え
+
+            Time.timeScale = isInventoryOpen ? 0 : 1; // 開いているときは時間を止める
         }
     }
 }
