@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     public MaterialDatabase materialDatabase; // MaterialDatabaseの参照
     public GameObject itemSlotPrefab;
     public Transform inventoryPanel;
-    public Text descriptionText; //説明文を表示するText
+    public Text descriptionText; // 説明文を表示するText
 
     private List<MaterialStack> inventoryItems = new List<MaterialStack>(); // MaterialStackのリスト
 
@@ -42,21 +42,68 @@ public class Inventory : MonoBehaviour
 
     void CreateSlot(MaterialStack stack)
     {
+        if (stack == null)
+        {
+            Debug.LogError("MaterialStack is null!");
+            return;
+        }
+
         var slot = Instantiate(itemSlotPrefab, inventoryPanel);
-        slot.GetComponent<Image>().sprite = stack.material.MaterialImage;
-        slot.GetComponentInChildren<Text>().text = $"{stack.material.Name} (×{stack.amount})"; // 個数を表示
-        Button button = slot.GetComponent<Button>();
-        button.onClick.AddListener(() => ShowItemDescription(stack.material)); // ここで直接デリゲートを追加
+        if (slot == null)
+        {
+            Debug.LogError("Failed to instantiate item slot prefab!");
+            return;
+        }
+
+        var imageComponent = slot.GetComponent<Image>();
+        var textComponent = slot.GetComponentInChildren<Text>();
+
+        if (imageComponent != null)
+        {
+            imageComponent.sprite = stack.material.MaterialImage;
+        }
+        else
+        {
+            Debug.LogError("Image component not found on slot!");
+        }
+
+        if (textComponent != null)
+        {
+            textComponent.text = $"{stack.material.Name} (×{stack.amount})"; // 個数を表示
+        }
+        else
+        {
+            Debug.LogError("Text component not found in slot!");
+        }
     }
 
     public void ShowItemDescription(MaterialData item)
     {
-        descriptionText.text = $"{item.Name}\nレア度: {item.Rarity}\n価格: {item.Price}\n説明: {item.Description}";
-        Debug.Log($"説明文を表示: {item.Name} - {item.Description}");
+        if (item == null)
+        {
+            Debug.LogError("MaterialData item is null!");
+            return;
+        }
+
+        if (descriptionText != null)
+        {
+            descriptionText.text = $"{item.Name}\nレア度: {item.Rarity}\n価格: {item.Price}\n説明: {item.Description}";
+            Debug.Log($"説明文を表示: {item.Name} - {item.Description}");
+        }
+        else
+        {
+            Debug.LogError("DescriptionText is not assigned!");
+        }
     }
 
     void UpdateInventoryUI()
     {
+        if (inventoryPanel == null)
+        {
+            Debug.LogError("Inventory panel is not assigned!");
+            return;
+        }
+
         // 必要に応じてスロットUIをリフレッシュ
         foreach (Transform child in inventoryPanel)
         {
