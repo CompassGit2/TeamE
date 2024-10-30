@@ -9,6 +9,7 @@ public class PlayerControll : MonoBehaviour
     public Animator animator;
     public GameObject inventoryUI;
     private bool isInventoryOpen = false;
+    public AudioSource WalkAudio;
     private Rigidbody2D rb;
     private KeyCode currentKey = KeyCode.None;
     private float lastMoveX = 0.0f;
@@ -85,6 +86,14 @@ public class PlayerControll : MonoBehaviour
         {
             lastMoveX = moveHorizontal;
             lastMoveY = moveVertical;
+            if (!WalkAudio.isPlaying) // ë´âπÇçƒê∂
+            {
+                WalkAudio.Play();
+            }
+        }
+        else
+        {
+            WalkAudio.Stop(); // ë´âπÇí‚é~
         }
 
         animator.SetFloat("MoveX", lastMoveX);
