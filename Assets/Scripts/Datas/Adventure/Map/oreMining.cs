@@ -19,7 +19,7 @@ public class oreMining : MonoBehaviour
             if (DropItem(dropChances[i]))
             {
                 // アイテムをドロップ
-                Instantiate(dropItems[i], transform.position, Quaternion.identity);
+               GameObject drop = Instantiate(dropItems[i], transform.position, Quaternion.identity);
             }
         }
 
