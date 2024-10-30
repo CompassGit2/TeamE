@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectBreaker : MonoBehaviour
 {
-    public AudioClip breakingSound; // ”j‰ó’†‚ÌŒø‰Ê‰¹
     public AudioClip destroyedSound; // ”j‰óŠ®—¹Žž‚ÌŒø‰Ê‰¹
     private AudioSource audioSource;
     private GameObject targetObject; // ”j‰ó‘ÎÛ‚ÌƒIƒuƒWƒFƒNƒg
@@ -23,13 +22,6 @@ public class ObjectBreaker : MonoBehaviour
         if (canBreak && Input.GetMouseButton(0) && targetObject != null)
         {
             holdTimer += Time.deltaTime;
-
-            // ”j‰ó’†‚ÌŒø‰Ê‰¹‚ðÄ¶
-            if (!audioSource.isPlaying && breakingSound != null)
-            {
-                audioSource.clip = breakingSound;
-                audioSource.Play();
-            }
 
             if (holdTimer >= holdTime)
             {
