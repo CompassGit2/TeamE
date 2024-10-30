@@ -46,11 +46,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5247248507436941645}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &53049605882360426
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,11 +104,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5545585450676790899}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &335551518922541373
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,11 +162,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1462977137666870906}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &352469923087253013
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,11 +220,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4637069568355130283}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &676864826389607227
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,11 +278,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7888590968884086482}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &852525692101645679
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,11 +336,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3371441714893177525}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1020235167610861726
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,11 +394,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3228416490420839249}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1326717855047371399
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,11 +569,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8680978780441838632}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1599581534399248595
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,11 +627,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3123174202399520728}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1912714548256702164
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,11 +685,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8688440323190029300}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1955955700265957029
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,11 +743,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4244979616039881159}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &1956834180734974570
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,11 +801,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5400357288433452002}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2098537643961561722
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,11 +859,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5227438881535138794}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2185236423717647098
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,11 +917,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1728059330950816484}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2221222461555942378
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,11 +975,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6822534940223963407}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2226009058143324989
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,11 +1033,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3163460490923017953}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2275758249131617973
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,11 +1091,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1717570235480943001}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2308441145702176202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,11 +1149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 613771918621990857}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2327398254678429240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,11 +1207,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1878984216241136204}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2612036368333976337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,11 +1265,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3399786055358932087}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2664109367234993944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,11 +1323,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4565589482495018027}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2816393698014100359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,11 +1381,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1419145459241012038}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2854249487628600004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,11 +1439,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4581920459304938923}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &2888725501738312704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,11 +1497,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7613629806812147718}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3022020176170471215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,11 +1555,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8132440959677439677}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3059755582687134540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,11 +1613,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3960411993619745712}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3093684719425245187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,11 +1671,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7236553196767752432}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3143828482651846131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,11 +1729,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1720668388881459837}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3271386040159666184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,11 +1787,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3526638987425710009}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3302887011778113278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,11 +1845,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 993714394083982647}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3339503970209031443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,11 +1903,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8040652517413464290}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3577281733691954083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,11 +1961,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3736722632185120831}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3746236085671356660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,11 +2019,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1816455448246588242}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3764255234959480058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,11 +2077,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8407760493766443304}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3782532467536031871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,11 +2135,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4211682840166700771}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3800008420718969237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,11 +2193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7291395906851269112}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &3873858795627722072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,11 +2251,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1724057260956750811}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4235577347707110382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,11 +2309,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 2599931977507635622}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4386162543122199951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,11 +2367,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 9181721361469621707}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4476913388689757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,11 +2425,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3551765173413412450}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4671177138029889960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,11 +2483,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 948220601454941111}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4960185059021184505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,11 +2541,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8629363842035630796}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &4972780236457858239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,11 +2599,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 2235266716322055511}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5008251554221247519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,11 +2657,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8069461225921934933}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5113150113664986213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,11 +2715,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7116760650783186175}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5122856462691523165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,11 +2773,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1567319445818767715}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5338440990171649907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,11 +2831,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 979546584037347822}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5417031149170543573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,11 +2889,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6296287845106041422}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5781953226346734574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,11 +2947,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4829848176892479078}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5826392002976922213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,11 +3005,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6711466722821956919}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &5895939350930607983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,11 +3063,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5011830108187385138}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6066166941067799524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,11 +3121,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1653391853452675892}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6067906048313855150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,11 +3179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5432848463645834004}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6114473527618873651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,11 +3237,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8563667794297413454}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6349510425481412296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,11 +3295,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 9090594701199850879}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6391373449775051741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,11 +3353,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4525945451343851398}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6443786726252638367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,11 +3411,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5886849489822485129}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6581291910287310090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,11 +3469,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4382398270555335965}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6678504093661482735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,11 +3527,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6952097773021445306}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6763950729132019014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3172,11 +3585,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 3448352734079183425}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &6928758337066508703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,11 +3643,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 2507893993092417383}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7238838078111486546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,11 +3701,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5177777622932801766}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7304076780241807558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,11 +3759,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 2931241955449472713}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7339297215472332557
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,11 +3817,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4784357216336594562}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7493930691306485746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,11 +3875,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7576044662251159324}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7578279854745068259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,11 +3933,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6406264893773109059}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7648647009249417097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,11 +3991,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1680552433971966770}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7657230809357360212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,11 +4049,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 770964366377067520}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7691287232891461805
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,11 +4107,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1470457275871331681}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7739360363321995161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3682,11 +4165,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4248223084812248407}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7860789413438461602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,11 +4223,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7326998763290906735}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7889952113669544221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,11 +4281,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4132691541065907913}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7918946973227345334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,11 +4339,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7519509017600684715}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &7987508973166849300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,11 +4397,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 553500954568527733}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8052946382914177073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3937,11 +4455,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 629435891474549977}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8101905541307937005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,11 +4513,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6991037866244009605}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8112940611087410788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,11 +4571,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5539403081169234425}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8398263224982059682
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,11 +4629,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 6494333420077464514}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8465273206530031649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,11 +4687,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 70573461152319142}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8543513478035385243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,11 +4745,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 1667941181864481306}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8635743999609864568
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,11 +4803,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 7749256362830961519}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8818104126179066086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,11 +4861,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 2291232285779324834}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8837934362724083629
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,11 +4919,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4619558295399932604}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8955116643179133319
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,11 +4977,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 4765274343594736092}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &8996566787813505441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4447,11 +5035,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 8185786456633199745}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []
 --- !u!1 &9173247165732787885
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,8 +5093,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - prefab: {fileID: 1546363649935997310, guid: e12648990e30d4b4a81d3e9ff55415c2, type: 3}
-    weight: 1
-  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
     weight: 2
-  spawnPoints:
-  - {fileID: 5608112305265210871}
+  - prefab: {fileID: 8516287584162574476, guid: dbe7ef23065f2654ba4d664255a16dc2, type: 3}
+    weight: 3
+  - prefab: {fileID: 1778283073863508063, guid: e1a1bfbe174891547a2757b37a2978e8, type: 3}
+    weight: 2
+  - prefab: {fileID: 150692578454502298, guid: 905d7544cb9f8824e83c6d28b3e142d3, type: 3}
+    weight: 1
+  - prefab: {fileID: 1063109285117735580, guid: f002fd88fe61d4743ad6e0f117028503, type: 3}
+    weight: 1
+  - prefab: {fileID: 6412793029685538611, guid: 9ac1bd4776298e04ba4ff1ca869e6a50, type: 3}
+    weight: 1
+  spawnPoints: []

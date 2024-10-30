@@ -19,8 +19,11 @@ public class RandomWeightedObjectSpawner : MonoBehaviour
     // 配置地点のリスト
     public Transform[] spawnPoints;
 
+
     void Start()
     {
+        Transform[] spawnPoints = new Transform[1];
+        spawnPoints[0] = GetComponent<Transform>();
         // 各配置地点に対してランダムにオブジェクトを配置
         foreach (Transform spawnPoint in spawnPoints)
         {

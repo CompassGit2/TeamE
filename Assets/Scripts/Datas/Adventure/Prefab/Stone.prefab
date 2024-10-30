@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4557580673833571031}
   - component: {fileID: 4781909452136405400}
   - component: {fileID: -1420064477565954796}
+  - component: {fileID: 3331006409753895621}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Destructible
@@ -130,3 +131,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &3331006409753895621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516287584162574476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abdaf750788fd640abcd499f3a638a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  inventory: {fileID: 0}
