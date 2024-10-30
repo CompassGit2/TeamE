@@ -35,3 +35,4 @@ public class oreMining : MonoBehaviour
         return randomValue <= chance;
     }
 }
+

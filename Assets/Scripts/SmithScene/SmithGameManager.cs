@@ -28,6 +28,7 @@ namespace SmithScene.Game
         [SerializeField] GameObject fireObject;
         [SerializeField] GameObject hammerObject;
         [SerializeField] GameObject waterObject;
+        [SerializeField] GameObject standingObject;
         [SerializeField] ComboCounter comboCounter;
         Hammer hammer;
 
@@ -120,16 +121,19 @@ namespace SmithScene.Game
                 switch(playerAction)
                 {
                     case PlayerAction.Hammer:
+                        standingObject.SetActive(false);
                         fireObject.SetActive(false);
                         waterObject.SetActive(false);
                         hammerObject.SetActive(true);
                         break;
                     case PlayerAction.Water:
+                        standingObject.SetActive(false);
                         fireObject.SetActive(false);
                         hammerObject.SetActive(false);
                         waterObject.SetActive(true);
                         break;
                     case PlayerAction.Fire:
+                        standingObject.SetActive(false);
                         waterObject.SetActive(false);
                         hammerObject.SetActive(false);
                         fireObject.SetActive(true);
@@ -138,6 +142,7 @@ namespace SmithScene.Game
                         waterObject.SetActive(false);
                         fireObject.SetActive(false);
                         hammerObject.SetActive(false);
+                        standingObject.SetActive(true);
                         break;
                 }
 

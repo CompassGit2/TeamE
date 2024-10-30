@@ -25,4 +25,12 @@ public class Test_AddItem : MonoBehaviour
         }
         return dummyItems;
     }
+
+    public void ShowAllItem()
+    {
+        foreach(MaterialStack m in Storage.Materials)
+        {
+            Debug.Log($"{m.material.Name} {m.amount}個\n");
+        }
+    }
 }
