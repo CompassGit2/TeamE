@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using Data;
 using Data.Database;
 using TMPro;
@@ -11,8 +12,15 @@ public class Inventory : MonoBehaviour
     public GameObject itemSlotPrefab;
     public Transform inventoryPanel;
     public TextMeshProUGUI descriptionText;
+    
 
     private List<MaterialStack> inventoryItems = new List<MaterialStack>(); // MaterialStackのリストに変更
+
+    void Start()
+    {
+        // シーンが読み込まれた時のイベント登録
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     public void AddItemById(int itemId)
     {
@@ -68,5 +76,31 @@ public class Inventory : MonoBehaviour
         {
             CreateSlot(stack);
         }
+    }
+
+    // リザルトシーンへの移動時にアイテムをStorageに移す
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "ResultScene")  // リザルトシーン名を確認
+        {
+            TransferItemsToStorage();
+        }
+    }
+
+    // インベントリからStorageへアイテムを移動
+    void TransferItemsToStorage()
+    {
+        foreach (var item in inventoryItems)
+        {
+            // Storage クラスの AddMaterial メソッドを直接呼び出す
+            Storage.AddMaterial(item.material, item.amount);
+        }
+        inventoryItems.Clear();  // インベントリをクリア
+    }
+
+    void OnDestroy()
+    {
+        // イベント登録解除
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
