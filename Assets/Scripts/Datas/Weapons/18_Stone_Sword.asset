@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 18
   Name: "\u77F3\u306E\u5263"
-  WeaponImage: {fileID: 0}
+  WeaponImage: {fileID: 21300000, guid: 7aacb24901efa3f469de854c845bf133, type: 3}
   Rarity: 0
   Length: 70
   Weight: 300
