@@ -60,6 +60,7 @@ MonoBehaviour:
   Maxspeed: 10
   animator: {fileID: 2154369065205321724}
   inventoryUI: {fileID: 0}
+  descriptionText: {fileID: 0}
   WalkAudio: {fileID: 5927467428484092377}
 --- !u!222 &6806494764715963974
 CanvasRenderer:

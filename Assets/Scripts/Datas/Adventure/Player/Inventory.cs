@@ -1,17 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using Data;
 using Data.Database;
-using TMPro;
 
 public class Inventory : MonoBehaviour
 {
     public MaterialDatabase materialDatabase; // MaterialDatabaseの参照
     public GameObject itemSlotPrefab;
     public Transform inventoryPanel;
-    public TextMeshProUGUI descriptionText;
+    public Text descriptionText; //説明文を表示するText
 
     private List<MaterialStack> inventoryItems = new List<MaterialStack>(); // MaterialStackのリスト
 
@@ -47,10 +45,11 @@ public class Inventory : MonoBehaviour
         var slot = Instantiate(itemSlotPrefab, inventoryPanel);
         slot.GetComponent<Image>().sprite = stack.material.MaterialImage;
         slot.GetComponentInChildren<Text>().text = $"{stack.material.Name} (×{stack.amount})"; // 個数を表示
-        slot.GetComponent<Button>().onClick.AddListener(() => ShowItemDescription(stack.material));
+        Button button = slot.GetComponent<Button>();
+        button.onClick.AddListener(() => ShowItemDescription(stack.material)); // ここで直接デリゲートを追加
     }
 
-    void ShowItemDescription(MaterialData item)
+    public void ShowItemDescription(MaterialData item)
     {
         descriptionText.text = $"{item.Name}\nレア度: {item.Rarity}\n価格: {item.Price}\n説明: {item.Description}";
         Debug.Log($"説明文を表示: {item.Name} - {item.Description}");
