@@ -31,7 +31,7 @@ namespace SmithScene.Result
             qualityText.text = $"{quality.ToString("f1")}%";
             weaponNameText.text = weapon.weapon.Name;
             bonusText.text = $"+{_weapon.bonus.ToString()}";
-            Price.text = _weapon.price.ToString();
+            Price.text = $"{_weapon.price}G";
             lengthText.text = _weapon.weapon.Length.ToString();
             weightText.text = _weapon.weapon.Weight.ToString();
             sharpnessText.text = _weapon.weapon.Sharpness.ToString(); 
