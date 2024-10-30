@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using Data;
 using Data.Database;
 using TMPro;
@@ -12,7 +13,7 @@ public class Inventory : MonoBehaviour
     public Transform inventoryPanel;
     public TextMeshProUGUI descriptionText;
 
-    private List<MaterialStack> inventoryItems = new List<MaterialStack>(); // MaterialStackのリストに変更
+    private List<MaterialStack> inventoryItems = new List<MaterialStack>(); // MaterialStackのリスト
 
     public void AddItemById(int itemId)
     {
@@ -68,5 +69,18 @@ public class Inventory : MonoBehaviour
         {
             CreateSlot(stack);
         }
+    }
+
+    // インベントリのアイテムを取得
+    public List<MaterialStack> GetInventoryItems()
+    {
+        return inventoryItems;
+    }
+
+    // インベントリをクリア
+    public void ClearInventory()
+    {
+        inventoryItems.Clear(); // アイテムリストをクリア
+        UpdateInventoryUI(); // UIを更新
     }
 }
