@@ -4677,7 +4677,6 @@ RectTransform:
   - {fileID: 1008720725}
   - {fileID: 2013075204}
   - {fileID: 739295407}
-  - {fileID: 2102995653}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4862,6 +4861,7 @@ RectTransform:
   m_Children:
   - {fileID: 1856235364}
   - {fileID: 1893896923}
+  - {fileID: 2102995653}
   m_Father: {fileID: 1978965347}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5280,6 +5280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderDatabase: {fileID: 11400000, guid: a568e9e958f4f074693f5c26553b1663, type: 2}
+  weaponDatabase: {fileID: 0}
   orderContainer: {fileID: 2024813346}
   weaponContainer: {fileID: 981252254}
   orderGridLayout: {fileID: 2024813347}
@@ -5458,17 +5459,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102995652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1978965347}
+  m_Father: {fileID: 2013075204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 784, y: 406}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 805, y: 361}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102995654
 MonoBehaviour:

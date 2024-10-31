@@ -5,6 +5,7 @@ using UnityEngine;
 public class OrderManagerInitializer : MonoBehaviour
 {
     [SerializeField] private OrderDatabase orderDatabase;
+    
 
     private void Awake()
     {
@@ -22,14 +23,6 @@ public class OrderManagerInitializer : MonoBehaviour
         }
     }
 
-    //void Update()
-    //{
-    //    if (!OrderManager.HasDatabase())
-    //    {
-    //        Debug.LogWarning("orderdatabase is null!!");
-    //    }
-    //        // ‚±‚±‚ÅOrderManager‚Ì‰Šú‰»‚ğ‚İ‚é
-    //    }
     private void InitializeOrderManager()
     {
         if (orderDatabase == null)

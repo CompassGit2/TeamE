@@ -56,9 +56,9 @@ public static class OrderManager
                 Debug.Log("OrderManager: AllOrders is null.");
             else
             {
-                Debug.Log("OrderManager: AllOrders count: " + AllOrders.Count);
-                AcceptableOrders = AllOrders.Where(order => order.rank == WorldRank && order.orderType == orderType.Normal).ToList();
-                Debug.Log("OrderManager: AcceptableOrders count: " + AcceptableOrders.Count);
+                //Debug.Log("OrderManager: AllOrders count: " + AllOrders.Count);
+                //AcceptableOrders = AllOrders.Where(order => order.rank == WorldRank && order.orderType == orderType.Normal).ToList();
+                //Debug.Log("OrderManager: AcceptableOrders count: " + AcceptableOrders.Count);
             }
         }
         else

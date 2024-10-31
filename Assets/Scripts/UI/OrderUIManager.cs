@@ -33,8 +33,12 @@ public class OrderUIManager : MonoBehaviour
     [SerializeField] private Button cancelButton;
 
     private OrderData currentOrder;//進行中の依頼
+    public OrderData CurrentOrder  => currentOrder;
+
     private OrderData SelectedOrder;// 選択中の依頼UI
     private bool onlyOneHighlight=false;//ハイライトは一個しかないようにするためのフラグ
+    private List<Weapon> VerifiedWeapons = new List<Weapon>();// 納品可能な武器リスト
+    private OrderDetailDialog orderDetailDialog;
 
     void Awake()
     {
@@ -47,6 +51,15 @@ public class OrderUIManager : MonoBehaviour
 
     }
 
+
+    void OnDisable()
+    {
+        if (orderDetailDialog != null)
+        {
+            Destroy(orderDetailDialog.gameObject);
+            orderDetailDialog = null;
+        }
+    }
     private void ConfirmOrder()
     {
         // 保険として、選択中の依頼がない場合は何もしない
@@ -54,22 +67,33 @@ public class OrderUIManager : MonoBehaviour
         // 依頼を受け取る
         OrderManager.AcceptOrder(SelectedOrder);
         SelectedOrder = null;
+        Debug.Log("今依頼を受注した");
         RefreshOrderList();
+    }
 
+    private void CheckVerifiedWeapon()
+    {
+        Debug.Log("今何本の剣を持っているかをチェック"+Storage.Weapons.Count);
+        // 今持っている武器の中でが納品可能な武器があるかをかチェック
+        foreach(var sword in Storage.Weapons)
+        {
+            if (IsWeaponValidForCurrentOrder(sword))
+            {
+                VerifiedWeapons.Add(sword);
+                Debug.Log("鉄の剣を納品可能リストに追加");
+                Debug.Log(VerifiedWeapons.Count);
+            }
+                
+        }
     }
 
     void OnEnable()
     {       
         RefreshOrderList();
-
         // 依頼選択ボタンの色を変更
        ConfirmButtonInvisiable();
     }
 
-    void OnDisable()
-    {
-     
-    }
 
     private void SetupGridLayouts()
     {
@@ -121,12 +145,24 @@ public class OrderUIManager : MonoBehaviour
         // 現在受注中の依頼がある場合は表示しない
         if (OrderManager.CurrentOrder != null)
         {
+            Debug.Log("現在受注中の依頼があります、完了報告後に新しい依頼を受けられます。");
             ShowCurrentOrderStatus();
+            CheckVerifiedWeapon();
+            if (VerifiedWeapons.Count > 0)
+            {
+                //依頼の要求にあっている剣を所持しているのであれば、武器納品用選択UIを表示
+                ShowWeaponSelectionUI();
+            }
+
             CloseWindow();
             //return;
         }
 
-        OrderManager.FetchOrdersByRank();//受付可能な依頼をOrderManager側で更新
+        if (OrderManager.CurrentOrder == null)
+        {
+            OrderManager.FetchOrdersByRank();//受付可能な依頼をOrderManager側で更新
+        }
+        
         var availableOrders = OrderManager.AcceptableOrders;
         //Debug.Log(availableOrders.Count);
         foreach (var order in availableOrders)
@@ -198,8 +234,6 @@ public class OrderUIManager : MonoBehaviour
         
     }
 
- 
-
     public void ShowHighlightEdge(GameObject OrderUI)
     {
         //選択した依頼のUIにハイライトエッジを表示
@@ -254,13 +288,10 @@ public class OrderUIManager : MonoBehaviour
         orderSelectionPanel.SetActive(false);
         weaponSelectionPanel.SetActive(true);
 
-        var playerWeapons = Storage.Weapons;
-        foreach (var weapon in playerWeapons)
+        //var playerWeapons = Storage.Weapons;
+        foreach (var weapon in VerifiedWeapons )
         {
-            if (IsWeaponValidForCurrentOrder(weapon))
-            {
                 CreateWeaponSelectionUI(weapon);
-            }
         }
     }
 
@@ -270,11 +301,9 @@ public class OrderUIManager : MonoBehaviour
         GameObject weaponUI = Instantiate(weaponUIPrefab, weaponContainer);
         
         Text nameText = weaponUI.transform.Find("NameText").GetComponent<Text>();
-        Text specText = weaponUI.transform.Find("SpecText").GetComponent<Text>();
-        Image weaponIcon = weaponUI.transform.Find("WeaponIcon").GetComponent<Image>();
+        Image weaponIcon = weaponUI.transform.Find("Icon").GetComponent<Image>();
 
         nameText.text = weapon.weapon.Name;
-        specText.text = $"攻撃力: {weapon.attack}\nボーナス: {weapon.bonus}";
         weaponIcon.sprite = weapon.weapon.WeaponImage;
 
         Button button = weaponUI.GetComponent<Button>();
@@ -292,7 +321,7 @@ public class OrderUIManager : MonoBehaviour
             requirements.Rarity => weapon.weapon.Rarity == order.RequiredRarity,
             requirements.SpecSpecifications => 
                 weapon.weapon.Weight >= order.Requirements.requiredWeight &&
-                weapon.weapon.Length>=order.Requirements.requiredLength&&
+                weapon.weapon.Length >=order.Requirements.requiredLength&&
                 weapon.weapon.Sharpness >= order.Requirements.requiredSharpness,
             _ => false
         };
@@ -305,7 +334,9 @@ public class OrderUIManager : MonoBehaviour
     private void OnWeaponSelected(Weapon weapon)
     {
         // 完了報告の確認ダイアログを表示
-        //detailDialog.ShowCompletionDialog(weapon);
+        orderDetailDialog.Initialize(weapon);
+        orderDetailDialog.ShowOrderCompletionDialog();
+        orderDetailDialog.Show();
     }
 
     private void ClearContainer(Transform container)
