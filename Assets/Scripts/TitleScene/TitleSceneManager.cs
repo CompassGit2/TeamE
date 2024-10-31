@@ -7,6 +7,11 @@ namespace TitleScene
 {
     public class TitleSceneManager : MonoBehaviour
     {
+        void Start()
+        {
+            Application.targetFrameRate = 60;
+        }
+        
         [SerializeField] MaterialDatabase materialDatabase;
         public void MoveMenuScene()
         {

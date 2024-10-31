@@ -41,6 +41,7 @@ namespace SmithScene.Game
         [SerializeField] Animator tempMeterAnimator;
         [SerializeField] Animator popUpTextAnimator;
 
+        [SerializeField] GameObject tutorialPanel;
         [SerializeField] Result.Result result;
 
         RecipeData recipe;
@@ -69,6 +70,16 @@ namespace SmithScene.Game
             hammer = hammerObject.GetComponent<Hammer>();
             hammer.HammerHit += OnHammerHit;
             waterObject.GetComponent<Water>().PutInWater += OnPutInWater;
+
+            if(Flags.SmithTutorial == true)
+            {
+                tutorialPanel.SetActive(true);
+                Flags.SmithTutorial = false;
+            }
+            else
+            {
+                tutorialPanel.SetActive(false);
+            }
 
         }
         

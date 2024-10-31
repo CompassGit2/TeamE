@@ -13,6 +13,18 @@ namespace Data.Database
             return weaponList;
         }
 
+        public WeaponData GetWeaponData(string weaponName)
+        {
+            foreach (WeaponData weapon in weaponList)
+            {
+                if (weapon.Name == weaponName)
+                {
+                    return weapon;
+                }
+            }
+            return new WeaponData();
+        }
+
     }
 
 }

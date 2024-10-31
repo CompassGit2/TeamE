@@ -11,7 +11,9 @@ namespace SmithScene.Game
         [SerializeField] Hammer hammer;
         [SerializeField] TextMeshProUGUI comboText;
         [SerializeField] TextMeshProUGUI bonusText;
+        [SerializeField] Animator comboAnimator;
         HammerHitResult lastHammerResult;
+        Color32 textColor;
         int nowCombo;
         int maxCombo;
         int bonus;
@@ -22,6 +24,7 @@ namespace SmithScene.Game
             maxCombo = 0;
             bonus = 0;
             lastHammerResult = HammerHitResult.Miss;
+            textColor = comboText.color;
             HideComboText();
             hammer.HammerHit += CheckCombo;
 
@@ -70,12 +73,13 @@ namespace SmithScene.Game
         void SetComboText()
         {
             comboText.text = $"{nowCombo}COMBO";
-            comboText.color = new Color32(255,255,255,255);
+            comboText.color = new Color32(textColor.r,textColor.g,textColor.b,255);
+            comboAnimator.SetTrigger("Combo");
         }
 
         void HideComboText()
         {
-            comboText.color = new Color32(255,255,255,0);
+            comboText.color = new Color32(textColor.r,textColor.g,textColor.b,0);
         }
 
         public int GetComboBonus()
