@@ -1,56 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectBreaker : MonoBehaviour
 {
-    public AudioClip destroyedSound; // ”j‰óŠ®—¹‚ÌŒø‰Ê‰¹
-    private GameObject targetObject; // ”j‰ó‘ÎÛ‚ÌƒIƒuƒWƒFƒNƒg
-    private bool canBreak = false; // ”j‰ó‰Â”\‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
-    public float holdTime = 3f; // ’·‰Ÿ‚µ‚É•K—v‚ÈŠÔ
+    [SerializeField] GameObject miningSliderObj;
+    Slider miningSlider;
+    public AudioClip destroyedSound; // ï¿½jï¿½óŠ®—ï¿½ï¿½ï¿½ï¿½ÌŒï¿½ï¿½Ê‰ï¿½
+    private GameObject targetObject; // ï¿½jï¿½ï¿½ÎÛ‚ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½g
+    private bool canBreak = false; // ï¿½jï¿½ï¿½Â”\ï¿½ï¿½ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½Ìƒtï¿½ï¿½ï¿½O
+    public float holdTime = 3f; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É•Kï¿½vï¿½Èï¿½ï¿½ï¿½
     private float holdTimer = 0f;
 
     private GameObject audioManager;
 
     void Start()
     {
-        // AudioManagerƒIƒuƒWƒFƒNƒg‚ğ’T‚·
+        // AudioManagerï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½Tï¿½ï¿½
         audioManager = GameObject.Find("AudioManager");
+        miningSlider = miningSliderObj.GetComponent<Slider>();
     }
 
 
     void Update()
     {
-        // ”»’èƒGƒŠƒA“à‚Å¶ƒNƒŠƒbƒN‚ª‰Ÿ‚³‚ê‚½ê‡Aƒ^ƒCƒ}[‚ğŠJn
+        // ï¿½ï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½Åï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ê‡ï¿½Aï¿½^ï¿½Cï¿½}ï¿½[ï¿½ï¿½ï¿½Jï¿½n
         if (canBreak && Input.GetMouseButton(0) && targetObject != null)
         {
+            miningSliderObj.SetActive(true);
             holdTimer += Time.deltaTime;
+            miningSlider.value = holdTimer; 
 
             if (holdTimer >= holdTime)
             {
                 Destroy(targetObject);
-                Debug.Log("•¨‘Ì‚ğ”j‰ó‚µ‚Ü‚µ‚½");
+                Debug.Log("ï¿½ï¿½ï¿½Ì‚ï¿½jï¿½ó‚µ‚Ü‚ï¿½ï¿½ï¿½");
 
-                // ”j‰óŠ®—¹‚ÌŒø‰Ê‰¹‚ğÄ¶
+                // ï¿½jï¿½óŠ®—ï¿½ï¿½ï¿½ï¿½ÌŒï¿½ï¿½Ê‰ï¿½ï¿½ï¿½ï¿½Äï¿½
                 if (destroyedSound != null && audioManager != null)
                 {
-                    // AudioSource‚ªƒAƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚é‚©Šm”F
+                    // AudioSourceï¿½ï¿½ï¿½Aï¿½^ï¿½bï¿½`ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½é‚©ï¿½mï¿½F
                     AudioSource audioSource = audioManager.GetComponent<AudioSource>();
                     if (audioSource != null)
                     {
                         audioSource.PlayOneShot(destroyedSound);
-                        Debug.Log("”j‰ó‰¹‚ğÄ¶‚µ‚Ü‚µ‚½");
+                        Debug.Log("ï¿½jï¿½ó‰¹‚ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
                     }
                 }
-
-                // ”j‰óŒã‚Éƒtƒ‰ƒO‚Æƒ^ƒCƒ}[‚ğƒŠƒZƒbƒg
+               
+                // ï¿½jï¿½ï¿½ï¿½Éƒtï¿½ï¿½ï¿½Oï¿½Æƒ^ï¿½Cï¿½}ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
                 canBreak = false;
                 targetObject = null;
                 holdTimer = 0f;
+                
             }
         }
         else if (Input.GetMouseButtonUp(0))
         {
+            miningSliderObj.SetActive(false);
             holdTimer = 0f;
         }
     }
@@ -67,6 +75,7 @@ public class ObjectBreaker : MonoBehaviour
     {
         if (collision.gameObject == targetObject)
         {
+            miningSliderObj.SetActive(false);
             canBreak = false;
             targetObject = null;
             holdTimer = 0f;
