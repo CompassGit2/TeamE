@@ -10,6 +10,14 @@ public class ObjectBreaker : MonoBehaviour
     public float holdTime = 3f; // 長押しに必要な時間
     private float holdTimer = 0f;
 
+    private GameObject audioManager;
+
+    void Start()
+    {
+        // AudioManagerオブジェクトを探す
+        audioManager = GameObject.Find("AudioManager");
+    }
+
 
     void Update()
     {
@@ -20,21 +28,20 @@ public class ObjectBreaker : MonoBehaviour
 
             if (holdTimer >= holdTime)
             {
-                // 破壊音を再生
-                AudioSource targetAudioSource = targetObject.GetComponent<AudioSource>();
-                if (targetAudioSource != null && destroyedSound != null)
-                {
-                    targetAudioSource.PlayOneShot(destroyedSound); // 破壊音を再生
-                    Debug.Log("破壊音を再生しました"); // デバッグログ追加
-                }
-                else
-                {
-                    Debug.LogWarning("破壊音の再生に失敗しました"); // エラーログ追加
-                }
-
-
-                Destroy(targetObject); // オブジェクトを破壊
+                Destroy(targetObject);
                 Debug.Log("物体を破壊しました");
+
+                // 破壊完了時の効果音を再生
+                if (destroyedSound != null && audioManager != null)
+                {
+                    // AudioSourceがアタッチされているか確認
+                    AudioSource audioSource = audioManager.GetComponent<AudioSource>();
+                    if (audioSource != null)
+                    {
+                        audioSource.PlayOneShot(destroyedSound);
+                        Debug.Log("破壊音を再生しました");
+                    }
+                }
 
                 // 破壊後にフラグとタイマーをリセット
                 canBreak = false;
@@ -44,7 +51,7 @@ public class ObjectBreaker : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            holdTimer = 0f; // タイマーリセット
+            holdTimer = 0f;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
