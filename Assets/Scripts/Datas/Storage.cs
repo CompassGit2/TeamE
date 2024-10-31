@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Data{
@@ -15,6 +16,21 @@ namespace Data{
             get => weapons;
         }
         private static List<Weapon> weapons = new List<Weapon>();
+
+        public static int Gold
+        {
+            get => gold;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "Goldは負数になれません.");
+                }
+
+                gold = value;
+            }
+        }
+        private static int gold = 500;
 
         /// <summary>
         /// 倉庫に素材を格納する

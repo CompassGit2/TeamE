@@ -1,0 +1,1734 @@
+fileFormatVersion: 2
+guid: 2ea88efe7034921479641e05afd417c2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Archer_Yellow_Frame_0
+    originalName: 
+    pivot: {x: 0.44444448, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 420
+      width: 63
+      height: 75
+    spriteID: 17097675d7a7e1443a490b9f3f2c93e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 420}
+  - name: Archer_Yellow_Frame_1
+    originalName: 
+    pivot: {x: 0.45161292, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 752
+      width: 62
+      height: 75
+    spriteID: d3d1d166bbf33fe4f9f3ee2e472b3751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 752}
+  - name: Archer_Yellow_Frame_2
+    originalName: 
+    pivot: {x: 0.44444448, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 503
+      width: 63
+      height: 75
+    spriteID: 801e94ab176a2f846b0e9218dcbcc3af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 503}
+  - name: Archer_Yellow_Frame_3
+    originalName: 
+    pivot: {x: 0.44444448, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 586
+      width: 63
+      height: 75
+    spriteID: 34075d9d54675a7428882a0a62f3d0ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 586}
+  - name: Archer_Yellow_Frame_4
+    originalName: 
+    pivot: {x: 0.44776118, y: -0.7837838}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 568
+      width: 67
+      height: 74
+    spriteID: c870d4a180235ee4f84f57ebe7f779c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 568}
+  - name: Archer_Yellow_Frame_5
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.81690145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 835
+      width: 65
+      height: 71
+    spriteID: 8af25fb11c9ae8d4ab10dade4dcd9ca3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 835}
+  - name: Archer_Yellow_Frame_6
+    originalName: 
+    pivot: {x: 0.46774188, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 914
+      width: 62
+      height: 73
+    spriteID: 1e32403fb758ae54a97451d6c6d02e11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 914}
+  - name: Archer_Yellow_Frame_7
+    originalName: 
+    pivot: {x: 0.44776118, y: -0.7532468}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 483
+      width: 67
+      height: 77
+    spriteID: caa1f790567cdf34dbb7e31f5b7bcf57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 483}
+  - name: Archer_Yellow_Frame_8
+    originalName: 
+    pivot: {x: 0.44615382, y: -0.7631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 733
+      width: 65
+      height: 76
+    spriteID: 8d170b9688abbd6499464143e93468df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 733}
+  - name: Archer_Yellow_Frame_9
+    originalName: 
+    pivot: {x: 0.45161292, y: -0.8285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 126
+      width: 62
+      height: 70
+    spriteID: 363179eaa7360364980f73604045a522
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 126}
+  - name: Archer_Yellow_Frame_10
+    originalName: 
+    pivot: {x: 0.4861111, y: -0.7532468}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 510
+      width: 72
+      height: 77
+    spriteID: e067864f99217ee4695bb06e33c94554
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 510}
+  - name: Archer_Yellow_Frame_11
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.7631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 4
+      width: 69
+      height: 76
+    spriteID: 3733335f6c72aff48a89233a7dca515a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 4}
+  - name: Archer_Yellow_Frame_12
+    originalName: 
+    pivot: {x: 0.45161292, y: -0.8285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 62
+      height: 70
+    spriteID: 794f3840761c7434fad1c219aaaa9b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: Archer_Yellow_Frame_13
+    originalName: 
+    pivot: {x: 0.44615382, y: -0.725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 293
+      width: 65
+      height: 80
+    spriteID: 79a4190e78915444fa0f11acdc0f8c91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 293}
+  - name: Archer_Yellow_Frame_14
+    originalName: 
+    pivot: {x: 0.38666663, y: -0.70731705}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 644
+      width: 75
+      height: 82
+    spriteID: 8f20f915ae3c73b4cb4fa94a2dcbcd8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 644}
+  - name: Archer_Yellow_Frame_15
+    originalName: 
+    pivot: {x: 0.46774188, y: -0.50877196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 62
+      height: 114
+    spriteID: c28ef768256009f489b404e2c206a120
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Archer_Yellow_Frame_16
+    originalName: 
+    pivot: {x: 0.530303, y: -0.59183675}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 538
+      width: 66
+      height: 98
+    spriteID: bef4fafa89aa7a5409772d0bfcf52914
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 538}
+  - name: Archer_Yellow_Frame_17
+    originalName: 
+    pivot: {x: 0.530303, y: -0.6304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 734
+      width: 66
+      height: 92
+    spriteID: a432d040fb9942349a1b7b6b2104561b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 734}
+  - name: Archer_Yellow_Frame_18
+    originalName: 
+    pivot: {x: 0.530303, y: -0.6304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 834
+      width: 66
+      height: 92
+    spriteID: 7628677723c6cd24bbd68720c4f6ee9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 834}
+  - name: Archer_Yellow_Frame_19
+    originalName: 
+    pivot: {x: 0.53623194, y: -0.6170213}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 436
+      width: 69
+      height: 94
+    spriteID: 331cbaf9ca385e34687e87b6d883940f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 436}
+  - name: Archer_Yellow_Frame_20
+    originalName: 
+    pivot: {x: 0.46774188, y: -0.65909094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 595
+      width: 62
+      height: 88
+    spriteID: 47b691b0662037b488110b36e9be0765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 595}
+  - name: Archer_Yellow_Frame_21
+    originalName: 
+    pivot: {x: 0.625, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 88
+      width: 64
+      height: 75
+    spriteID: 8912400d12886e44f96523e2206aadf2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 88}
+  - name: Archer_Yellow_Frame_22
+    originalName: 
+    pivot: {x: 0.5636364, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 282
+      width: 55
+      height: 75
+    spriteID: 6b17464b08e38fe4a9ff69553e8ff9e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 282}
+  - name: Archer_Yellow_Frame_23
+    originalName: 
+    pivot: {x: 0.33695653, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 4
+      width: 92
+      height: 75
+    spriteID: 76145ed8b34d88e4faab2306d9f608ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 4}
+  - name: Archer_Yellow_Frame_24
+    originalName: 
+    pivot: {x: 0.51388896, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 853
+      width: 72
+      height: 73
+    spriteID: 1b7096a344bd3624f910bb65bb44258d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 853}
+  - name: Archer_Yellow_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 344
+      width: 74
+      height: 75
+    spriteID: 57052292ab1623a4b8e9736c9d9d6b49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 344}
+  - name: Archer_Yellow_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 427
+      width: 74
+      height: 75
+    spriteID: eb26428b84b13754894705aab2c7ab45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 427}
+  - name: Archer_Yellow_Frame_27
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.7631579}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 934
+      width: 78
+      height: 76
+    spriteID: 0586a80dfb633114e834b10e06639786
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 934}
+  - name: Archer_Yellow_Frame_28
+    originalName: 
+    pivot: {x: 0.469697, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 650
+      width: 66
+      height: 75
+    spriteID: ee0cb61d49dd7b54e92d14b2028d0c07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 650}
+  - name: Archer_Yellow_Frame_29
+    originalName: 
+    pivot: {x: 0.625, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 171
+      width: 64
+      height: 75
+    spriteID: ca1c7cd05a054824f83c20230109c526
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 171}
+  - name: Archer_Yellow_Frame_30
+    originalName: 
+    pivot: {x: 0.5636364, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 365
+      width: 55
+      height: 75
+    spriteID: bb6555e5d29f3144ead306c2918f96f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 365}
+  - name: Archer_Yellow_Frame_31
+    originalName: 
+    pivot: {x: 0.33695653, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 87
+      width: 92
+      height: 75
+    spriteID: 6484c1afa118e8345a9564f8b88e35b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 87}
+  - name: Archer_Yellow_Frame_32
+    originalName: 
+    pivot: {x: 0.46835443, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 85
+      width: 79
+      height: 73
+    spriteID: 85fc047793728724d80d9af35ac6da80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 85}
+  - name: Archer_Yellow_Frame_33
+    originalName: 
+    pivot: {x: 0.50684935, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 691
+      width: 73
+      height: 73
+    spriteID: 40910acb0e14bfe47ba884307b355ae4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 691}
+  - name: Archer_Yellow_Frame_34
+    originalName: 
+    pivot: {x: 0.50684935, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 772
+      width: 73
+      height: 73
+    spriteID: 8004e5cd4276b5943abb456bb3bcd97c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 772}
+  - name: Archer_Yellow_Frame_35
+    originalName: 
+    pivot: {x: 0.5625, y: -0.79452056}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 4
+      width: 80
+      height: 73
+    spriteID: a7d8292ccaf879f448977c0a7565dab4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 4}
+  - name: Archer_Yellow_Frame_36
+    originalName: 
+    pivot: {x: 0.49206352, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 669
+      width: 63
+      height: 75
+    spriteID: 3b0167c5486b39e428f0b00f5ebca169
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 669}
+  - name: Archer_Yellow_Frame_37
+    originalName: 
+    pivot: {x: 0.625, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 254
+      width: 64
+      height: 75
+    spriteID: eb34921921348ae4889815127d0fe1e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 254}
+  - name: Archer_Yellow_Frame_38
+    originalName: 
+    pivot: {x: 0.5636364, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 448
+      width: 55
+      height: 75
+    spriteID: 0316717c751e6c54fb56e5518e8b7739
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 448}
+  - name: Archer_Yellow_Frame_39
+    originalName: 
+    pivot: {x: 0.33695653, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 170
+      width: 92
+      height: 75
+    spriteID: 76ca8d4295e16d14fa2b77b16903de26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 170}
+  - name: Archer_Yellow_Frame_40
+    originalName: 
+    pivot: {x: 0.52459013, y: -0.5930233}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 934
+      width: 61
+      height: 86
+    spriteID: 8b2d931272a39df40a3a58b4cc33ef34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 934}
+  - name: Archer_Yellow_Frame_41
+    originalName: 
+    pivot: {x: 0.53731346, y: -0.55681825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 4
+      width: 67
+      height: 88
+    spriteID: e31d4b51e82fb884a84d1729eca8ad7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 4}
+  - name: Archer_Yellow_Frame_42
+    originalName: 
+    pivot: {x: 0.53731346, y: -0.55681825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 100
+      width: 67
+      height: 88
+    spriteID: 2c0d9839abe495b4ba270e3bd2f3fd4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 100}
+  - name: Archer_Yellow_Frame_43
+    originalName: 
+    pivot: {x: 0.5675675, y: -0.53932583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 253
+      width: 74
+      height: 89
+    spriteID: 8db968628bcf7c34f973d8f648ede81b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 253}
+  - name: Archer_Yellow_Frame_44
+    originalName: 
+    pivot: {x: 0.53623194, y: -0.64197534}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 166
+      width: 69
+      height: 81
+    spriteID: a66e1ee7cdbe3e445808d4c3bd26c8ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 166}
+  - name: Archer_Yellow_Frame_45
+    originalName: 
+    pivot: {x: 0.625, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 337
+      width: 64
+      height: 75
+    spriteID: f67348950ca06df4ebac6aa79be532f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 337}
+  - name: Archer_Yellow_Frame_46
+    originalName: 
+    pivot: {x: 0.5636364, y: -0.7733334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 531
+      width: 55
+      height: 75
+    spriteID: 0c8c0373ed0a3aa4bbe719d20b32d75e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 531}
+  - name: Archer_Yellow_Frame_47
+    originalName: 
+    pivot: {x: 0.36904767, y: -0.70512825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 350
+      width: 84
+      height: 78
+    spriteID: 0bc20d295d5c2434a857ad1d4b1501a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 350}
+  - name: Archer_Yellow_Frame_48
+    originalName: 
+    pivot: {x: 0.58181816, y: -0.45744678}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 381
+      width: 55
+      height: 94
+    spriteID: da5d6ba436884bc47929846158549768
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 381}
+  - name: Archer_Yellow_Frame_49
+    originalName: 
+    pivot: {x: 0.58181816, y: -0.53932583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 817
+      width: 55
+      height: 89
+    spriteID: 8cb41a56cf6973646ad12f4f1242e7d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 817}
+  - name: Archer_Yellow_Frame_50
+    originalName: 
+    pivot: {x: 0.58181816, y: -0.53932583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 914
+      width: 55
+      height: 89
+    spriteID: e7b833480260be94ca5dfa406ab0d8d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 914}
+  - name: Archer_Yellow_Frame_51
+    originalName: 
+    pivot: {x: 0.5932203, y: -0.53932583}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 196
+      width: 59
+      height: 89
+    spriteID: 83f997a2a9e18844db204289fb60c311
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 196}
+  - name: Archer_Yellow_Frame_52
+    originalName: 
+    pivot: {x: 0.53623194, y: -0.64197534}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 249
+      y: 255
+      width: 69
+      height: 81
+    spriteID: 6d1cd03a131245f4086067d03381afef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 249, y: 255}
+  - name: Archer_Yellow_Frame_53
+    originalName: 
+    pivot: {x: 0.49206352, y: -6.142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 995
+      width: 63
+      height: 14
+    spriteID: d48361e1a7f8cb045bc65c1fa7de05f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 995}
+  - name: Archer_Yellow_Frame_54
+    originalName: 
+    pivot: {x: 0.6326531, y: -6.142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 614
+      width: 49
+      height: 14
+    spriteID: 3f773cf52662bed49a328a7f8985529f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 614}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1724145790
+    name: Archer_Yellow
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Archer_Yellow_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 63
+        height: 75
+      spriteId: 17097675d7a7e1443a490b9f3f2c93e5
+    - name: Archer_Yellow_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 62
+        height: 75
+      spriteId: d3d1d166bbf33fe4f9f3ee2e472b3751
+    - name: Archer_Yellow_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 63
+        height: 75
+      spriteId: 801e94ab176a2f846b0e9218dcbcc3af
+    - name: Archer_Yellow_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 63
+        height: 75
+      spriteId: 34075d9d54675a7428882a0a62f3d0ad
+    - name: Archer_Yellow_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 58
+        width: 67
+        height: 74
+      spriteId: c870d4a180235ee4f84f57ebe7f779c4
+    - name: Archer_Yellow_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 58
+        width: 65
+        height: 71
+      spriteId: 8af25fb11c9ae8d4ab10dade4dcd9ca3
+    - name: Archer_Yellow_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 62
+        height: 73
+      spriteId: 1e32403fb758ae54a97451d6c6d02e11
+    - name: Archer_Yellow_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 58
+        width: 67
+        height: 77
+      spriteId: caa1f790567cdf34dbb7e31f5b7bcf57
+    - name: Archer_Yellow_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 65
+        height: 76
+      spriteId: 8d170b9688abbd6499464143e93468df
+    - name: Archer_Yellow_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 62
+        height: 70
+      spriteId: 363179eaa7360364980f73604045a522
+    - name: Archer_Yellow_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 58
+        width: 72
+        height: 77
+      spriteId: e067864f99217ee4695bb06e33c94554
+    - name: Archer_Yellow_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 58
+        width: 69
+        height: 76
+      spriteId: 3733335f6c72aff48a89233a7dca515a
+    - name: Archer_Yellow_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 58
+        width: 62
+        height: 70
+      spriteId: 794f3840761c7434fad1c219aaaa9b42
+    - name: Archer_Yellow_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 65
+        height: 80
+      spriteId: 79a4190e78915444fa0f11acdc0f8c91
+    - name: Archer_Yellow_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 75
+        height: 82
+      spriteId: 8f20f915ae3c73b4cb4fa94a2dcbcd8d
+    - name: Archer_Yellow_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 62
+        height: 114
+      spriteId: c28ef768256009f489b404e2c206a120
+    - name: Archer_Yellow_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 58
+        width: 66
+        height: 98
+      spriteId: bef4fafa89aa7a5409772d0bfcf52914
+    - name: Archer_Yellow_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 58
+        width: 66
+        height: 92
+      spriteId: a432d040fb9942349a1b7b6b2104561b
+    - name: Archer_Yellow_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 58
+        width: 66
+        height: 92
+      spriteId: 7628677723c6cd24bbd68720c4f6ee9b
+    - name: Archer_Yellow_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 69
+        height: 94
+      spriteId: 331cbaf9ca385e34687e87b6d883940f
+    - name: Archer_Yellow_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 62
+        height: 88
+      spriteId: 47b691b0662037b488110b36e9be0765
+    - name: Archer_Yellow_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 58
+        width: 64
+        height: 75
+      spriteId: 8912400d12886e44f96523e2206aadf2
+    - name: Archer_Yellow_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 55
+        height: 75
+      spriteId: 6b17464b08e38fe4a9ff69553e8ff9e7
+    - name: Archer_Yellow_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 92
+        height: 75
+      spriteId: 76145ed8b34d88e4faab2306d9f608ab
+    - name: Archer_Yellow_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 72
+        height: 73
+      spriteId: 1b7096a344bd3624f910bb65bb44258d
+    - name: Archer_Yellow_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 74
+        height: 75
+      spriteId: 57052292ab1623a4b8e9736c9d9d6b49
+    - name: Archer_Yellow_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 74
+        height: 75
+      spriteId: eb26428b84b13754894705aab2c7ab45
+    - name: Archer_Yellow_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 58
+        width: 78
+        height: 76
+      spriteId: 0586a80dfb633114e834b10e06639786
+    - name: Archer_Yellow_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 66
+        height: 75
+      spriteId: ee0cb61d49dd7b54e92d14b2028d0c07
+    - name: Archer_Yellow_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 58
+        width: 64
+        height: 75
+      spriteId: ca1c7cd05a054824f83c20230109c526
+    - name: Archer_Yellow_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 55
+        height: 75
+      spriteId: bb6555e5d29f3144ead306c2918f96f9
+    - name: Archer_Yellow_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 92
+        height: 75
+      spriteId: 6484c1afa118e8345a9564f8b88e35b7
+    - name: Archer_Yellow_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 79
+        height: 73
+      spriteId: 85fc047793728724d80d9af35ac6da80
+    - name: Archer_Yellow_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 73
+        height: 73
+      spriteId: 40910acb0e14bfe47ba884307b355ae4
+    - name: Archer_Yellow_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 58
+        width: 73
+        height: 73
+      spriteId: 8004e5cd4276b5943abb456bb3bcd97c
+    - name: Archer_Yellow_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 51
+        y: 58
+        width: 80
+        height: 73
+      spriteId: a7d8292ccaf879f448977c0a7565dab4
+    - name: Archer_Yellow_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 63
+        height: 75
+      spriteId: 3b0167c5486b39e428f0b00f5ebca169
+    - name: Archer_Yellow_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 58
+        width: 64
+        height: 75
+      spriteId: eb34921921348ae4889815127d0fe1e6
+    - name: Archer_Yellow_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 55
+        height: 75
+      spriteId: 0316717c751e6c54fb56e5518e8b7739
+    - name: Archer_Yellow_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 92
+        height: 75
+      spriteId: 76ca8d4295e16d14fa2b77b16903de26
+    - name: Archer_Yellow_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 51
+        width: 61
+        height: 86
+      spriteId: 8b2d931272a39df40a3a58b4cc33ef34
+    - name: Archer_Yellow_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 67
+        height: 88
+      spriteId: e31d4b51e82fb884a84d1729eca8ad7d
+    - name: Archer_Yellow_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 67
+        height: 88
+      spriteId: 2c0d9839abe495b4ba270e3bd2f3fd4a
+    - name: Archer_Yellow_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 48
+        width: 74
+        height: 89
+      spriteId: 8db968628bcf7c34f973d8f648ede81b
+    - name: Archer_Yellow_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 52
+        width: 69
+        height: 81
+      spriteId: a66e1ee7cdbe3e445808d4c3bd26c8ca
+    - name: Archer_Yellow_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 58
+        width: 64
+        height: 75
+      spriteId: f67348950ca06df4ebac6aa79be532f4
+    - name: Archer_Yellow_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 58
+        width: 55
+        height: 75
+      spriteId: 0c8c0373ed0a3aa4bbe719d20b32d75e
+    - name: Archer_Yellow_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 55
+        width: 84
+        height: 78
+      spriteId: 0bc20d295d5c2434a857ad1d4b1501a7
+    - name: Archer_Yellow_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 43
+        width: 55
+        height: 94
+      spriteId: da5d6ba436884bc47929846158549768
+    - name: Archer_Yellow_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 48
+        width: 55
+        height: 89
+      spriteId: 8cb41a56cf6973646ad12f4f1242e7d0
+    - name: Archer_Yellow_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 48
+        width: 55
+        height: 89
+      spriteId: e7b833480260be94ca5dfa406ab0d8d5
+    - name: Archer_Yellow_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 48
+        width: 59
+        height: 89
+      spriteId: 83f997a2a9e18844db204289fb60c311
+    - name: Archer_Yellow_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 52
+        width: 69
+        height: 81
+      spriteId: 6d1cd03a131245f4086067d03381afef
+    - name: Archer_Yellow_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 86
+        width: 63
+        height: 14
+      spriteId: d48361e1a7f8cb045bc65c1fa7de05f1
+    - name: Archer_Yellow_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 86
+        width: 49
+        height: 14
+      spriteId: 3f773cf52662bed49a328a7f8985529f
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 192, y: 192}

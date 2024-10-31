@@ -1,0 +1,1212 @@
+fileFormatVersion: 2
+guid: 4f88d252886e6a94c9752db0deed2488
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Pawn_Purple_Frame_0
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 295
+      width: 58
+      height: 59
+    spriteID: 8ffbc22308fd9154c85c90ea22efccf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 295}
+  - name: Pawn_Purple_Frame_1
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 295
+      width: 58
+      height: 59
+    spriteID: 05a40cc2155c33f43878ee9947796a67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 295}
+  - name: Pawn_Purple_Frame_2
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.122807}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 363
+      width: 58
+      height: 57
+    spriteID: 8eb86f7385fc4a344b75680a15d6f75a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 363}
+  - name: Pawn_Purple_Frame_3
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 400
+      y: 363
+      width: 58
+      height: 56
+    spriteID: d2bb2991033e44949a4de12a9b5aa67d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 400, y: 363}
+  - name: Pawn_Purple_Frame_4
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.122807}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 363
+      width: 58
+      height: 57
+    spriteID: db01e5bb52781ac43b2501b094c66516
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 363}
+  - name: Pawn_Purple_Frame_5
+    originalName: 
+    pivot: {x: 0.48275867, y: -1.1034484}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 363
+      width: 58
+      height: 58
+    spriteID: e7fb6e34cdc1de147810941e29ee22eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 363}
+  - name: Pawn_Purple_Frame_6
+    originalName: 
+    pivot: {x: 0.48275867, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 295
+      width: 58
+      height: 59
+    spriteID: daafd57f52be35f4b94cb5f0e24f81cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 295}
+  - name: Pawn_Purple_Frame_7
+    originalName: 
+    pivot: {x: 0.53448284, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 227
+      width: 58
+      height: 60
+    spriteID: 9aa4e03535567fc4bbb2fc576c1eec95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 227}
+  - name: Pawn_Purple_Frame_8
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 295
+      width: 58
+      height: 59
+    spriteID: e1f8fff0d33497b40ba45f7a8c1e29e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 295}
+  - name: Pawn_Purple_Frame_9
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 78
+      width: 58
+      height: 55
+    spriteID: 36ec5bbc89f8b6947b8cc20975e452d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 78}
+  - name: Pawn_Purple_Frame_10
+    originalName: 
+    pivot: {x: 0.48387095, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 227
+      width: 62
+      height: 60
+    spriteID: 6a76d00bf054d0e43a18dbc49f013ae1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 227}
+  - name: Pawn_Purple_Frame_11
+    originalName: 
+    pivot: {x: 0.49152538, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 227
+      width: 59
+      height: 59
+    spriteID: 18627a7a707b2ac43a900736f33e6141
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 227}
+  - name: Pawn_Purple_Frame_12
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 78
+      width: 58
+      height: 55
+    spriteID: 70fa9bfa04cef0947b160f343379cce7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 309, y: 78}
+  - name: Pawn_Purple_Frame_13
+    originalName: 
+    pivot: {x: 0.49230766, y: -0.85333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 142
+      width: 65
+      height: 75
+    spriteID: 8a1db8e96aa01b34eaa89942a962c57b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 142}
+  - name: Pawn_Purple_Frame_14
+    originalName: 
+    pivot: {x: 0.50769234, y: -0.83116883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 142
+      width: 65
+      height: 77
+    spriteID: d837110185e23704c9c6e8c8f754d8c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 142}
+  - name: Pawn_Purple_Frame_15
+    originalName: 
+    pivot: {x: 0.50769234, y: -0.83116883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 142
+      width: 65
+      height: 77
+    spriteID: 9e44c6b68f184f94d9c5ed49617ac514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 142}
+  - name: Pawn_Purple_Frame_16
+    originalName: 
+    pivot: {x: 0.34782606, y: -0.969697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 92
+      height: 66
+    spriteID: c5b37e9c35cbf90409e4e5bed441ad2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Pawn_Purple_Frame_17
+    originalName: 
+    pivot: {x: 0.3483146, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 4
+      width: 89
+      height: 56
+    spriteID: 71e3b368d5c0ccc4f8c73cca46e6ce1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 4}
+  - name: Pawn_Purple_Frame_18
+    originalName: 
+    pivot: {x: 0.3421052, y: -1.1034484}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 389
+      y: 142
+      width: 76
+      height: 58
+    spriteID: f84597c9ae294c345847262b520aa60f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 389, y: 142}
+  - name: Pawn_Purple_Frame_19
+    originalName: 
+    pivot: {x: 0.654321, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 142
+      width: 81
+      height: 60
+    spriteID: 6d52555ad215e0848ba61ec033c131ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 142}
+  - name: Pawn_Purple_Frame_20
+    originalName: 
+    pivot: {x: 0.6704546, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 4
+      width: 88
+      height: 64
+    spriteID: 858a09feed258344b96c9745d374eb06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 4}
+  - name: Pawn_Purple_Frame_21
+    originalName: 
+    pivot: {x: 0.6704546, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 4
+      width: 88
+      height: 64
+    spriteID: 2d9430c69f593df40aa58b180b19e21d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 318, y: 4}
+  - name: Pawn_Purple_Frame_22
+    originalName: 
+    pivot: {x: 0.3909091, y: -1.1851852}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 110
+      height: 54
+    spriteID: 9ad247834071b9049996e39431548efb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: Pawn_Purple_Frame_23
+    originalName: 
+    pivot: {x: 0.33333334, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 99
+      height: 56
+    spriteID: 761d4ac68b4524a4cab1c54cf50c448d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: Pawn_Purple_Frame_24
+    originalName: 
+    pivot: {x: 0.53623194, y: -0.8484849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 142
+      width: 69
+      height: 66
+    spriteID: 1115374b012eaa1428bdaeef580ce705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 142}
+  - name: Pawn_Purple_Frame_25
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 227
+      width: 58
+      height: 60
+    spriteID: 5c690219af1e2964cabb401fd8734e6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 227}
+  - name: Pawn_Purple_Frame_26
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 334
+      y: 295
+      width: 58
+      height: 59
+    spriteID: 5559ec183b172fc47a758cbcc9042032
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 334, y: 295}
+  - name: Pawn_Purple_Frame_27
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.1034484}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 363
+      width: 58
+      height: 58
+    spriteID: 0ef9f3a975dc4384da18780c2cdad4de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 363}
+  - name: Pawn_Purple_Frame_28
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.122807}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 334
+      y: 363
+      width: 58
+      height: 57
+    spriteID: c5e12cf23ac2db44794baf9d04cd9d50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 334, y: 363}
+  - name: Pawn_Purple_Frame_29
+    originalName: 
+    pivot: {x: 0.48275867, y: -1.1034484}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 363
+      width: 58
+      height: 58
+    spriteID: e55c3838ee94ace43ad03c68a23d4057
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 363}
+  - name: Pawn_Purple_Frame_30
+    originalName: 
+    pivot: {x: 0.48275867, y: -1.0847458}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 400
+      y: 295
+      width: 58
+      height: 59
+    spriteID: 227e487d01146f14d95ba756b6f86cd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 400, y: 295}
+  - name: Pawn_Purple_Frame_31
+    originalName: 
+    pivot: {x: 0.53448284, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 273
+      y: 227
+      width: 58
+      height: 60
+    spriteID: aa269182222ccd645b6a67d6d3d58636
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 273, y: 227}
+  - name: Pawn_Purple_Frame_32
+    originalName: 
+    pivot: {x: 0.5172414, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 339
+      y: 227
+      width: 58
+      height: 60
+    spriteID: 6385887d5f0a9a44d81526d471fdde94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 339, y: 227}
+  - name: Pawn_Purple_Frame_33
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 78
+      width: 58
+      height: 56
+    spriteID: fd7a489d67e83214fb38a9f0d1e77c6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 78}
+  - name: Pawn_Purple_Frame_34
+    originalName: 
+    pivot: {x: 0.46551725, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 405
+      y: 227
+      width: 58
+      height: 60
+    spriteID: 10336b8322c788543beb61f9548e373f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 405, y: 227}
+  - name: Pawn_Purple_Frame_35
+    originalName: 
+    pivot: {x: 0.48275867, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 295
+      width: 58
+      height: 60
+    spriteID: 2030b78866ecbf544bb5397e015b4e06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 295}
+  - name: Pawn_Purple_Frame_36
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 78
+      width: 58
+      height: 56
+    spriteID: 9b474df2f4acd1244be5b26b0bc12f59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 177, y: 78}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1800371011
+    name: Pawn_Purple
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Pawn_Purple_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 59
+      spriteId: 8ffbc22308fd9154c85c90ea22efccf3
+    - name: Pawn_Purple_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 59
+      spriteId: 05a40cc2155c33f43878ee9947796a67
+    - name: Pawn_Purple_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 57
+      spriteId: 8eb86f7385fc4a344b75680a15d6f75a
+    - name: Pawn_Purple_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 56
+      spriteId: d2bb2991033e44949a4de12a9b5aa67d
+    - name: Pawn_Purple_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 57
+      spriteId: db01e5bb52781ac43b2501b094c66516
+    - name: Pawn_Purple_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 64
+        width: 58
+        height: 58
+      spriteId: e7fb6e34cdc1de147810941e29ee22eb
+    - name: Pawn_Purple_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 64
+        width: 58
+        height: 59
+      spriteId: daafd57f52be35f4b94cb5f0e24f81cd
+    - name: Pawn_Purple_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 64
+        width: 58
+        height: 60
+      spriteId: 9aa4e03535567fc4bbb2fc576c1eec95
+    - name: Pawn_Purple_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 59
+      spriteId: e1f8fff0d33497b40ba45f7a8c1e29e9
+    - name: Pawn_Purple_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 55
+      spriteId: 36ec5bbc89f8b6947b8cc20975e452d7
+    - name: Pawn_Purple_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 62
+        height: 60
+      spriteId: 6a76d00bf054d0e43a18dbc49f013ae1
+    - name: Pawn_Purple_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 59
+        height: 59
+      spriteId: 18627a7a707b2ac43a900736f33e6141
+    - name: Pawn_Purple_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 55
+      spriteId: 70fa9bfa04cef0947b160f343379cce7
+    - name: Pawn_Purple_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 64
+        width: 65
+        height: 75
+      spriteId: 8a1db8e96aa01b34eaa89942a962c57b
+    - name: Pawn_Purple_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 64
+        width: 65
+        height: 77
+      spriteId: d837110185e23704c9c6e8c8f754d8c5
+    - name: Pawn_Purple_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 64
+        width: 65
+        height: 77
+      spriteId: 9e44c6b68f184f94d9c5ed49617ac514
+    - name: Pawn_Purple_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 64
+        width: 92
+        height: 66
+      spriteId: c5b37e9c35cbf90409e4e5bed441ad2b
+    - name: Pawn_Purple_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 64
+        width: 89
+        height: 56
+      spriteId: 71e3b368d5c0ccc4f8c73cca46e6ce1c
+    - name: Pawn_Purple_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 70
+        y: 64
+        width: 76
+        height: 58
+      spriteId: f84597c9ae294c345847262b520aa60f
+    - name: Pawn_Purple_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 64
+        width: 81
+        height: 60
+      spriteId: 6d52555ad215e0848ba61ec033c131ee
+    - name: Pawn_Purple_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 64
+        width: 88
+        height: 64
+      spriteId: 858a09feed258344b96c9745d374eb06
+    - name: Pawn_Purple_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 64
+        width: 88
+        height: 64
+      spriteId: 2d9430c69f593df40aa58b180b19e21d
+    - name: Pawn_Purple_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 64
+        width: 110
+        height: 54
+      spriteId: 9ad247834071b9049996e39431548efb
+    - name: Pawn_Purple_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 64
+        width: 99
+        height: 56
+      spriteId: 761d4ac68b4524a4cab1c54cf50c448d
+    - name: Pawn_Purple_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 56
+        width: 69
+        height: 66
+      spriteId: 1115374b012eaa1428bdaeef580ce705
+    - name: Pawn_Purple_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 60
+      spriteId: 5c690219af1e2964cabb401fd8734e6b
+    - name: Pawn_Purple_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 59
+      spriteId: 5559ec183b172fc47a758cbcc9042032
+    - name: Pawn_Purple_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 58
+      spriteId: 0ef9f3a975dc4384da18780c2cdad4de
+    - name: Pawn_Purple_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 57
+      spriteId: c5e12cf23ac2db44794baf9d04cd9d50
+    - name: Pawn_Purple_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 64
+        width: 58
+        height: 58
+      spriteId: e55c3838ee94ace43ad03c68a23d4057
+    - name: Pawn_Purple_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 64
+        width: 58
+        height: 59
+      spriteId: 227e487d01146f14d95ba756b6f86cd8
+    - name: Pawn_Purple_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 64
+        width: 58
+        height: 60
+      spriteId: aa269182222ccd645b6a67d6d3d58636
+    - name: Pawn_Purple_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 64
+        width: 58
+        height: 60
+      spriteId: 6385887d5f0a9a44d81526d471fdde94
+    - name: Pawn_Purple_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 56
+      spriteId: fd7a489d67e83214fb38a9f0d1e77c6a
+    - name: Pawn_Purple_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 64
+        width: 58
+        height: 60
+      spriteId: 10336b8322c788543beb61f9548e373f
+    - name: Pawn_Purple_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 64
+        width: 58
+        height: 60
+      spriteId: 2030b78866ecbf544bb5397e015b4e06
+    - name: Pawn_Purple_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 64
+        width: 58
+        height: 56
+      spriteId: 9b474df2f4acd1244be5b26b0bc12f59
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 192, y: 192}

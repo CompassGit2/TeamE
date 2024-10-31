@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac11359bf37ad143b6f00df80726ff8, type: 3}
+  m_Name: New Order Data 1
+  m_EditorClassIdentifier: 
+  Id: 1
+  Name: Mary's Order
+  OrderImage: {fileID: 0}
+  OrderType: 0
+  Reward: 0
+  Description: Test Content 2
+  requirementType: 1
+  Rank: 0
+  IsCompleted: 0
+  weaponName: 
+  weaponRequirements:
+    checkLength: 1
+    checkWeight: 0
+    checkSharpness: 0
+    requiredLength: 0
+    requiredWeight: 0
+    requiredSharpness: 0
+  requiredRarity: 0
