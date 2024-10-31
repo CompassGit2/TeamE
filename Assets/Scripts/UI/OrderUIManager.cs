@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using Data;
 using Data.Database;
+using System.Linq;
 using Unity.VisualScripting;
 
 public class OrderUIManager : MonoBehaviour
@@ -27,13 +28,14 @@ public class OrderUIManager : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] private GameObject orderUIPrefab;
     [SerializeField] private GameObject weaponUIPrefab;
+    [SerializeField] private GameObject weaponDetailDialogPrefab;
 
     [Header("Buttons")]
     [SerializeField] private Button confirmButton;
     [SerializeField] private Button cancelButton;
 
     private OrderData currentOrder;//進行中の依頼
-    public OrderData CurrentOrder  => currentOrder;
+    //public OrderData CurrentOrder  => currentOrder;
 
     private OrderData SelectedOrder;// 選択中の依頼UI
     private bool onlyOneHighlight=false;//ハイライトは一個しかないようにするためのフラグ
@@ -50,8 +52,7 @@ public class OrderUIManager : MonoBehaviour
         currentOrderStatus = QuestShopPanel.transform.Find("QuestButton/CurrentOrderStatus").GetComponent<Image>();
 
     }
-
-
+  
     void OnDisable()
     {
         if (orderDetailDialog != null)
@@ -69,6 +70,8 @@ public class OrderUIManager : MonoBehaviour
         SelectedOrder = null;
         Debug.Log("今依頼を受注した");
         RefreshOrderList();
+        //
+        ConfirmButtonInvisiable();
     }
 
     private void CheckVerifiedWeapon()
@@ -83,15 +86,31 @@ public class OrderUIManager : MonoBehaviour
                 Debug.Log("鉄の剣を納品可能リストに追加");
                 Debug.Log(VerifiedWeapons.Count);
             }
-                
         }
     }
 
     void OnEnable()
-    {       
-        RefreshOrderList();
-        // 依頼選択ボタンの色を変更
-       ConfirmButtonInvisiable();
+    {
+        if (orderDetailDialog != null)
+            return;
+        // 詳細ダイアログの初期化
+        orderDetailDialog = Instantiate(weaponDetailDialogPrefab, transform).GetComponent<OrderDetailDialog>();
+        //Debug.Log($"実体化は成功した？{orderDetailDialog != null}");
+        orderDetailDialog.Hide();
+
+        if (OrderManager.CurrentOrder == null)
+        {
+            RefreshOrderList();
+            // 依頼選択ボタンの色を変更
+            ConfirmButtonInvisiable();
+            // 依頼受けているかの表示を更新
+            currentOrderStatus.gameObject.SetActive(false);
+        }
+        else if (OrderManager.CurrentOrder != null)
+        {
+            triggerWhenClicked();
+        }
+
     }
 
 
@@ -109,7 +128,7 @@ public class OrderUIManager : MonoBehaviour
                 orderGridLayout.spacing = new Vector2(20, 0); // 横方向のスペースのみ
                 orderGridLayout.startCorner = GridLayoutGroup.Corner.UpperLeft;
                 orderGridLayout.startAxis = GridLayoutGroup.Axis.Horizontal;
-                orderGridLayout.childAlignment = TextAnchor.MiddleCenter; // 中央寄せ
+                orderGridLayout.childAlignment = TextAnchor.UpperLeft; 
                 orderGridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
                 orderGridLayout.constraintCount = 3;
             }
@@ -121,6 +140,7 @@ public class OrderUIManager : MonoBehaviour
 
     private void SetupWeaponGridLayout(GridLayoutGroup grid, Transform container)
     {
+        //インスペクタービューで弄ればいい。
         if (grid == null)
         {
             grid = container.GetComponent<GridLayoutGroup>();
@@ -141,33 +161,45 @@ public class OrderUIManager : MonoBehaviour
     public void RefreshOrderList()
     {
         ClearContainer(orderContainer);
-        
+        //ハイライト選択初期化
+        onlyOneHighlight = false;
+
+
         // 現在受注中の依頼がある場合は表示しない
+        //
         if (OrderManager.CurrentOrder != null)
         {
             Debug.Log("現在受注中の依頼があります、完了報告後に新しい依頼を受けられます。");
             ShowCurrentOrderStatus();
-            CheckVerifiedWeapon();
-            if (VerifiedWeapons.Count > 0)
-            {
-                //依頼の要求にあっている剣を所持しているのであれば、武器納品用選択UIを表示
-                ShowWeaponSelectionUI();
-            }
-
             CloseWindow();
-            //return;
         }
-
-        if (OrderManager.CurrentOrder == null)
+        else if (OrderManager.CurrentOrder == null)
         {
             OrderManager.FetchOrdersByRank();//受付可能な依頼をOrderManager側で更新
+            var availableOrders = OrderManager.AcceptableOrders;
+            //Debug.Log(availableOrders.Count);
+            foreach (var order in availableOrders)
+            {
+                CreateOrderUI(order);
+            }
+            //進行中の依頼存在を宣言するバナーを消す
+            currentOrderStatus.gameObject.SetActive(false);
         }
         
-        var availableOrders = OrderManager.AcceptableOrders;
-        //Debug.Log(availableOrders.Count);
-        foreach (var order in availableOrders)
+    }
+
+    public void triggerWhenClicked()//
+    {
+        if (OrderManager.CurrentOrder != null)
         {
-            CreateOrderUI(order);
+            CheckVerifiedWeapon();
+            Debug.Log("triggerWhenClickedが実行されているはず");
+            if (VerifiedWeapons.Count > 0)
+            {
+                //依頼の要求にあっている剣を所持している→直接武器納品用選択UIを表示
+                Debug.Log("武器選択UIを表示");
+                ShowWeaponSelectionUI();
+            }
         }
     }
 
@@ -190,7 +222,6 @@ public class OrderUIManager : MonoBehaviour
         Text requirementTypeText=orderUI.transform.Find("RequirementTypeText").GetComponent<Text>();
 
         orderTypeText.text = order.orderType == orderType.Normal ? "通常依頼" : "昇級依頼";
-        //rewardText.text = $"{order.reward}G";
         descriptionText.text = order.description;
         orderIcon.sprite = order.orderIcon;
         //requirementTypeText.text=order.RequirementType.ToString();
@@ -228,7 +259,7 @@ public class OrderUIManager : MonoBehaviour
         else
         {
             SelectedOrder = order;
-            ConfirmButtonVisible();//OKボタンを表示
+            ConfirmButtonVisible();//OKボタンを表示させる
             confirmButton.onClick.AddListener(ConfirmOrder);//OKボタンに依頼受付イベントを設定
         }
         
@@ -285,16 +316,17 @@ public class OrderUIManager : MonoBehaviour
     public void ShowWeaponSelectionUI()
     {
         ClearContainer(weaponContainer);
+        
         orderSelectionPanel.SetActive(false);
         weaponSelectionPanel.SetActive(true);
 
         //var playerWeapons = Storage.Weapons;
         foreach (var weapon in VerifiedWeapons )
         {
+            Debug.Log("依頼に出せる武器の数は" + VerifiedWeapons.Count);
                 CreateWeaponSelectionUI(weapon);
         }
     }
-
 
     private void CreateWeaponSelectionUI(Weapon weapon)
     {
@@ -327,13 +359,11 @@ public class OrderUIManager : MonoBehaviour
         };
     }
 
-    
-
-
-
     private void OnWeaponSelected(Weapon weapon)
     {
         // 完了報告の確認ダイアログを表示
+        Debug.Log($"武器選択が出来たか?{weapon == null}");
+        Debug.Log($"実体化は？{orderDetailDialog != null}");
         orderDetailDialog.Initialize(weapon);
         orderDetailDialog.ShowOrderCompletionDialog();
         orderDetailDialog.Show();
@@ -357,7 +387,7 @@ public class OrderUIManager : MonoBehaviour
 
     private void CloseWindow()
     {
-        Debug.Log("CloseWindowが実行されているはず");
+        //Debug.Log("CloseWindowが実行されているはず");
         QuestShopPanel.SetActive(true);
         gameObject.SetActive(false);
     }

@@ -22,7 +22,7 @@ public static class OrderManager
     //世界ランク　ピッケルのランクでもある
     public static OrderData CurrentOrder { get; private set; }
     //現在選択中の依頼
-    public static List<OrderData> CompletedOrders { get; private set; }
+    //public static List<OrderData> CompletedOrders { get; private set; }
     //完了した依頼
     public static int FinishedNormalOrders = 0;
     //完了した通常依頼の数
@@ -96,15 +96,18 @@ public static class OrderManager
     public static void CompleteOrder()
     {
         AcceptableOrders.Remove(CurrentOrder);
-        CompletedOrders.Add(CurrentOrder);
+        //CompletedOrders.Add(CurrentOrder);
+        //※static型変数はリスト構造内に入れることが出来ない。。。
         if (CurrentOrder.orderType == orderType.Normal)
             FinishedNormalOrders++;
         else if(CurrentOrder.orderType == orderType.Special)
             FinishedSpecialOrders++;
-        CurrentOrder = null;
-
+        
         //依頼完了時所持金の処理
         Storage.Gold += CurrentOrder.reward;
+
+        CurrentOrder = null;
+
         UpdateWorldRank();
     }
 

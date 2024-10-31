@@ -130,6 +130,7 @@ public class ItemDetailDialog : MonoBehaviour
         materialDescription.text = currentShopDetail.material.Description;
         stockNum.text = $"在庫: {currentShopDetail.amount}/{currentShopDetail.initAmount}";
         ownEdgeImage.color=originalColor;
+        buyButton.GetComponentInChildren<Text>().text = "購入";
 
         // スライダーの設定
         maxQuantity = Mathf.Min(currentShopDetail.amount,
