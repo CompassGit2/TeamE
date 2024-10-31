@@ -40,6 +40,20 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    // アイテムを収集するメソッド
+    public void CollectItem(MaterialData item)
+    {
+        if (item != null)
+        {
+            AddItemById(item.Id); // アイテムをインベントリに追加
+            Debug.Log($"アイテムを収集しました: {item.Name}");
+        }
+        else
+        {
+            Debug.LogError("収集するアイテムがnullです。");
+        }
+    }
+
     void CreateSlot(MaterialStack stack)
     {
         if (stack == null)
