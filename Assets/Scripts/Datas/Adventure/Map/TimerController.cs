@@ -23,7 +23,7 @@ public class TimerController : MonoBehaviour
         if (timeRemaining <= 0)
         {
             timeRemaining = 0;
-            MoveInventoryItemsToStorage(); // ƒCƒ“ƒxƒ“ƒgƒŠ‚ÌƒAƒCƒeƒ€‚ðƒXƒgƒŒ[ƒW‚ÉˆÚ“®
+            MoveInventoryItemsToStorage(); // ï¿½Cï¿½ï¿½ï¿½xï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ÌƒAï¿½Cï¿½eï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½[ï¿½Wï¿½ÉˆÚ“ï¿½
             SceneManager.LoadScene("ResultScene");
         }
         UpdateTimerUI();
@@ -42,11 +42,13 @@ public class TimerController : MonoBehaviour
 
         if (inventory != null)
         {
+            ResultScene.GetItems.AddItems(inventory.GetInventoryItems());
             foreach (var item in inventory.GetInventoryItems())
             {
+                
                 Storage.AddMaterial(item.material, item.amount);
             }
-            inventory.ClearInventory(); // ƒCƒ“ƒxƒ“ƒgƒŠ‚ðƒNƒŠƒA‚·‚é
+            inventory.ClearInventory(); // ï¿½Cï¿½ï¿½ï¿½xï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½
         }
     }
 }
