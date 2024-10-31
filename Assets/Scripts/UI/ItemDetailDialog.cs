@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using Data;
-using UnityEditor.AssetImporters;
 
 
 public class ItemDetailDialog : MonoBehaviour
