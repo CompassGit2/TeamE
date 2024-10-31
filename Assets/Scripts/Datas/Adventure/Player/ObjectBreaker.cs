@@ -48,11 +48,12 @@ public class ObjectBreaker : MonoBehaviour
                         Debug.Log("�j�󉹂��Đ����܂���");
                     }
                 }
-
+               
                 // �j���Ƀt���O�ƃ^�C�}�[�����Z�b�g
                 canBreak = false;
                 targetObject = null;
                 holdTimer = 0f;
+                
             }
         }
         else if (Input.GetMouseButtonUp(0))
@@ -74,6 +75,7 @@ public class ObjectBreaker : MonoBehaviour
     {
         if (collision.gameObject == targetObject)
         {
+            miningSliderObj.SetActive(false);
             canBreak = false;
             targetObject = null;
             holdTimer = 0f;
