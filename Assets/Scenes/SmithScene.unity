@@ -1484,6 +1484,7 @@ MonoBehaviour:
   hammer: {fileID: 786390464}
   comboText: {fileID: 793490918}
   bonusText: {fileID: 0}
+  comboAnimator: {fileID: 793490920}
 --- !u!1 &382597588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,6 +3693,7 @@ GameObject:
   - component: {fileID: 793490916}
   - component: {fileID: 793490919}
   - component: {fileID: 793490918}
+  - component: {fileID: 793490920}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3741,20 +3743,20 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 703d2765bf49c124c841909a45907cef, type: 2}
-  m_sharedMaterial: {fileID: -5217558135822294345, guid: 703d2765bf49c124c841909a45907cef, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e515d2866da0a234c9a19820e3b7caa4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+    rgba: 4279894015
+  m_fontColor: {r: 1, g: 0.9997935, b: 0.09803921, a: 1}
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 0, b: 0, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
@@ -3815,6 +3817,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793490915}
   m_CullTransparentMesh: 1
+--- !u!95 &793490920
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793490915}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87ddd4711ac8da14ea410a51e708d462, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &801229697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8990683771390958925, guid: 015d1ab851608c443b9c429c29ff63c1, type: 3}
@@ -5798,9 +5821,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 317990443}
     m_Modifications:
-    - target: {fileID: 800517543764396798, guid: 8728d39b431602444ba5948988955aa8, type: 3}
-      propertyPath: m_text
-      value: 100.0%
+    - target: {fileID: 3496941952802559846, guid: 8728d39b431602444ba5948988955aa8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496941952802559846, guid: 8728d39b431602444ba5948988955aa8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4222852910649759715, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_Name
@@ -5809,14 +5836,6 @@ PrefabInstance:
     - target: {fileID: 4222852910649759715, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579715520819239890, guid: 8728d39b431602444ba5948988955aa8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 184.3035
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579715520819239890, guid: 8728d39b431602444ba5948988955aa8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 104.82957
       objectReference: {fileID: 0}
     - target: {fileID: 6847246802068351597, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_Pivot.x
@@ -5848,7 +5867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6847246802068351597, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -256
+      value: -171.6817
       objectReference: {fileID: 0}
     - target: {fileID: 6847246802068351597, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_LocalPosition.x
