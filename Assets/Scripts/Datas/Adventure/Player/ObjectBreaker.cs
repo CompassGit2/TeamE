@@ -5,16 +5,11 @@ using UnityEngine;
 public class ObjectBreaker : MonoBehaviour
 {
     public AudioClip destroyedSound; // 破壊完了時の効果音
-    private AudioSource audioSource;
     private GameObject targetObject; // 破壊対象のオブジェクト
     private bool canBreak = false; // 破壊可能かどうかのフラグ
     public float holdTime = 3f; // 長押しに必要な時間
     private float holdTimer = 0f;
 
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     void Update()
     {
@@ -25,15 +20,21 @@ public class ObjectBreaker : MonoBehaviour
 
             if (holdTimer >= holdTime)
             {
-                Destroy(targetObject);
-                Debug.Log("物体を破壊しました");
-
-                // 破壊完了時の効果音を再生
-                audioSource.Stop(); // 破壊中の音を停止
-                if (destroyedSound != null)
+                // 破壊音を再生
+                AudioSource targetAudioSource = targetObject.GetComponent<AudioSource>();
+                if (targetAudioSource != null && destroyedSound != null)
                 {
-                    audioSource.PlayOneShot(destroyedSound);
+                    targetAudioSource.PlayOneShot(destroyedSound); // 破壊音を再生
+                    Debug.Log("破壊音を再生しました"); // デバッグログ追加
                 }
+                else
+                {
+                    Debug.LogWarning("破壊音の再生に失敗しました"); // エラーログ追加
+                }
+
+
+                Destroy(targetObject); // オブジェクトを破壊
+                Debug.Log("物体を破壊しました");
 
                 // 破壊後にフラグとタイマーをリセット
                 canBreak = false;
@@ -41,32 +42,27 @@ public class ObjectBreaker : MonoBehaviour
                 holdTimer = 0f;
             }
         }
-        else if (Input.GetMouseButtonUp(0)) 
+        else if (Input.GetMouseButtonUp(0))
         {
-            holdTimer = 0f;
-            audioSource.Stop();
+            holdTimer = 0f; // タイマーリセット
         }
     }
-
-    // 判定エリアに入った時にフラグを設定
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Destructible")) 
+        if (collision.gameObject.CompareTag("Destructible"))
         {
             targetObject = collision.gameObject;
             canBreak = true;
         }
     }
 
-    // 判定エリアから出た時にフラグをリセット
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject == targetObject)
         {
             canBreak = false;
             targetObject = null;
-            holdTimer = 0f; // エリア外に出たらタイマーもリセット
-            audioSource.Stop();
+            holdTimer = 0f;
         }
     }
 }

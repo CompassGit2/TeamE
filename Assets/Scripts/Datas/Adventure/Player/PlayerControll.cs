@@ -8,9 +8,8 @@ public class PlayerControll : MonoBehaviour
     public float Maxspeed;
     public Animator animator;
     public GameObject inventoryUI;
-    public GameObject descriptionText;
     private bool isInventoryOpen = false;
-    public AudioSource WalkAudio;
+    public AudioSource WalkAudio; // プレイヤーの足音用のAudioSource
     private Rigidbody2D rb;
     private KeyCode currentKey = KeyCode.None;
     private float lastMoveX = 0.0f;
@@ -28,7 +27,6 @@ public class PlayerControll : MonoBehaviour
         {
             isInventoryOpen = !isInventoryOpen;  // 開閉をトグル
             inventoryUI.SetActive(isInventoryOpen);  // インベントリUIの表示を切り替え
-            descriptionText.SetActive(isInventoryOpen);
         }
         if (isInventoryOpen)
         {
@@ -123,13 +121,5 @@ public class PlayerControll : MonoBehaviour
         {
             rb.velocity = rb.velocity.normalized * Maxspeed;
         }
-
-        
     }
 }
-
-        
-
-    
-
-
