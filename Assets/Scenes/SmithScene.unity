@@ -7792,6 +7792,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3960050335511771929, guid: 8728d39b431602444ba5948988955aa8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
     - target: {fileID: 4222852910649759715, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_Name
       value: Result
@@ -7799,6 +7803,10 @@ PrefabInstance:
     - target: {fileID: 4222852910649759715, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786806600395735555, guid: 8728d39b431602444ba5948988955aa8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 6847246802068351597, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_Pivot.x
@@ -7879,6 +7887,10 @@ PrefabInstance:
     - target: {fileID: 6847246802068351597, guid: 8728d39b431602444ba5948988955aa8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183203895264064858, guid: 8728d39b431602444ba5948988955aa8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

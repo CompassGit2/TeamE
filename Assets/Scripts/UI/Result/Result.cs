@@ -8,6 +8,7 @@ namespace SmithScene.Result
 {
     public class Result : MonoBehaviour
     {
+        [SerializeField] Animator animator;
         public TextMeshProUGUI RankText;
         public TextMeshProUGUI weaponNameText;
         public TextMeshProUGUI qualityText;
@@ -36,7 +37,7 @@ namespace SmithScene.Result
             weightText.text = _weapon.weapon.Weight.ToString();
             sharpnessText.text = _weapon.weapon.Sharpness.ToString(); 
             SwordImage.sprite = _weapon.weapon.WeaponImage;
-
+            animator.SetBool("Win",true);
 
             if (_weapon.bonus <= 5)
             {
@@ -71,6 +72,8 @@ namespace SmithScene.Result
             RankText.text = "D";
             WeaponPanel.SetActive(false);
             LosePanel.SetActive(true);
+            gameObject.SetActive(true);
+            animator.SetBool("Lose",true);
         }
 
         //ID?��ő{?��?��?��o?��[?��W?��?��?��?��

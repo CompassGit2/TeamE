@@ -917,7 +917,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -196, y: 145.58}
-  m_SizeDelta: {x: 295.64, y: 60.3048}
+  m_SizeDelta: {x: 295.64, y: 63.576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1257406630318465289
 CanvasGroup:
@@ -1389,7 +1389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4326076649977799602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2310,6 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbfd36e85021d1428c6a5c8a47aaade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4558921932105577977}
   RankText: {fileID: 9183203895264064858}
   weaponNameText: {fileID: 3960050335511771929}
   qualityText: {fileID: 800517543764396798}
