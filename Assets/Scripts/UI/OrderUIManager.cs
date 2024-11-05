@@ -3,8 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using Data;
 using Data.Database;
-using System.Linq;
-using Unity.VisualScripting;
+using TMPro;
 
 public class OrderUIManager : MonoBehaviour
 {
@@ -71,7 +70,7 @@ public class OrderUIManager : MonoBehaviour
         Debug.Log("今依頼を受注した");
         RefreshOrderList();
         //
-        ConfirmButtonInvisiable();
+        ConfirmButtonInvisible();
     }
 
     private void CheckVerifiedWeapon()
@@ -102,7 +101,7 @@ public class OrderUIManager : MonoBehaviour
         {
             RefreshOrderList();
             // 依頼選択ボタンの色を変更
-            ConfirmButtonInvisiable();
+            ConfirmButtonInvisible();
             // 依頼受けているかの表示を更新
             currentOrderStatus.gameObject.SetActive(false);
         }
@@ -215,11 +214,11 @@ public class OrderUIManager : MonoBehaviour
         GameObject orderUI = Instantiate(orderUIPrefab, orderContainer);
         
         // 基本情報の設定
-        Text orderTypeText = orderUI.transform.Find("OrderTypeText").GetComponent<Text>();
+        TextMeshProUGUI orderTypeText = orderUI.transform.Find("OrderTypeText").GetComponent<TextMeshProUGUI>();
         //Text rewardText = orderUI.transform.Find("RewardText").GetComponent<Text>();
-        Text descriptionText = orderUI.transform.Find("DescriptionText").GetComponent<Text>();
+        TextMeshProUGUI descriptionText = orderUI.transform.Find("DescriptionText").GetComponent<TextMeshProUGUI>();
         Image orderIcon = orderUI.transform.Find("OrderIcon").GetComponent<Image>();
-        Text requirementTypeText=orderUI.transform.Find("RequirementTypeText").GetComponent<Text>();
+        TextMeshProUGUI requirementTypeText=orderUI.transform.Find("RequirementTypeText").GetComponent<TextMeshProUGUI>();
 
         orderTypeText.text = order.orderType == orderType.Normal ? "通常依頼" : "昇級依頼";
         descriptionText.text = order.description;
@@ -227,7 +226,7 @@ public class OrderUIManager : MonoBehaviour
         //requirementTypeText.text=order.RequirementType.ToString();
         requirementTypeText.text = order.RequirementType switch
         {
-            requirements.ByName => $"名前指定：{order.WeaponName}",
+            requirements.ByData => $"名前指定：{order.WeaponName}",
             requirements.Rarity => $"レア度指定：{order.RequiredRarity}",
             requirements.SpecSpecifications => $"スペック指定",
             //$"長さ指定:{order.Requirements.requiredLength} " +
@@ -253,7 +252,7 @@ public class OrderUIManager : MonoBehaviour
         if(SelectedOrder == order)
         {
             SelectedOrder = null;
-            ConfirmButtonInvisiable();
+            ConfirmButtonInvisible();
             confirmButton.onClick.RemoveListener(ConfirmOrder);
         }
         else
@@ -287,7 +286,7 @@ public class OrderUIManager : MonoBehaviour
             
     }
 
-    public void ConfirmButtonInvisiable()
+    public void ConfirmButtonInvisible()
     {
         Color buttonColor = confirmButton.image.color;
         Color textColor = confirmButton.GetComponentInChildren<Text>().color;
@@ -349,7 +348,7 @@ public class OrderUIManager : MonoBehaviour
 
         return order.RequirementType switch
         {
-            requirements.ByName => weapon.weapon.Name == order.WeaponName,
+            requirements.ByData => weapon.weapon.Name == order.WeaponName,
             requirements.Rarity => weapon.weapon.Rarity == order.RequiredRarity,
             requirements.SpecSpecifications => 
                 weapon.weapon.Weight >= order.Requirements.requiredWeight &&

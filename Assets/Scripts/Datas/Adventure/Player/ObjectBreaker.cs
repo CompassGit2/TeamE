@@ -75,7 +75,10 @@ public class ObjectBreaker : MonoBehaviour
     {
         if (collision.gameObject == targetObject)
         {
-            miningSliderObj.SetActive(false);
+            if(miningSliderObj)
+            {
+                miningSliderObj.SetActive(false);
+            }
             canBreak = false;
             targetObject = null;
             holdTimer = 0f;

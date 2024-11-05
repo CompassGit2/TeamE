@@ -228,7 +228,7 @@ public class IntegratedShopUIManager : MonoBehaviour
 
         return currentOrder.RequirementType switch
         {
-            requirements.ByName => weapon.weapon.Name == currentOrder.WeaponName,
+            requirements.ByData => weapon.weapon.Name == currentOrder.WeaponName,
             requirements.Rarity => weapon.weapon.Rarity == currentOrder.RequiredRarity,
             requirements.SpecSpecifications => false,
             _ => false,

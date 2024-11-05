@@ -9,87 +9,88 @@ public class PlayerControll : MonoBehaviour
     public Animator animator;
     public GameObject inventoryUI;
     private bool isInventoryOpen = false;
-    public AudioSource WalkAudio; // ƒvƒŒƒCƒ„[‚Ì‘«‰¹—p‚ÌAudioSource
+    public AudioSource WalkAudio; // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½Ì‘ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½AudioSource
     private Rigidbody2D rb;
     private KeyCode currentKey = KeyCode.None;
     private float lastMoveX = 0.0f;
-    private float lastMoveY = -1.0f; // ƒfƒtƒHƒ‹ƒg‚Í‰º‚ğŒü‚­
+    private float lastMoveY = -1.0f; // ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Í‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // EƒL[‚ª‰Ÿ‚³‚ê‚½‚çƒCƒ“ƒxƒ“ƒgƒŠ‚ğŠJ•Â
+        // Eï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½Cï¿½ï¿½ï¿½xï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½
         if (Input.GetKeyDown(KeyCode.E))
         {
-            isInventoryOpen = !isInventoryOpen;  // ŠJ•Â‚ğƒgƒOƒ‹
-            inventoryUI.SetActive(isInventoryOpen);  // ƒCƒ“ƒxƒ“ƒgƒŠUI‚Ì•\¦‚ğØ‚è‘Ö‚¦
+            isInventoryOpen = !isInventoryOpen;  // ï¿½Jï¿½Â‚ï¿½ï¿½gï¿½Oï¿½ï¿½
+            inventoryUI.SetActive(isInventoryOpen);  // ï¿½Cï¿½ï¿½ï¿½xï¿½ï¿½ï¿½gï¿½ï¿½UIï¿½Ì•\ï¿½ï¿½ï¿½ï¿½Ø‚ï¿½Ö‚ï¿½
         }
         if (isInventoryOpen)
         {
-            return; // ˆÚ“®ˆ—‚ğs‚í‚È‚¢
+            return; // ï¿½Ú“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½È‚ï¿½
         }
 
-        // …•½•ûŒü‚Æ‚’¼•ûŒü‚Ì“ü—Í‚ğæ“¾
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì“ï¿½ï¿½Í‚ï¿½ï¿½æ“¾
         float moveHorizontal = 0.0f;
         float moveVertical = 0.0f;
 
-        // Œ»İ‚ÌƒL[“ü—Í‚ª–³Œø‚Å‚ ‚ê‚ÎAV‚µ‚¢“ü—Í‚ğó‚¯•t‚¯‚é
+        // ï¿½ï¿½ï¿½İ‚ÌƒLï¿½[ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ÎAï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ó‚¯•tï¿½ï¿½ï¿½ï¿½
         if (currentKey == KeyCode.None)
         {
             if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             {
                 currentKey = KeyCode.W;
-                moveVertical = 1.0f;  // ãˆÚ“®
+                moveVertical = 1.0f;  // ï¿½ï¿½Ú“ï¿½
             }
             else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             {
                 currentKey = KeyCode.S;
-                moveVertical = -1.0f;  // ‰ºˆÚ“®
+                moveVertical = -1.0f;  // ï¿½ï¿½ï¿½Ú“ï¿½
             }
             else if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
             {
                 currentKey = KeyCode.A;
-                moveHorizontal = -1.0f;  // ¶ˆÚ“®
+                moveHorizontal = -1.0f;  // ï¿½ï¿½ï¿½Ú“ï¿½
             }
             else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A))
             {
                 currentKey = KeyCode.D;
-                moveHorizontal = 1.0f;  // ‰EˆÚ“®
+                moveHorizontal = 1.0f;  // ï¿½Eï¿½Ú“ï¿½
             }
         }
         else
         {
-            // Œ»İ‚ÌƒL[“ü—Í‚ğ•Û
+            // ï¿½ï¿½ï¿½İ‚ÌƒLï¿½[ï¿½ï¿½ï¿½Í‚ï¿½Ûï¿½
             if (Input.GetKey(currentKey))
             {
                 switch (currentKey)
                 {
                     case KeyCode.W:
-                        moveVertical = 1.0f;  // ãˆÚ“®
+                        moveVertical = 1.0f;  // ï¿½ï¿½Ú“ï¿½
                         break;
                     case KeyCode.S:
-                        moveVertical = -1.0f;  // ‰ºˆÚ“®
+                        moveVertical = -1.0f;  // ï¿½ï¿½ï¿½Ú“ï¿½
                         break;
                     case KeyCode.A:
-                        moveHorizontal = -1.0f;  // ¶ˆÚ“®
+                        moveHorizontal = -1.0f;  // ï¿½ï¿½ï¿½Ú“ï¿½
                         break;
                     case KeyCode.D:
-                        moveHorizontal = 1.0f;  // ‰EˆÚ“®
+                        moveHorizontal = 1.0f;  // ï¿½Eï¿½Ú“ï¿½
                         break;
                 }
             }
             else
             {
-                // Œ»İ‚ÌƒL[‚ª•ú‚³‚ê‚½‚çAƒL[“ü—Í‚ğƒŠƒZƒbƒg
+                // ï¿½ï¿½ï¿½İ‚ÌƒLï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½Aï¿½Lï¿½[ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
                 currentKey = KeyCode.None;
             }
         }
 
-        // ƒAƒjƒ[ƒVƒ‡ƒ“‚Ìƒpƒ‰ƒ[ƒ^‚ğİ’è
+        // ï¿½Aï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ìƒpï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½^ï¿½ï¿½İ’ï¿½
         int speedValue = (int)(Mathf.Abs(moveHorizontal) + Mathf.Abs(moveVertical));
         animator.SetInteger("Speed", speedValue);
 
@@ -97,26 +98,26 @@ public class PlayerControll : MonoBehaviour
         {
             lastMoveX = moveHorizontal;
             lastMoveY = moveVertical;
-            if (!WalkAudio.isPlaying) // ‘«‰¹‚ğÄ¶
+            if (!WalkAudio.isPlaying) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½
             {
                 WalkAudio.Play();
             }
         }
         else
         {
-            WalkAudio.Stop(); // ‘«‰¹‚ğ’â~
+            WalkAudio.Stop(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~
         }
 
         animator.SetFloat("MoveX", lastMoveX);
         animator.SetFloat("MoveY", lastMoveY);
 
-        // ƒvƒŒƒCƒ„[‚ÌˆÚ“®‚ğAddForce‚ÅÀs
+        // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½ÌˆÚ“ï¿½ï¿½ï¿½AddForceï¿½Åï¿½ï¿½s
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized * speed;
 
-        // —Í‚ğ‰Á‚¦‚é
+        // ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         rb.AddForce(movement);
 
-        // Å‘å‘¬“x‚ğ’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é
+        // ï¿½Å‘å‘¬ï¿½xï¿½ğ’´‚ï¿½ï¿½È‚ï¿½ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
         if (rb.velocity.magnitude > Maxspeed)
         {
             rb.velocity = rb.velocity.normalized * Maxspeed;

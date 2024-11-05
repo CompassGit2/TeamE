@@ -1,32 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Data;
+using TMPro;
 
 
 public class ItemDetailDialog : MonoBehaviour
 {
     //[SerializeField]
-    private IntegratedShopUIManager IntegratedshopUIManager;
+    private IntegratedShopUIManager integratedShopUIManager;
 
     [Header("UI References")]
     private Image ownEdgeImage;
-    private Text sliderText;
-    private Text stockNum;
-    private Text minNum;
-    private Text maxNum;
-    private Text materialTitle;
-    private Text materialDescription;
-    private Image materialImage;
-    private Button increaseButton;
-    private Button decreaseButton;
-    private Button buyButton;
-    private Button cancelButton;
-    private Slider slider;
-    private GameObject handleSlideArea;
-    private Text priceText;
-    private GameObject blocker;
-    //private Text quantityText;
-   
+    [SerializeField] private TextMeshProUGUI materialTitle;
+    [SerializeField] private TextMeshProUGUI materialDescription;
+    [SerializeField] private Image materialImage;
+    [SerializeField] private TextMeshProUGUI priceText;
+    [SerializeField] private Button buyButton;
+    [SerializeField] private Button cancelButton;
+    [SerializeField] private TextMeshProUGUI sliderText;
+
+    [SerializeField] private GameObject materialPropertiesObj;
+    [SerializeField] private TextMeshProUGUI stockNum;
+    [SerializeField] private TextMeshProUGUI minNum;
+    [SerializeField] private TextMeshProUGUI maxNum;
+    [SerializeField] private Button increaseButton;
+    [SerializeField] private Button decreaseButton;
+    [SerializeField] private Slider slider;
+
+    private GameObject blocker;   
     private ShopDetail currentShopDetail;
     private Weapon currentWeapon;
     private bool isMaterialPurchase; // true = 素材購入, false = 武器販売
@@ -42,39 +43,14 @@ public class ItemDetailDialog : MonoBehaviour
         ownEdgeImage = GetComponent<Image>();
         originalColor = ownEdgeImage.color;
 
-        //必要なコンポーネントの参照を取得する
-        // SliderTextは階層が深いので、Find で順に探す
-        sliderText = transform.Find("BuyMenuPaper/Slider/SliderText").GetComponent<Text>();
-        handleSlideArea=transform.Find("BuyMenuPaper/Handle Slide Area").gameObject;
-        priceText=transform.Find("BuyMenuPaper/PriceText").GetComponent<Text>();
-
-        // 各テキストコンポーネントの取得
-        stockNum = transform.Find("BuyMenuPaper/StockNum").GetComponent<Text>();
-        minNum = transform.Find("BuyMenuPaper/MinNum").GetComponent<Text>();
-        maxNum = transform.Find("BuyMenuPaper/MaxNum").GetComponent<Text>();
-        materialTitle = transform.Find("BuyMenuPaper/MaterialTitle").GetComponent<Text>();
-        materialDescription = transform.Find("BuyMenuPaper/MaterialDescription").GetComponent<Text>();
-
-        // Image コンポーネントの取得
-        materialImage = transform.Find("BuyMenuPaper/MaterialImage").GetComponent<Image>();
-
-        // Button コンポーネントの取得
-        increaseButton = transform.Find("BuyMenuPaper/IncreaseButton").GetComponent<Button>();
-        decreaseButton = transform.Find("BuyMenuPaper/DecreaseButton").GetComponent<Button>();
-        buyButton = transform.Find("BuyMenuPaper/BuyButton_UI").GetComponent<Button>();
-        cancelButton = transform.Find("CancelButton").GetComponent<Button>();
-
-        // Slider コンポーネントの取得
-        slider = transform.Find("BuyMenuPaper/Slider").GetComponent<Slider>();
-
         //IntegratedShopUIManagerの参照をセット
-        IntegratedshopUIManager = FindObjectOfType<IntegratedShopUIManager>();
+        integratedShopUIManager = FindObjectOfType<IntegratedShopUIManager>();
 
         //ブロッカーの取得
-        blocker = IntegratedshopUIManager.blocker;
+        blocker = integratedShopUIManager.blocker;
         
        // ボタンのイベントリスナーを設定
-       increaseButton.onClick.AddListener(IncreaseQuantity);
+        increaseButton.onClick.AddListener(IncreaseQuantity);
         decreaseButton.onClick.AddListener(DecreaseQuantity);
         buyButton.onClick.AddListener(OnBuyButtonClicked);
         cancelButton.onClick.AddListener(OnCancelButtonClicked);
@@ -83,7 +59,7 @@ public class ItemDetailDialog : MonoBehaviour
         slider.onValueChanged.AddListener(OnSliderValueChanged);
     }
 
- 　void OnDisable()
+    void OnDisable()
     {
         currentQuantity = 1;
         //Destroy(gameObject, 0.1f);
@@ -131,12 +107,11 @@ public class ItemDetailDialog : MonoBehaviour
         buyButton.GetComponentInChildren<Text>().text = "購入";
 
         // スライダーの設定
-        maxQuantity = Mathf.Min(currentShopDetail.amount,
-            Storage.Gold / currentShopDetail.material.Price); // 所持金による制限も考慮
+        maxQuantity = Mathf.Min(currentShopDetail.amount, Storage.Gold / currentShopDetail.material.Price); // 所持金による制限も考慮
         maxNum.text = maxQuantity.ToString();
         slider.minValue = 1;
         slider.maxValue = maxQuantity;
-        Debug.Log($"Slider max value: {maxQuantity}");
+        // Debug.Log($"Slider max value: {maxQuantity}");
         slider.value = 1;
 
         UpdateQuantityUI();
@@ -175,25 +150,11 @@ public class ItemDetailDialog : MonoBehaviour
 
     public void ActivateButtonsforMaterialUI()
     {
-        increaseButton.gameObject.SetActive(true);
-        decreaseButton.gameObject.SetActive(true);
-        slider.gameObject.SetActive(true);
-        //transform.Find("BuyMenuPaper/Handle Slide Area").gameObject.SetActive(true);
-        handleSlideArea.SetActive(true);
-        stockNum.gameObject.SetActive(true);
-        minNum.gameObject.SetActive(true);
-        maxNum.gameObject.SetActive(true);
+        materialPropertiesObj.SetActive(true);
     }
     public void DeactiavteButtonsforWeaponUI()
     {
-        increaseButton.gameObject.SetActive(false);
-        decreaseButton.gameObject.SetActive(false);
-        slider.gameObject.SetActive(false);
-        //transform.Find("BuyMenuPaper/Handle Slide Area").gameObject.SetActive(false);
-        handleSlideArea.SetActive(false);
-        stockNum.gameObject.SetActive(false);
-        minNum.gameObject.SetActive(false);
-        maxNum.gameObject.SetActive(false);
+        materialPropertiesObj.SetActive(false);
     }
 
     private void UpdateQuantityUI()
@@ -201,7 +162,7 @@ public class ItemDetailDialog : MonoBehaviour
         currentQuantity = Mathf.RoundToInt(slider.value);
         
         if (isMaterialPurchase)//購入時のみ数量を表示する
-            sliderText.text = $"購入数:{currentQuantity.ToString()}";
+            sliderText.text = $"購入数:{currentQuantity}";
             
         else//売却時は表示しない
             sliderText.text = string.Empty;//$"";
@@ -214,12 +175,11 @@ public class ItemDetailDialog : MonoBehaviour
         // 購入ボタンの有効/無効（金の）
         int transactionAmount = isMaterialPurchase
             ? -(currentShopDetail.material.Price * currentQuantity)//素材を買う
-            : currentWeapon.price+currentWeapon.bonus;//剣を売る
+            : currentWeapon.price;//剣を売る
 
-        priceText.text = isMaterialPurchase ? $"{transactionAmount}"
-            :$"+{transactionAmount}";
+        priceText.text = $"{transactionAmount}";
 
-
+        
         if (isMaterialPurchase)//購入の際のみ所持金をチェックする
             //これ実は今いらなくなっている
         {
@@ -253,7 +213,7 @@ public class ItemDetailDialog : MonoBehaviour
         UpdateQuantityUI();
     }
 
-    //以下全部Onclickにより呼び出される処理
+    //以下全部onClickにより呼び出される処理
     private void OnBuyButtonClicked()
     {
         if (isMaterialPurchase)
@@ -266,15 +226,15 @@ public class ItemDetailDialog : MonoBehaviour
                 Storage.AddMaterial(currentShopDetail.material, currentQuantity);
                 currentShopDetail.amount -= currentQuantity;
             }
-            IntegratedshopUIManager.CreateMaterialShopUI();
+            integratedShopUIManager.CreateMaterialShopUI();
         }
         else
         {
             // 武器販売処理
-                Storage.Gold += (currentWeapon.price+currentWeapon.bonus);
-                Storage.RemoveWeapon(currentWeapon);
-                Debug.Log("売却ボタン押下" + Storage.Weapons.Count);
-                IntegratedshopUIManager.CreateWeaponShopUI();
+            Storage.Gold += currentWeapon.price;
+            Storage.RemoveWeapon(currentWeapon);
+            // Debug.Log("売却ボタン押下" + Storage.Weapons.Count);
+            integratedShopUIManager.CreateWeaponShopUI();
         }
 
         //ブロッカーを消す

@@ -16,12 +16,12 @@ MonoBehaviour:
   Name: John's Order
   OrderImage: {fileID: 21300000, guid: ae6749d495a9b304abf44a509b0d1716, type: 3}
   OrderType: 0
-  Reward: 10
-  Description: "Unity\u306EUI\u3067\u9577\u3044\u30C6\u30AD\u30B9\u30C8\u3092\u30B9\u30AF\u30ED\u30FC\u30EB\u53EF\u80FD\u306B\u3059\u308B\u306B\u306F"
+  Reward: 100
+  Description: "\u65B0\u3057\u304F\u935B\u51B6\u5C4B\u3092\u59CB\u3081\u305F\u3093\u3060\u3063\u3066\uFF1F\n\u3058\u3083\u3042\u3068\u308A\u3042\u3048\u305A\u9244\u306E\u5263\u3092\u4F5C\u3063\u3066\u304F\u308C\u3088\u3002"
   requirementType: 0
   Rank: 0
   IsCompleted: 0
-  weaponName: "\u9244\u306E\u5263"
+  weaponData: {fileID: 11400000, guid: 9c89a908dc4cd8748940bff9e9c55160, type: 2}
   weaponRequirements:
     checkLength: 0
     checkWeight: 0

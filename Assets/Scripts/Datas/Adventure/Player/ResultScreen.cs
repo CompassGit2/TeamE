@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ResultScreen : MonoBehaviour
 {
+    /*
     public GameObject itemSlotPrefab;
     public Transform resultPanel;
 
@@ -18,7 +19,7 @@ public class ResultScreen : MonoBehaviour
     {
         foreach (Transform child in resultPanel)
         {
-            Destroy(child.gameObject); // Œ»İ‚ÌƒXƒƒbƒg‚ğíœ
+            Destroy(child.gameObject); // ï¿½ï¿½ï¿½İ‚ÌƒXï¿½ï¿½ï¿½bï¿½gï¿½ï¿½ï¿½íœ
         }
 
         foreach (var stack in GameManager.Instance.collectedItems)
@@ -40,7 +41,8 @@ public class ResultScreen : MonoBehaviour
 
         if (textComponent != null)
         {
-            textComponent.text = $"{stack.material.Name} (~{stack.amount})"; // ŒÂ”‚ğ•\¦
+            textComponent.text = $"{stack.material.Name} (ï¿½~{stack.amount})"; // ï¿½Âï¿½ï¿½ï¿½\ï¿½ï¿½
         }
     }
+    */
 }

@@ -20,11 +20,8 @@ namespace Data
         [SerializeField] private string Description;//依頼の詳細
         [SerializeField] private requirements requirementType;//依頼条件
         [SerializeField] private int Rank;//依頼のランク＝世界ランクと同じ
-        [SerializeField] private bool IsCompleted;//依頼が完了したかどうかのフラグ
         public requirements RequirementType => requirementType;//要求方式のゲッター’
         public int rank=>Rank;//レア度のゲッター
-        public bool isCompleted => IsCompleted;//完了フラグのゲッター
-        public void SetCompleted(bool isCompleted) => IsCompleted = isCompleted;//完了フラグのセッター
         public orderType orderType => OrderType;//依頼種類のゲッター
         public int reward => Reward;//報酬金額のゲッター
         public string description => Description;
@@ -32,8 +29,8 @@ namespace Data
         ///<summary>
         /// 以下依頼条件のカスタムインスペクタービューに関する設定↓
         /// </summary>
-        [SerializeField] private string weaponName;//武器名による直接指名時に現れる
-        public string WeaponName => weaponName;//武器名による直接指名時に現れる
+        [SerializeField] private WeaponData weaponData;//武器名による直接指名時に現れる
+        public string WeaponName => weaponData.Name;//武器名による直接指名時に現れる
 
         [System.Serializable]
         public class WeaponRequirements
@@ -56,8 +53,8 @@ namespace Data
         public bool CheckWeaponRequirements(WeaponData weapon)
         {
             switch(requirementType){
-                case requirements.ByName:
-                    return weapon.Name == weaponName;
+                case requirements.ByData:
+                    return weapon.Name == weaponData.Name;
 
                 case requirements.SpecSpecifications:
                     if (weaponRequirements.checkLength && weapon.Length <= weaponRequirements.requiredLength)
@@ -95,7 +92,7 @@ namespace Data
     }
     public enum requirements
     {
-        ByName,//武器名による直接指名
+        ByData,//武器名による直接指名
         SpecSpecifications,//武器スペックに対して要求を出す
         Rarity//レア度に対して要求を出す
     }

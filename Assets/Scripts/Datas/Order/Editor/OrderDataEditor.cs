@@ -8,7 +8,7 @@ public class OrderDataEditor : Editor
 {
     private SerializedProperty requirementType;
     // 直接指名用
-    private SerializedProperty weaponName;
+    private SerializedProperty weaponData;
     // スペック要求用
     private SerializedProperty weaponRequirements;
     // レア度指定用
@@ -17,7 +17,7 @@ public class OrderDataEditor : Editor
     private void OnEnable()
     {
         requirementType = serializedObject.FindProperty("requirementType");
-        weaponName = serializedObject.FindProperty("weaponName");
+        weaponData = serializedObject.FindProperty("weaponData");
         weaponRequirements = serializedObject.FindProperty("weaponRequirements");
         requiredRarity = serializedObject.FindProperty("requiredRarity");
     }
@@ -28,7 +28,7 @@ public class OrderDataEditor : Editor
 
         // 基本プロパティの描画
         DrawPropertiesExcluding(serializedObject, new string[] { 
-            "weaponName", 
+            "weaponData", 
             "weaponRequirements", 
             "requiredRarity" 
         });
@@ -39,7 +39,7 @@ public class OrderDataEditor : Editor
         // 選択された要求タイプに基づいて対応するUIを表示
         switch ((requirements)requirementType.enumValueIndex)
         {
-            case requirements.ByName:
+            case requirements.ByData:
                 DrawDirectNameRequirement();
                 break;
 
@@ -61,7 +61,7 @@ public class OrderDataEditor : Editor
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
         EditorGUILayout.HelpBox("武器の名前を直接指定してください", MessageType.Info);
         
-        EditorGUILayout.PropertyField(weaponName, new GUIContent("武器の名前"));
+        EditorGUILayout.PropertyField(weaponData, new GUIContent("武器の名前"));
         
         EditorGUILayout.EndVertical();
     }
