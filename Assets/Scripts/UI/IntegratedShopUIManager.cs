@@ -43,9 +43,11 @@ public class IntegratedShopUIManager : MonoBehaviour
         closeButton.onClick.AddListener(CloseWindow);
         shopDatabase.Initialize();//データベースの初期化
         //テスト用↓※後で消して！
+        /*
         Weapon weapon1 = new Weapon(weaponDatabase.GetWeaponData("鉄の剣"), 100, 10, 100);
         Storage.AddWeapon(weapon1);
         Debug.Log("新しい剣が生成されました");
+        */
     }
 
     void OnEnable()
