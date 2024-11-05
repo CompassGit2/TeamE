@@ -1146,11 +1146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3526040082250940008, guid: 2a0b0c4350c92c74ba28f4e14d8762cb, type: 3}
       propertyPath: speed
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3526040082250940008, guid: 2a0b0c4350c92c74ba28f4e14d8762cb, type: 3}
       propertyPath: Maxspeed
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3526040082250940008, guid: 2a0b0c4350c92c74ba28f4e14d8762cb, type: 3}
       propertyPath: walkSound
