@@ -1,18 +1,19 @@
-using FancyScrollView;
+using Data;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using Data;
+using FancyScrollView;
+using CommonUI;
 
-namespace SmithScene.SelectMaterial
+namespace ShopScene
 {
-    class Cell : FancyGridViewCell<MaterialStack, Context>
+    public class MaterialCell : FancyGridViewCell<MaterialStack, Context>
     {
+        [SerializeField] TextMeshProUGUI itemName;
+        [SerializeField] Image itemImage;
+        [SerializeField] TextMeshProUGUI itemPrice;
+        [SerializeField] TextMeshProUGUI stock;
         [SerializeField] Button button;
-        [SerializeField] Image image = default;
-        [SerializeField] TextMeshProUGUI materialName = default;
-        [SerializeField] TextMeshProUGUI amount = default;
-        [SerializeField] TextMeshProUGUI useAmount = default;
 
         public override void Initialize()
         {
@@ -21,11 +22,10 @@ namespace SmithScene.SelectMaterial
 
         public override void UpdateContent(MaterialStack itemData)
         {
-            materialName.text = itemData.material.Name;
-            amount.text = itemData.amount.ToString();
-            image.sprite = itemData.material.MaterialImage;
-
-
+            itemName.text = itemData.material.Name;
+            itemImage.sprite = itemData.material.MaterialImage;
+            itemPrice.text = $"{itemData.material.Price}G";
+            stock.text = $"在庫:{itemData.amount}";
         }
 
         public override void UpdatePosition(float position)
@@ -34,7 +34,5 @@ namespace SmithScene.SelectMaterial
             // position に基づいてスクロールの外観を自由に制御できます
             base.UpdatePosition(position);
         }
-
     }
-
 }

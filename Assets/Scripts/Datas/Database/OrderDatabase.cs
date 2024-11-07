@@ -13,5 +13,19 @@ namespace Data.Database
             return orderList;
         }
 
+        public List<OrderData> GetOrdersByRank(int rank)
+        {
+            List<OrderData> foundOrders = new();
+            foreach (OrderData order in orderList)
+            {
+                if(order.rank == rank)
+                {
+                    foundOrders.Add(order);
+                }
+            }
+
+            return foundOrders;
+        }
+
     }
 }

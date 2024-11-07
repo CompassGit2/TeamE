@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Data{
     public static class Storage
     {
+        /* 素材倉庫 -------------------------------------------------------------------------------- */
         public static List<MaterialStack> Materials
         {
             get => materials;
@@ -11,26 +13,6 @@ namespace Data{
         
         private static List<MaterialStack> materials = new List<MaterialStack>();
 
-        public static List<Weapon> Weapons
-        {
-            get => weapons;
-        }
-        private static List<Weapon> weapons = new List<Weapon>();
-
-        public static int Gold
-        {
-            get => gold;
-            set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException(nameof(value), "Goldは負数になれません.");
-                }
-
-                gold = value;
-            }
-        }
-        private static int gold = 500;
 
         /// <summary>
         /// 倉庫に素材を格納する
@@ -74,6 +56,15 @@ namespace Data{
             }
         }
 
+
+        /* 武器倉庫 -------------------------------------------------------------------------------- */
+        public static List<Weapon> Weapons
+        {
+            get => weapons;
+        }
+        private static List<Weapon> weapons = new List<Weapon>();
+
+
         public static void AddWeapon(Weapon weapon)
         {
             weapons.Add(weapon);
@@ -90,6 +81,63 @@ namespace Data{
             if(weapon != null)
             {
                 weapons.Remove(weapon);
+            }
+        }
+
+
+        /* お金倉庫 -------------------------------------------------------------------------------- */
+        public static int Gold
+        {
+            get => gold;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "Goldは負数になれません.");
+                }
+
+                gold = value;
+            }
+        }
+        private static int gold = 0;
+
+
+        /* 商店在庫 -------------------------------------------------------------------------------- */
+        public static List<MaterialStack> ShopMaterials
+        {
+            get => shopMaterials;
+        }
+        private static List<MaterialStack> shopMaterials = new List<MaterialStack>();
+
+        public static void AddShopMaterial(MaterialData materialData, int amount)
+        {
+            // アイテムがすでにあるか確認
+            MaterialStack stack = shopMaterials.Find(i => i.material == materialData);
+            
+            if (stack != null)
+            {
+                // 既存のアイテムがあれば所持数を増やす
+                stack.amount += amount;
+            }
+            else
+            {
+                // なければ新しいアイテムを追加
+                shopMaterials.Add(new MaterialStack(materialData, amount));
+            }
+        }
+
+        public static void RemoveShopMaterial(MaterialData materialData, int amount)
+        {
+            MaterialStack stack = shopMaterials.Find(i => i.material == materialData);
+
+            if (stack != null)
+            {
+                stack.amount -= amount;
+
+                if (stack.amount <= 0)
+                {
+                    shopMaterials.Remove(stack); // 所持数が0以下になったら削除
+                }
             }
         }
     }

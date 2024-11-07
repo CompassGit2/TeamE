@@ -9054,8 +9054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce5a49e145b1c484b95751a03ba88a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellInterval: 0.17
-  scrollOffset: 0.17
+  cellInterval: 0.20952381
+  scrollOffset: 0.20952381
   loop: 0
   cellContainer: {fileID: 517257726}
   reuseCellMarginCount: 0
@@ -9064,7 +9064,7 @@ MonoBehaviour:
   spacing: 20
   startAxisSpacing: 20
   startAxisCellCount: 6
-  cellSize: {x: 120, y: 150}
+  cellSize: {x: 120, y: 200}
   cellPrefab: {fileID: 2580171620972891017, guid: ac6887bb2366f1e479fefdf9c1b20295, type: 3}
 --- !u!1 &1576731199
 GameObject:
