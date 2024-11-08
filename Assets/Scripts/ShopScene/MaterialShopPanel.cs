@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace ShopScene
 {
-    public class ShopPanel : MonoBehaviour
+    public class MaterialShopPanel : MonoBehaviour
     {
-        [SerializeField] MaterialGridView gridView;
+        [SerializeField] MaterialGridView materialGridView;
 
         [SerializeField] BuyPanel buyPanel;
 
@@ -16,7 +16,7 @@ namespace ShopScene
         void OnEnable()
         {
             buyPanel.BuyMaterial = BuyItem;
-            gridView.OnCellClicked(index => SetBuyPanelActive(index, Storage.ShopMaterials[index]));
+            materialGridView.OnCellClicked(index => SetBuyPanelActive(index, Storage.ShopMaterials[index]));
             
             GenerateCells(Storage.ShopMaterials);
 
@@ -24,7 +24,7 @@ namespace ShopScene
 
         void GenerateCells(List<MaterialStack> materialStacks)
         {
-            gridView.UpdateContents(materialStacks);
+            materialGridView.UpdateContents(materialStacks);
         }
 
         void SetBuyPanelActive(int index, MaterialStack materialStack)
@@ -40,7 +40,7 @@ namespace ShopScene
             Storage.Gold -= selectedMaterial.Price * amount;
             Storage.RemoveShopMaterial(selectedMaterial, amount);
             buyPanel.Disable();
-            gridView.UpdateContents(Storage.ShopMaterials);
+            materialGridView.UpdateContents(Storage.ShopMaterials);
         }
     }
 

@@ -302,8 +302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012398, y: -76.3}
-  m_SizeDelta: {x: 220, y: 30}
+  m_AnchoredPosition: {x: 0.000012398, y: -59.249985}
+  m_SizeDelta: {x: 220, y: 78.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3431854724037596033
 CanvasRenderer:
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4188795567399566617}
   - component: {fileID: 375801095968277110}
   m_Layer: 5
-  m_Name: itemUIPrefab
+  m_Name: MaterialCellPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,7 +654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 30}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5471782836611489347
