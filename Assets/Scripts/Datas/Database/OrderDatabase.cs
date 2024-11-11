@@ -18,7 +18,7 @@ namespace Data.Database
             List<OrderData> foundOrders = new();
             foreach (OrderData order in orderList)
             {
-                if(order.rank == rank)
+                if(order.Rank == rank)
                 {
                     foundOrders.Add(order);
                 }

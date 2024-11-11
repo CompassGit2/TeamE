@@ -16,10 +16,10 @@ public class OrderDataEditor : Editor
 
     private void OnEnable()
     {
-        requirementType = serializedObject.FindProperty("requirementType");
+        requirementType = serializedObject.FindProperty("RequirementType");
         weaponData = serializedObject.FindProperty("weaponData");
-        weaponRequirements = serializedObject.FindProperty("weaponRequirements");
-        requiredRarity = serializedObject.FindProperty("requiredRarity");
+        weaponRequirements = serializedObject.FindProperty("specRequirements");
+        requiredRarity = serializedObject.FindProperty("RequiredRarity");
     }
 
     public override void OnInspectorGUI()
@@ -29,25 +29,25 @@ public class OrderDataEditor : Editor
         // 基本プロパティの描画
         DrawPropertiesExcluding(serializedObject, new string[] { 
             "weaponData", 
-            "weaponRequirements", 
-            "requiredRarity" 
+            "specRequirements", 
+            "RequiredRarity" 
         });
 
         EditorGUILayout.Space(10);
         EditorGUILayout.LabelField("依頼要求の詳細設定", EditorStyles.boldLabel);
 
         // 選択された要求タイプに基づいて対応するUIを表示
-        switch ((requirements)requirementType.enumValueIndex)
+        switch ((Requirements)requirementType.enumValueIndex)
         {
-            case requirements.ByData:
+            case Requirements.ByData:
                 DrawDirectNameRequirement();
                 break;
 
-            case requirements.SpecSpecifications:
+            case Requirements.SpecSpecifications:
                 DrawSpecificationsRequirement();
                 break;
 
-            case requirements.Rarity:
+            case Requirements.Rarity:
                 DrawRarityRequirement();
                 break;
         }

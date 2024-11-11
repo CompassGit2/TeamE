@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82f81602df0923a49b9c57dde5565592, type: 3}
-  m_Name: New Order Database
+  m_Name: OrderDatabase
   m_EditorClassIdentifier: 
   orderList:
   - {fileID: 11400000, guid: 9b1b02a472ad34f49b546f74b19ab4f1, type: 2}

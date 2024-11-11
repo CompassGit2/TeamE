@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
+using UnityEngine;
 
 namespace Data{
     public static class Storage
@@ -139,6 +139,47 @@ namespace Data{
                     shopMaterials.Remove(stack); // 所持数が0以下になったら削除
                 }
             }
+        }
+
+        /* 取得依頼 ---------------------------------------------------------------------------------- */
+        public static List<Order> Orders
+        {
+            get => orders;
+        }
+        private static List<Order> orders = new();
+
+        public static void AddOrderData(OrderData orderData)
+        {
+            Order data = orders.Find(i => i.orderData == orderData);
+
+            if(data == null)
+            {
+                orders.Add(new Order(orderData));
+            }
+        }
+
+        public static void SetOrderFinished(Order order)
+        {
+            Order data = orders.Find(i => i == order);
+            if(data != null)
+            {
+                data.isFinished = true;
+                acceptedOrder = null;
+            }
+            else
+            {
+                Debug.LogError("Order not found!");
+            }
+        }
+
+        public static Order AcceptedOrder
+        {
+            get => acceptedOrder;
+        }
+        private static Order acceptedOrder = null;
+        public static void SetOrderAccept(Order order)
+        {
+            if (acceptedOrder == null) acceptedOrder = order;
         }
     }
 }

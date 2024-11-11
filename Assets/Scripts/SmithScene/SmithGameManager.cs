@@ -358,7 +358,6 @@ namespace SmithScene.Game
             {
                 nowQuality += value;
             }
-            Debug.Log(nowQuality.ToString());
         }
 
 

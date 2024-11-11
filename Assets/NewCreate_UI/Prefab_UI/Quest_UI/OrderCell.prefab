@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4188795567399566617}
   - component: {fileID: 2338101712510307770}
   m_Layer: 5
-  m_Name: OrderUIPrefab
+  m_Name: OrderCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
