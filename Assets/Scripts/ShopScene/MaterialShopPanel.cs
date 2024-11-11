@@ -10,6 +10,7 @@ namespace ShopScene
         [SerializeField] MaterialGridView materialGridView;
 
         [SerializeField] BuyPanel buyPanel;
+        [SerializeField] GameObject noItemText;
 
         int selectedMaterialIndex;
 
@@ -25,6 +26,15 @@ namespace ShopScene
         void GenerateCells(List<MaterialStack> materialStacks)
         {
             materialGridView.UpdateContents(materialStacks);
+
+            if(materialStacks.Count <= 0)
+            {
+                noItemText.SetActive(true);
+            }
+            else
+            {
+                noItemText.SetActive(false);
+            }
         }
 
         void SetBuyPanelActive(int index, MaterialStack materialStack)
@@ -41,6 +51,11 @@ namespace ShopScene
             Storage.RemoveShopMaterial(selectedMaterial, amount);
             buyPanel.Disable();
             materialGridView.UpdateContents(Storage.ShopMaterials);
+            
+            if(Storage.ShopMaterials.Count <= 0)
+            {
+                noItemText.SetActive(true);
+            }
         }
     }
 

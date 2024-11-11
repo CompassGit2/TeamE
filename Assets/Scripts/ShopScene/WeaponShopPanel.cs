@@ -9,6 +9,7 @@ namespace ShopScene
     {
         [SerializeField] WeaponGridView weaponGridView;
         [SerializeField] WeaponSellPanel weaponSellPanel;
+        [SerializeField] GameObject noWeaponText;
 
         int selectedWeaponIndex;
 
@@ -23,6 +24,15 @@ namespace ShopScene
         void GenerateCells(List<Weapon> weapons)
         {
             weaponGridView.UpdateContents(weapons);
+
+            if(weapons.Count <= 0)
+            {
+                noWeaponText.SetActive(true);
+            }
+            else
+            {
+                noWeaponText.SetActive(false);
+            }
         }
 
         void SetSellPanelActive(int index, Weapon weapon)
@@ -38,6 +48,11 @@ namespace ShopScene
             Storage.RemoveWeapon(weapon);
             weaponSellPanel.Disable();
             weaponGridView.UpdateContents(Storage.Weapons);
+
+            if(Storage.Weapons.Count <= 0)
+            {
+                noWeaponText.SetActive(true);
+            }
         }
         
     }

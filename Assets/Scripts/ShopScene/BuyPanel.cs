@@ -50,6 +50,7 @@ namespace ShopScene
                 slider.maxValue = maxNum;
                 maxText.text = $"{maxNum}";
                 
+                buyAmount = 1;
                 slider.value = buyAmount;
                 sliderText.text = $"購入数:{buyAmount}";
                 buyAmountPanel.SetActive(true);

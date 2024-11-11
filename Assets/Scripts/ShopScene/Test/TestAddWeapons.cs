@@ -13,7 +13,7 @@ public class TestAddWeapons : MonoBehaviour
         Storage.AddWeapon(weapon);
         weapon = new Weapon(weaponDatabase.weaponList[0],0,0,400);
         Storage.AddWeapon(weapon);
-        weapon = new Weapon(weaponDatabase.weaponList[1],0,0,300);
+        weapon = new Weapon(weaponDatabase.weaponList[1],0,0,300000);
         Storage.AddWeapon(weapon);
         Debug.Log("武器を倉庫に追加しました");
     }
