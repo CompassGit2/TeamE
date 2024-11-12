@@ -33,7 +33,10 @@ namespace Data{
             {
                 // なければ新しいアイテムを追加
                 materials.Add(new MaterialStack(materialData, amount));
+                ItemDictionary.RegisterMaterialDictionary(materialData);
             }
+            
+
         }
         
         /// <summary>
@@ -68,6 +71,7 @@ namespace Data{
         public static void AddWeapon(Weapon weapon)
         {
             weapons.Add(weapon);
+            ItemDictionary.RegisterRecipeDictionaryByWeapon(weapon);
         }
 
         public static void RemoveWeapon(Weapon weapon)

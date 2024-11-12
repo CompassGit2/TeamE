@@ -6,17 +6,18 @@ namespace Data.Database
     [CreateAssetMenu(menuName = "Database/OrderDatabase")]
     public class OrderDatabase : ScriptableObject
     {
-        public List<OrderData> orderList = new List<OrderData>();
+        public List<OrderData> normalOrderList = new List<OrderData>();
+        public List<OrderData> specialOrderList = new List<OrderData>();
 
         public List<OrderData> GetOrderList()
         {
-            return orderList;
+            return normalOrderList;
         }
 
-        public List<OrderData> GetOrdersByRank(int rank)
+        public List<OrderData> GetNormalOrdersByRank(int rank)
         {
             List<OrderData> foundOrders = new();
-            foreach (OrderData order in orderList)
+            foreach (OrderData order in normalOrderList)
             {
                 if(order.Rank == rank)
                 {
@@ -25,6 +26,11 @@ namespace Data.Database
             }
 
             return foundOrders;
+        }
+
+        public OrderData GetSpecialOrderByRank(int rank)
+        {
+            return specialOrderList[rank];
         }
 
     }

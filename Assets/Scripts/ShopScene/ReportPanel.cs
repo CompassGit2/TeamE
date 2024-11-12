@@ -7,7 +7,7 @@ namespace ShopScene
 {
     public class ReportPanel : MonoBehaviour
     {
-        public Action ReportOrder;
+        public Action<OrderType> ReportOrder;
         [SerializeField] OrderCell orderCell;
         [SerializeField] WeaponGridView weaponGridView;
         [SerializeField] WeaponDeliverPanel weaponDeliverPanel;
@@ -106,11 +106,12 @@ namespace ShopScene
 
         void DeliverWeapon()
         {
+            OrderType orderType = Storage.AcceptedOrder.orderData.OrderType;
             Storage.Gold += acceptableWeapons[selectedWeaponIndex].price + Storage.AcceptedOrder.orderData.Reward;
             Storage.RemoveWeapon(acceptableWeapons[selectedWeaponIndex]);
             Storage.SetOrderFinished(Storage.AcceptedOrder);
             weaponDeliverPanel.Disable();
-            ReportOrder();
+            ReportOrder(orderType);
         }
     }
 

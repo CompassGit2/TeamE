@@ -270,7 +270,7 @@ TextureImporter:
         width: 46
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 15, y: 15, z: 15, w: 15}
       outline: []
       physicsShape: []
@@ -278,6 +278,69 @@ TextureImporter:
       bones: []
       spriteID: e4ef9de1f0030394d9bc3bf17a3c10a7
       internalID: 1967495167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 337
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca64bd7581ac223478fee78d7e923696
+      internalID: 1038011344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 7, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b5716dcd0547041a6d742e812dca73
+      internalID: -795152511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 7, z: 8, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8579e3a2618cb14d9dd0fad2209cd50
+      internalID: 591057958
       vertices: []
       indices: 
       edges: []
@@ -300,6 +363,9 @@ TextureImporter:
       UI books & more_4: 786976924
       UI books & more_5: -613130581
       UI books & more_6: 1967495167
+      UI books & more_7: 1038011344
+      UI books & more_8: -795152511
+      UI books & more_9: 591057958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

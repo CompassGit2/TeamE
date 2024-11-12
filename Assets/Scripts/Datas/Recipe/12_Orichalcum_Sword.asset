@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8534fc9fc1cfd4aa4fb615bd312171, type: 3}
   m_Name: 12_Orichalcum_Sword
   m_EditorClassIdentifier: 
-  Id: 0
+  Id: 12
   Weapon: {fileID: 11400000, guid: 5a9adc4f3bc3f8c4fa087578444da633, type: 2}
   Material1: {fileID: 11400000, guid: 2595efbce407e6e4990e2b4230c52558, type: 2}
   AmountMaterial1: 10
