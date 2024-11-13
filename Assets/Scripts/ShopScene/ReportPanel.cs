@@ -53,11 +53,24 @@ namespace ShopScene
         void GenerateWeaponCells()
         {
             acceptableWeapons = new();
-            foreach(Weapon weapon in Storage.Weapons)
+            if(Storage.AcceptedOrder.orderData.OrderType == OrderType.Special)
             {
-                if(CheckWeaponRequirements(weapon.weapon))
+                if(Storage.Pickaxe != null)
                 {
-                    acceptableWeapons.Add(weapon);
+                    if(CheckWeaponRequirements(Storage.Pickaxe.weapon))
+                    {
+                        acceptableWeapons.Add(Storage.Pickaxe);
+                    }
+                }
+            }
+            else
+            {
+                foreach(Weapon weapon in Storage.Weapons)
+                {
+                    if(CheckWeaponRequirements(weapon.weapon))
+                    {
+                        acceptableWeapons.Add(weapon);
+                    }
                 }
             }
             weaponGridView.UpdateContents(acceptableWeapons);
@@ -74,6 +87,14 @@ namespace ShopScene
         public bool CheckWeaponRequirements(WeaponData weapon)
         {
             OrderData orderData = Storage.AcceptedOrder.orderData;
+
+            if(orderData.OrderType == OrderType.Special)
+            {
+                if(weapon.Name == orderData.weaponData.Name) return true;
+                
+                return false;
+            }
+
             switch(orderData.RequirementType){
                 case Requirements.ByData:
                     return weapon.Name == orderData.weaponData.Name;
@@ -91,7 +112,7 @@ namespace ShopScene
                     return true;
                     
                 case Requirements.Rarity:
-                    return weapon.Rarity == orderData.RequiredRarity;
+                    return weapon.Rarity >= orderData.RequiredRarity;
                     
                 default:
                     return false;
@@ -108,7 +129,10 @@ namespace ShopScene
         {
             OrderType orderType = Storage.AcceptedOrder.orderData.OrderType;
             Storage.Gold += acceptableWeapons[selectedWeaponIndex].price + Storage.AcceptedOrder.orderData.Reward;
+            
+            if(orderType == OrderType.Normal)
             Storage.RemoveWeapon(acceptableWeapons[selectedWeaponIndex]);
+            
             Storage.SetOrderFinished(Storage.AcceptedOrder);
             weaponDeliverPanel.Disable();
             ReportOrder(orderType);

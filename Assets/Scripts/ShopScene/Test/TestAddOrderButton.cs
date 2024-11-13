@@ -7,7 +7,7 @@ public class TestAddOrderButton : MonoBehaviour
     [SerializeField] OrderDatabase orderDatabase;
     public void OnClickButton()
     {
-        foreach(OrderData orderData in orderDatabase.normalOrderList)
+        foreach(OrderData orderData in orderDatabase.GetNormalOrdersByRank(PlayerData.WorldRank))
         {
             Storage.AddOrderData(orderData);
         }

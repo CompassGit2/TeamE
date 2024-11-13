@@ -30,7 +30,9 @@ namespace Data.Database
 
         public OrderData GetSpecialOrderByRank(int rank)
         {
-            return specialOrderList[rank];
+            if(rank < specialOrderList.Count) return specialOrderList[rank];
+
+            return null;
         }
 
     }

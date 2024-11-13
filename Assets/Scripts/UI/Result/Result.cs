@@ -23,6 +23,8 @@ namespace SmithScene.Result
         public GameObject LosePanel;
         Weapon _weapon = null;
 
+        [SerializeField] ShopScene.ShopItemTable shopItemTable;
+
         public void DisplayWeapon(Weapon weapon, float quality, int qualityBonus, bool temperatureBonus)
         {
             _weapon = weapon;
@@ -39,31 +41,32 @@ namespace SmithScene.Result
             SwordImage.sprite = _weapon.weapon.WeaponImage;
             animator.SetBool("Win",true);
 
-            if (_weapon.bonus <= 5)
+            if (_weapon.bonus <= 50)
             {
                 RankText.text = "B";
 
             }
-            else if (_weapon.bonus <= 10)
+            else if (_weapon.bonus <= 75)
             {
                 RankText.text = "A";
 
             }
-            else if (_weapon.bonus <= 15)
+            else if (_weapon.bonus <= 100)
             {
                 RankText.text = "S";
 
             }
-            else if (_weapon.bonus <= 20)
+            else if (_weapon.bonus <= 150)
             {
                 RankText.text = "SS";
 
             }
-            else if (_weapon.bonus > 20)
+            else if (_weapon.bonus > 150)
             {
                 RankText.text = "SSS";
             }
 
+            shopItemTable.AddShopItem();
         }
 
         public void DisplayLose(float quality)
@@ -121,7 +124,7 @@ namespace SmithScene.Result
                 Storage.AddWeapon(_weapon);
 
             }
-
+            
             SceneManager.LoadScene("MenuScene");
         }
         public void Continume()

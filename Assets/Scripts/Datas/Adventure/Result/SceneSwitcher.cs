@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    // ƒƒjƒ…[ƒV[ƒ“‚É‘JˆÚ‚·‚éƒƒ\ƒbƒh
+    [SerializeField] ShopScene.ShopItemTable shopItemTable;
+    // ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½[ï¿½ï¿½ï¿½É‘Jï¿½Ú‚ï¿½ï¿½éƒï¿½\ï¿½bï¿½h
     public void GoToMenu()
     {
-        SceneManager.LoadScene("MenuScene"); // ƒƒjƒ…[ƒV[ƒ“‚Ì–¼‘O‚ğ³Šm‚É‹Lq
+        shopItemTable.AddShopItem();
+        SceneManager.LoadScene("MenuScene"); // ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½Vï¿½[ï¿½ï¿½ï¿½Ì–ï¿½ï¿½Oï¿½ğ³Šmï¿½É‹Lï¿½q
     }
 }

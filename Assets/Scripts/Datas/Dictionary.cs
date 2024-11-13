@@ -8,12 +8,14 @@ namespace Data
     {
         public static void Initialize(MaterialDatabase materialDatabase, RecipeDatabase recipeDatabase)
         {
+            materialDictionary = new List<MaterialDictionaryData>();
             foreach(MaterialData materialData in materialDatabase.materialList)
             {
                 MaterialDictionaryData materialDictionaryData = new (materialData);
                 materialDictionary.Add(materialDictionaryData);
             }
 
+            recipeDictionary = new List<RecipeDictionaryData>();
             foreach(RecipeData recipeData in recipeDatabase.recipeList)
             {
                 RecipeDictionaryData recipeDictionaryData = new (recipeData);

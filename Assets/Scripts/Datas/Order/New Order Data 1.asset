@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: New Order Data 1
   m_EditorClassIdentifier: 
   Id: 1
-  Name: Mary's Order
   OrderImage: {fileID: 0}
   OrderType: 0
   Reward: 20
   Description: "\u3061\u3087\u3046\u3069\u3044\u3044\u9577\u3055\u306E\u5263\u3092\u983C\u3080\u3002\n\u30CA\u30A4\u30D5\u3058\u3083\u3060\u3081\u3060\u305E\u3002"
   RequirementType: 1
-  Rank: 0
+  Rank: 1
   weaponData: {fileID: 0}
   specRequirements:
     checkLength: 1
@@ -28,4 +27,4 @@ MonoBehaviour:
     requiredLength: 50
     requiredWeight: 0
     requiredSharpness: 0
-  requiredRarity: 0
+  RequiredRarity: 0

@@ -16,10 +16,10 @@ MonoBehaviour:
   Weapon: {fileID: 11400000, guid: be8e568f0310007408d787543987570b, type: 2}
   Material1: {fileID: 11400000, guid: 50c4b22f4cee5c245b732fb3d7f4e618, type: 2}
   AmountMaterial1: 8
-  Material2: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+  Material2: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
   AmountMaterial2: 15
-  Material3: {fileID: 0}
-  AmountMaterial3: 0
+  Material3: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+  AmountMaterial3: 2
   MaxQuality: 300
   SuitableTemperature: 8000
   RiseTemperatureSensitivity: 1

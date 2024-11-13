@@ -16,13 +16,19 @@ namespace TitleScene
         
         [SerializeField] MaterialDatabase materialDatabase;
         [SerializeField] RecipeDatabase recipeDatabase;
+        [SerializeField] OrderDatabase orderDatabase;
         public void StartNewGame()
         {
             PlayerData.SetWorldRank(0);
             ItemDictionary.Initialize(materialDatabase, recipeDatabase);
             
+            foreach(OrderData orderData in orderDatabase.GetNormalOrdersByRank(PlayerData.WorldRank))
+            {
+                Storage.AddOrderData(orderData);
+            }
+
             Storage.AddMaterial(materialDatabase.materialList[0],2);
-            Storage.Gold = 100;
+            Storage.Gold = 150;
 
             SceneManager.LoadScene("MenuScene");
         }

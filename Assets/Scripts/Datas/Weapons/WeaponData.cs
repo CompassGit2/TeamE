@@ -17,6 +17,7 @@ namespace Data
         public int Sharpness;
         public int BasePrice;
         public string Description;
+        public bool isPickaxe;
 
     }
 }

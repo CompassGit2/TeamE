@@ -53,7 +53,7 @@ namespace ShopScene
                     break;
                 case Requirements.Rarity:
                     requirementTypeText.text = "納品条件:レアリティ";
-                    requirementDetailText.text = $"Rare{order.orderData.RequiredRarity}";
+                    requirementDetailText.text = $"Rare{order.orderData.RequiredRarity}以上";
                     break;
             }
         }

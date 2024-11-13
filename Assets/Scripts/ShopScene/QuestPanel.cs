@@ -11,6 +11,7 @@ namespace ShopScene
         [SerializeField] OrderDatabase orderDatabase;
         [SerializeField] ReceptionPanel receptionPanel;
         [SerializeField] ReportPanel reportPanel;
+        [SerializeField] ShopItemTable shopItemTable;
 
         void OnEnable()
         {
@@ -49,7 +50,7 @@ namespace ShopScene
         {
             if(orderType == OrderType.Normal)
             {
-                if(Storage.Orders.Count <= 0)
+                if(Storage.GetNotFinishedOrder().Count <= 0)
                 {
                     Storage.AddOrderData(orderDatabase.GetSpecialOrderByRank(PlayerData.WorldRank));
                 }
@@ -61,6 +62,7 @@ namespace ShopScene
                 {
                     Storage.AddOrderData(orderData);
                 }
+                shopItemTable.AddShopItem();
             }
         }
     }

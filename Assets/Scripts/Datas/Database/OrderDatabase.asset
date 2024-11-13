@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f81602df0923a49b9c57dde5565592, type: 3}
   m_Name: OrderDatabase
   m_EditorClassIdentifier: 
-  orderList:
+  normalOrderList:
   - {fileID: 11400000, guid: 9b1b02a472ad34f49b546f74b19ab4f1, type: 2}
   - {fileID: 11400000, guid: 9c50b66db5d57e94e9be222caf676eee, type: 2}
   - {fileID: 11400000, guid: 11ea8aed49904c64388673f5dd7be8cf, type: 2}
+  specialOrderList:
+  - {fileID: 11400000, guid: 963976c7611bf2c4c9a94af60a35539c, type: 2}

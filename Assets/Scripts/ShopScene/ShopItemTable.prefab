@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6245318291665390052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3716721846462090142}
+  - component: {fileID: 4860050206698886218}
+  m_Layer: 0
+  m_Name: ShopItemTable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3716721846462090142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245318291665390052}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 844.1675, y: 464.1835, z: -6.3857126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4860050206698886218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245318291665390052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382a5d0e3dfa77649822c176ce132096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rank0ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 5
+  rank1ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
+    amount: 5
+  rank2ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 8cdcde7ebc0b5a44fafeccd7b1f616f3, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 7383264bf99c7b44589bebc190c0f570, type: 2}
+    amount: 2
+  rank3ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 15
+  - material: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 8cdcde7ebc0b5a44fafeccd7b1f616f3, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 7383264bf99c7b44589bebc190c0f570, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: a3789aa950442434ba4d7e00da500359, type: 2}
+    amount: 2
+  - material: {fileID: 11400000, guid: 2595efbce407e6e4990e2b4230c52558, type: 2}
+    amount: 1
+  - material: {fileID: 11400000, guid: d6eec8e17a019b24a880b18a9ef15124, type: 2}
+    amount: 1
+  - material: {fileID: 11400000, guid: 50c4b22f4cee5c245b732fb3d7f4e618, type: 2}
+    amount: 1
+  rank4ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 20
+  - material: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+    amount: 20
+  - material: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
+    amount: 20
+  - material: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 8cdcde7ebc0b5a44fafeccd7b1f616f3, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 7383264bf99c7b44589bebc190c0f570, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: a3789aa950442434ba4d7e00da500359, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 2595efbce407e6e4990e2b4230c52558, type: 2}
+    amount: 3
+  - material: {fileID: 11400000, guid: d6eec8e17a019b24a880b18a9ef15124, type: 2}
+    amount: 3
+  - material: {fileID: 11400000, guid: 50c4b22f4cee5c245b732fb3d7f4e618, type: 2}
+    amount: 3
+  - material: {fileID: 11400000, guid: 1859878fee739e9448d15e645bc4e919, type: 2}
+    amount: 2
+  - material: {fileID: 11400000, guid: d6accb41198448c4fbff14e5d65435ec, type: 2}
+    amount: 2
+  - material: {fileID: 11400000, guid: 6a92d5d6d5ededc4e97d1752e436d389, type: 2}
+    amount: 2
+  rank5ShopItemTable:
+  - material: {fileID: 11400000, guid: 72ab0c8f381135c4ea720431a44fa09f, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 7e73e9dda37741e47a26aefb0d912215, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 454d805ae0061484eb6a5be615dcc457, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 7992979dd1f0efe40a5515107666c5cd, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 8c5b796bbaf327b4aa3127ed71143e81, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 8cdcde7ebc0b5a44fafeccd7b1f616f3, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: 7383264bf99c7b44589bebc190c0f570, type: 2}
+    amount: 30
+  - material: {fileID: 11400000, guid: a3789aa950442434ba4d7e00da500359, type: 2}
+    amount: 20
+  - material: {fileID: 11400000, guid: 2595efbce407e6e4990e2b4230c52558, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: d6eec8e17a019b24a880b18a9ef15124, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 50c4b22f4cee5c245b732fb3d7f4e618, type: 2}
+    amount: 10
+  - material: {fileID: 11400000, guid: 1859878fee739e9448d15e645bc4e919, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: d6accb41198448c4fbff14e5d65435ec, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 6a92d5d6d5ededc4e97d1752e436d389, type: 2}
+    amount: 5
+  - material: {fileID: 11400000, guid: 363d506f8583787409a01ef9417a6a9a, type: 2}
+    amount: 1

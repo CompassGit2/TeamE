@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Data{
@@ -70,6 +71,12 @@ namespace Data{
 
         public static void AddWeapon(Weapon weapon)
         {
+            if(weapon.weapon.isPickaxe)
+            {
+                SetPickaxe(weapon);
+                return;
+            }
+
             weapons.Add(weapon);
             ItemDictionary.RegisterRecipeDictionaryByWeapon(weapon);
         }
@@ -85,6 +92,24 @@ namespace Data{
             if(weapon != null)
             {
                 weapons.Remove(weapon);
+            }
+        }
+
+        public static Weapon Pickaxe
+        {
+            get => pickaxe;
+        }
+        private static Weapon pickaxe;
+
+        static void SetPickaxe(Weapon weapon)
+        {
+            if(pickaxe == null)
+            {
+                pickaxe = weapon;
+            }
+            else if(weapon.weapon.Rarity > pickaxe.weapon.Rarity)
+            {
+                pickaxe = weapon;
             }
         }
 
@@ -129,6 +154,15 @@ namespace Data{
                 shopMaterials.Add(new MaterialStack(materialData, amount));
             }
         }
+        public static void SetShopMaterial(List<MaterialStack> materialItems)
+        {
+            shopMaterials.Clear();
+            foreach (MaterialStack stack in materialItems)
+            {
+                MaterialStack item = new(stack.material, stack.amount);
+                shopMaterials.Add(item);
+            }
+        }
 
         public static void RemoveShopMaterial(MaterialData materialData, int amount)
         {
@@ -145,6 +179,7 @@ namespace Data{
             }
         }
 
+
         /* 取得依頼 ---------------------------------------------------------------------------------- */
         public static List<Order> Orders
         {
@@ -159,7 +194,14 @@ namespace Data{
             if(data == null)
             {
                 orders.Add(new Order(orderData));
+                Debug.Log("依頼を追加しました。");
             }
+        }
+
+        public static List<Order> GetNotFinishedOrder()
+        {
+            List<Order> foundOrder = orders.Where(i => i.isFinished == false).ToList();
+            return foundOrder;
         }
 
         public static void SetOrderFinished(Order order)

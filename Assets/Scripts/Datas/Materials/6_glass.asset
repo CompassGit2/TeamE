@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b3bd4638ea5154bb360eb57d7b640e, type: 3}
+  m_Name: 6_glass
+  m_EditorClassIdentifier: 
+  Id: 6
+  Name: "\u30AC\u30E9\u30B9"
+  MaterialImage: {fileID: 21300000, guid: 270e5308e619d46428aea214be3f047f, type: 3}
+  Rarity: 1
+  Price: 50
+  Description: "\u7DBA\u9E97\u3060\u304C\u3001\u58CA\u308C\u3084\u3059\u3044\u3002"
